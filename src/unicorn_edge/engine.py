@@ -8,6 +8,10 @@ class DataGapError(ValueError):
     pass
 
 
+class NoTrainingVariationError(ValueError):
+    """The requested strategy has no calibratable training variation."""
+
+
 @dataclass(frozen=True)
 class BacktestConfig:
     cost_bps: float = .6
@@ -154,6 +158,6 @@ def training_scale(series: pd.Series, cap: float | None = None) -> float:
     m = metrics(series)
     vol, dd = float(m["annual_volatility"]), abs(float(m["max_drawdown"]))
     if vol <= 1e-14:
-        raise ValueError("No training variation; cannot calibrate scale")
+        raise NoTrainingVariationError("No training variation; cannot calibrate scale")
     scale = min(.12/vol, .15/dd if dd>1e-14 else np.inf)
     return float(min(scale,cap)) if cap is not None else float(scale)

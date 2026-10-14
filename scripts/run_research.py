@@ -13,7 +13,7 @@ import numpy as np
 import pandas as pd
 
 from unicorn_edge.data import load_cache
-from unicorn_edge.engine import BacktestConfig, backtest, metrics, training_scale
+from unicorn_edge.engine import BacktestConfig, NoTrainingVariationError, backtest, metrics, training_scale
 from unicorn_edge.signals import SignalConfig, make_signals
 
 
@@ -101,7 +101,8 @@ def main():
                        'Training scaling excludes kill switches; evaluation includes them except the named ablation.',
                        '20 random gates match daily counts, not spell lengths; this does not replicate the paper\'s 1000-gate null distribution.',
                        'Additional annual evaluation is retrospective, with year-end liquidation and annual restart, not an untouched holdout.',
-                       'Missing provider histories are explicitly recorded; no substitution or synthetic fallback.']}
+                       'Missing provider histories are explicitly recorded; no substitution or synthetic fallback.',
+                       'Amendment after partial v1: zero-variation training is recorded as uncalibratable, never assigned an invented scale or dropped silently. No aggregate is reported for an incomplete case.']}
     protocol_text=json.dumps(protocol,indent=2,sort_keys=True)
     (output/'run-specification.json').write_text(protocol_text,encoding='utf-8')
     print('Frozen run specification SHA256:',hashlib.sha256(protocol_text.encode()).hexdigest(),flush=True)
@@ -111,7 +112,7 @@ def main():
     coverage.to_csv(output/'coverage.csv',index_label='date')
     (output/'data-receipt.json').write_text(json.dumps(receipt,indent=2),encoding='utf-8')
     (output/'paper-arithmetic.json').write_text(json.dumps(paper_arithmetic(),indent=2),encoding='utf-8')
-    summaries=[]; window_rows=[]; primary_scales={}; signals_cache={}; primary_years=[]
+    summaries=[]; window_rows=[]; primary_scales={}; signals_cache={}; primary_years=[]; unavailable=[]
     all_daily={}
     for name,signal_config,engine_config,price_mode,scale_source in chosen:
         key=(signal_config,price_mode)
@@ -133,14 +134,20 @@ def main():
             if signal_config==SignalConfig() and price_mode=='close':signals_cache[key]=weights
         else:
             weights=signals_cache[key]
-        paths=[]
+        paths=[]; failed_years=[]
         for year in (2010,2015,2020):
             training=backtest(returns,weights,f'{year-5}-01-01',f'{year}-01-01',replace(engine_config,scale=1,kill_switch=False))
             if scale_source in {'primary','capped'}:
                 scale=primary_scales[year]
                 if scale_source=='capped':scale=min(scale,1.)
             else:
-                scale=training_scale(training['net_return'])
+                try:
+                    scale=training_scale(training['net_return'])
+                except NoTrainingVariationError as exc:
+                    failed_years.append({'test_year':year,'reason':str(exc),
+                                         'training_observations':len(training),
+                                         'training_nonzero_returns':int(training.net_return.ne(0).sum())})
+                    continue
             if name=='primary':primary_scales[year]=scale
             test=backtest(returns,weights,f'{year}-01-01',f'{year+1}-01-01',replace(engine_config,scale=scale))
             paths.append(test)
@@ -151,6 +158,15 @@ def main():
                                 'mean_gross_exposure':test['gross_exposure'].mean(),'annual_turnover':test['turnover'].mean()*252,
                                 'annual_cost_drag':test['trading_cost'].mean()*252})
             if name=='primary':primary_years.append(test['net_return'])
+        if failed_years:
+            failure={'case':name,'status':'uncalibratable','failed_windows':failed_years,
+                     'completed_windows':len(paths),'aggregate_reported':False}
+            unavailable.append(failure)
+            (output/'unavailable-cases.json').write_text(json.dumps(unavailable,indent=2),encoding='utf-8')
+            if paths:
+                pd.concat(paths).to_csv(output/(name+'-PARTIAL-daily.csv'),index_label='date')
+            print(name,json.dumps(failure),flush=True)
+            continue
         joined=pd.concat(paths)
         joined.to_csv(output/(name+'-daily.csv'),index_label='date')
         summary={'case':name,**metrics(joined['net_return']),
@@ -195,7 +211,7 @@ def main():
              'output_sha256':{f.name:hashlib.sha256(f.read_bytes()).hexdigest() for f in output.iterdir() if f.is_file()},
              'scope':'Methodological reproduction; current membership and current-vintage public prices; no investability certification.'}
     (output/'run-receipt.json').write_text(json.dumps(receipt,indent=2),encoding='utf-8')
-    print('Completed',len(summaries),'specified strategy cases.',flush=True)
+    print('Accounted for',len(summaries)+len(unavailable),'specified strategy cases:',len(summaries),'complete,',len(unavailable),'uncalibratable.',flush=True)
 
 
 if __name__=='__main__':main()
