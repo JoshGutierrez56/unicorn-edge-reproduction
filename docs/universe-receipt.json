@@ -1,0 +1,15 @@
+{
+  "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/36472b57910842f4025e8ca8303b93a692d2bbae/data/constituents.csv",
+  "source_commit": "36472b57910842f4025e8ca8303b93a692d2bbae",
+  "source_commit_date": "2026-10-09T03:19:58Z",
+  "downloaded_at": "2026-10-14T23:29:43.849403+00:00",
+  "sha256": "a8045f043ea7e68d4254a07470a5e95ca5759ded4656657eac514162e6e82e06",
+  "licenses": [
+    {
+      "name": "ODC-PDDL-1.0",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License v1.0"
+    }
+  ],
+  "scope": "Current membership snapshot. Not point-in-time historical membership. Survivorship and selection bias remain."
+}
