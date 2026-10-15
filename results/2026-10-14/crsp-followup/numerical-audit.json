@@ -1,0 +1,103 @@
+{
+  "status": "passed",
+  "signal_dates_checked": 300,
+  "signal_weight_max_absolute_error": 2.914335439641036e-15,
+  "training_return_observations": 11325,
+  "evaluation_return_observations": 2271,
+  "training_scale_max_absolute_error": 6.350475700855895e-14,
+  "ledger_comparisons": [
+    {
+      "case": "yahoo_close_quote_freeze_gated_blend",
+      "year": 2010,
+      "observations": 252,
+      "maximum_absolute_errors": {
+        "nav": 2.6645352591003757e-15,
+        "net_return": 5.232359684415044e-16,
+        "trading_cost": 3.2526065174565133e-19
+      }
+    },
+    {
+      "case": "yahoo_close_quote_freeze_gated_blend",
+      "year": 2015,
+      "observations": 252,
+      "maximum_absolute_errors": {
+        "nav": 9.992007221626409e-16,
+        "net_return": 4.335724487769532e-16,
+        "trading_cost": 5.2827750854356204e-17
+      }
+    },
+    {
+      "case": "yahoo_close_quote_freeze_gated_blend",
+      "year": 2020,
+      "observations": 253,
+      "maximum_absolute_errors": {
+        "nav": 8.881784197001252e-15,
+        "net_return": 2.9698465908722937e-15,
+        "trading_cost": 8.665485863590394e-17
+      }
+    },
+    {
+      "case": "crsp_nominal_stale_freeze_gated_blend",
+      "year": 2010,
+      "observations": 252,
+      "maximum_absolute_errors": {
+        "nav": 5.773159728050814e-15,
+        "net_return": 4.0852737859253807e-16,
+        "trading_cost": 1.260385025514399e-18
+      }
+    },
+    {
+      "case": "crsp_nominal_stale_freeze_gated_blend",
+      "year": 2015,
+      "observations": 252,
+      "maximum_absolute_errors": {
+        "nav": 1.7763568394002505e-15,
+        "net_return": 4.9439619065339e-16,
+        "trading_cost": 7.123208273229764e-17
+      }
+    },
+    {
+      "case": "crsp_nominal_stale_freeze_gated_blend",
+      "year": 2020,
+      "observations": 253,
+      "maximum_absolute_errors": {
+        "nav": 1.4432899320127035e-15,
+        "net_return": 4.9439619065339e-16,
+        "trading_cost": 9.2970336290632e-17
+      }
+    },
+    {
+      "case": "crsp_split_stale_freeze_gated_blend",
+      "year": 2010,
+      "observations": 252,
+      "maximum_absolute_errors": {
+        "nav": 1.9984014443252818e-15,
+        "net_return": 4.490765398434959e-16,
+        "trading_cost": 5.421010862427522e-19
+      }
+    },
+    {
+      "case": "crsp_split_stale_freeze_gated_blend",
+      "year": 2015,
+      "observations": 252,
+      "maximum_absolute_errors": {
+        "nav": 3.3306690738754696e-15,
+        "net_return": 4.466912950640278e-16,
+        "trading_cost": 4.653937825394028e-17
+      }
+    },
+    {
+      "case": "crsp_split_stale_freeze_gated_blend",
+      "year": 2020,
+      "observations": 253,
+      "maximum_absolute_errors": {
+        "nav": 1.7763568394002505e-15,
+        "net_return": 8.049116928532385e-16,
+        "trading_cost": 9.597899731927928e-17
+      }
+    }
+  ],
+  "method": "Direct return slices and scipy rankdata; separate total-return-unit shares/cash ledger with Brent fee solver and explicit quote locks.",
+  "scope": "Same authoring agent; not independent human review, source-data certification or removal of survivorship bias.",
+  "audited_run_sha256": "5e85c0f18884983ae109c3f1a40b017eff7f63d695546dc9cf3cac3e1e6b6b1e"
+}

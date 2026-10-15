@@ -1,0 +1,275 @@
+{
+  "cases": [
+    {
+      "name": "yahoo_close_gated_blend",
+      "source": "yahoo_close",
+      "mode": "gated_blend",
+      "lag": 1,
+      "cost_bps": 0.6
+    },
+    {
+      "name": "yahoo_close_gated_reversal",
+      "source": "yahoo_close",
+      "mode": "gated_reversal",
+      "lag": 1,
+      "cost_bps": 0.6
+    },
+    {
+      "name": "yahoo_close_ungated",
+      "source": "yahoo_close",
+      "mode": "ungated",
+      "lag": 1,
+      "cost_bps": 0.6
+    },
+    {
+      "name": "yahoo_close_extra_day",
+      "source": "yahoo_close",
+      "mode": "gated_blend",
+      "lag": 2,
+      "cost_bps": 0.6
+    },
+    {
+      "name": "yahoo_close_cost_10bps",
+      "source": "yahoo_close",
+      "mode": "gated_blend",
+      "lag": 1,
+      "cost_bps": 10.0
+    },
+    {
+      "name": "crsp_nominal_gated_blend",
+      "source": "crsp_nominal",
+      "mode": "gated_blend",
+      "lag": 1,
+      "cost_bps": 0.6
+    },
+    {
+      "name": "crsp_nominal_gated_reversal",
+      "source": "crsp_nominal",
+      "mode": "gated_reversal",
+      "lag": 1,
+      "cost_bps": 0.6
+    },
+    {
+      "name": "crsp_nominal_ungated",
+      "source": "crsp_nominal",
+      "mode": "ungated",
+      "lag": 1,
+      "cost_bps": 0.6
+    },
+    {
+      "name": "crsp_nominal_extra_day",
+      "source": "crsp_nominal",
+      "mode": "gated_blend",
+      "lag": 2,
+      "cost_bps": 0.6
+    },
+    {
+      "name": "crsp_nominal_cost_10bps",
+      "source": "crsp_nominal",
+      "mode": "gated_blend",
+      "lag": 1,
+      "cost_bps": 10.0
+    },
+    {
+      "name": "crsp_split_adjusted_gated_blend",
+      "source": "crsp_split_adjusted",
+      "mode": "gated_blend",
+      "lag": 1,
+      "cost_bps": 0.6
+    },
+    {
+      "name": "crsp_split_adjusted_gated_reversal",
+      "source": "crsp_split_adjusted",
+      "mode": "gated_reversal",
+      "lag": 1,
+      "cost_bps": 0.6
+    },
+    {
+      "name": "crsp_split_adjusted_ungated",
+      "source": "crsp_split_adjusted",
+      "mode": "ungated",
+      "lag": 1,
+      "cost_bps": 0.6
+    },
+    {
+      "name": "crsp_split_adjusted_extra_day",
+      "source": "crsp_split_adjusted",
+      "mode": "gated_blend",
+      "lag": 2,
+      "cost_bps": 0.6
+    },
+    {
+      "name": "crsp_split_adjusted_cost_10bps",
+      "source": "crsp_split_adjusted",
+      "mode": "gated_blend",
+      "lag": 1,
+      "cost_bps": 10.0
+    },
+    {
+      "name": "yahoo_close_quote_freeze_gated_blend",
+      "source": "yahoo_close_quote_freeze",
+      "mode": "gated_blend",
+      "lag": 1,
+      "cost_bps": 0.6
+    },
+    {
+      "name": "yahoo_close_quote_freeze_gated_reversal",
+      "source": "yahoo_close_quote_freeze",
+      "mode": "gated_reversal",
+      "lag": 1,
+      "cost_bps": 0.6
+    },
+    {
+      "name": "yahoo_close_quote_freeze_ungated",
+      "source": "yahoo_close_quote_freeze",
+      "mode": "ungated",
+      "lag": 1,
+      "cost_bps": 0.6
+    },
+    {
+      "name": "yahoo_close_quote_freeze_extra_day",
+      "source": "yahoo_close_quote_freeze",
+      "mode": "gated_blend",
+      "lag": 2,
+      "cost_bps": 0.6
+    },
+    {
+      "name": "yahoo_close_quote_freeze_cost_10bps",
+      "source": "yahoo_close_quote_freeze",
+      "mode": "gated_blend",
+      "lag": 1,
+      "cost_bps": 10.0
+    },
+    {
+      "name": "crsp_nominal_stale_freeze_gated_blend",
+      "source": "crsp_nominal_stale_freeze",
+      "mode": "gated_blend",
+      "lag": 1,
+      "cost_bps": 0.6
+    },
+    {
+      "name": "crsp_nominal_stale_freeze_gated_reversal",
+      "source": "crsp_nominal_stale_freeze",
+      "mode": "gated_reversal",
+      "lag": 1,
+      "cost_bps": 0.6
+    },
+    {
+      "name": "crsp_nominal_stale_freeze_ungated",
+      "source": "crsp_nominal_stale_freeze",
+      "mode": "ungated",
+      "lag": 1,
+      "cost_bps": 0.6
+    },
+    {
+      "name": "crsp_nominal_stale_freeze_extra_day",
+      "source": "crsp_nominal_stale_freeze",
+      "mode": "gated_blend",
+      "lag": 2,
+      "cost_bps": 0.6
+    },
+    {
+      "name": "crsp_nominal_stale_freeze_cost_10bps",
+      "source": "crsp_nominal_stale_freeze",
+      "mode": "gated_blend",
+      "lag": 1,
+      "cost_bps": 10.0
+    },
+    {
+      "name": "crsp_split_stale_freeze_gated_blend",
+      "source": "crsp_split_stale_freeze",
+      "mode": "gated_blend",
+      "lag": 1,
+      "cost_bps": 0.6
+    },
+    {
+      "name": "crsp_split_stale_freeze_gated_reversal",
+      "source": "crsp_split_stale_freeze",
+      "mode": "gated_reversal",
+      "lag": 1,
+      "cost_bps": 0.6
+    },
+    {
+      "name": "crsp_split_stale_freeze_ungated",
+      "source": "crsp_split_stale_freeze",
+      "mode": "ungated",
+      "lag": 1,
+      "cost_bps": 0.6
+    },
+    {
+      "name": "crsp_split_stale_freeze_extra_day",
+      "source": "crsp_split_stale_freeze",
+      "mode": "gated_blend",
+      "lag": 2,
+      "cost_bps": 0.6
+    },
+    {
+      "name": "crsp_split_stale_freeze_cost_10bps",
+      "source": "crsp_split_stale_freeze",
+      "mode": "gated_blend",
+      "lag": 1,
+      "cost_bps": 10.0
+    }
+  ],
+  "test_years": [
+    2010,
+    2015,
+    2020
+  ],
+  "training_years": 5,
+  "annual_retrospective": {
+    "years": [
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "modes": [
+      "gated_blend"
+    ],
+    "sources": [
+      "yahoo_close",
+      "crsp_nominal",
+      "crsp_split_adjusted",
+      "yahoo_close_quote_freeze",
+      "crsp_nominal_stale_freeze",
+      "crsp_split_stale_freeze"
+    ]
+  },
+  "signal": {
+    "window": 63,
+    "threshold": 0.6,
+    "reversal_window": 10,
+    "value_weight": 0.7,
+    "mode": "gated_blend",
+    "equal_side": false,
+    "random_seed": 0
+  },
+  "engine_default": {
+    "cost_bps": 0.6,
+    "borrow_bps_annual": 0,
+    "signal_lag": 1,
+    "scale": 1,
+    "kill_switch": true,
+    "max_drawdown": 0.3,
+    "rolling_loss": 0.1,
+    "rolling_days": 63,
+    "liquidate_final": true
+  },
+  "common_observation_rule": "Issuer-reviewed permanent-ID current symbols, with valid observed Yahoo/CIZ prices and returns on the signal date; same mask applies before cross-sectional ranking. Past return lookbacks retain each provider observations. Missing held returns fail in strict cases. Separate stale_freeze cases bridge only documented P1/P2 price gaps and prohibit trading without a quote; modeled zeros never enter signal histories. Matched Yahoo quote-freeze cases retain Yahoo observed returns.",
+  "original_results_seen": true,
+  "historical_membership": "BLOCKED: crsp_a_indexes permission denied; no PIT membership result",
+  "commit": "979e20b92831f0444839ee25b4fc89dfe1df984a",
+  "started_utc": "2026-10-15T01:03:03.705349+00:00"
+}

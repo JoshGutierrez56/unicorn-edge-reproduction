@@ -1,0 +1,7 @@
+{
+  "paired_security_days": 2713130,
+  "median_absolute_difference": 2.7363859261570617e-07,
+  "mean_absolute_difference": 7.41119346862481e-06,
+  "fraction_abs_difference_above_1bp": 0.006461172151721444,
+  "note": "Aggregate observation comparison, not proof of equivalent security histories, prices or execution."
+}

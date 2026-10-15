@@ -1,0 +1,92 @@
+{
+  "source": "WRDS / CRSP CIZ, current vintage",
+  "rows": 2378539,
+  "acquired_rows": 2389055,
+  "calendar_sessions": 5537,
+  "mapped_symbols": 492,
+  "observed_symbols": 490,
+  "excluded_flagged_returns": 494,
+  "return_flags": {
+    "NA": 2378051,
+    "NT": 349,
+    "NS": 131,
+    "MP": 7,
+    "RA": 1
+  },
+  "duration_flags": {
+    "D1": 1862911,
+    "D3": 428723,
+    "D4": 63555,
+    "D2": 22047,
+    "DU": 809,
+    "MR": 488,
+    "P1": 5,
+    "P2": 1
+  },
+  "price_flags": {
+    "TR": 2378148,
+    "NT": 349,
+    "BA": 35,
+    "MP": 7
+  },
+  "membership_status": "blocked: licensed account lacks permission for the index-membership schema; no historical-membership backtest authorized by this extract",
+  "unresolved_mappings": [
+    {
+      "symbol": "FDXF",
+      "status": "unmatched"
+    },
+    {
+      "symbol": "HONA",
+      "status": "unmatched"
+    },
+    {
+      "symbol": "LEN",
+      "status": "ambiguous"
+    },
+    {
+      "symbol": "MRSH",
+      "status": "unmatched"
+    },
+    {
+      "symbol": "MKC",
+      "status": "ambiguous"
+    },
+    {
+      "symbol": "SKYD",
+      "status": "unmatched"
+    },
+    {
+      "symbol": "VMRK",
+      "status": "unmatched"
+    },
+    {
+      "symbol": "VYLR",
+      "status": "unmatched"
+    }
+  ],
+  "identity_review_sha256": "a95be93147401af0fa7db6a86bc9260738f93e0c753396fbbe23031b4d271173",
+  "excluded_identity_candidates": [
+    {
+      "symbol": "BNY",
+      "reason": "Excluded: candidate issuer is a municipal closed-end fund, not the intended BNY Mellon common stock."
+    },
+    {
+      "symbol": "ECHO",
+      "reason": "Excluded: candidate issuer is Echo Global Logistics, not the intended EchoStar current company."
+    },
+    {
+      "symbol": "P",
+      "reason": "Excluded: candidate issuer is Pandora Media, not the intended Everpure current company."
+    }
+  ],
+  "modeled_gap_valuation": {
+    "bridged_intervals": 6,
+    "stale_valuation_sessions": 7,
+    "policy": "Last valuation carried during documented MP gaps; no trading without a quote. Full P1/P2 return applied on resumption. These are modeled valuations, not observed zero returns. Signal lookbacks remain missing."
+  },
+  "acquisition_receipt_sha256": "fcbc34f4069d5ec8fd3ea97c7daafad51dab57289257cacfb3b4f707ba5bbcc5",
+  "common_symbols": 490,
+  "common_signal_observations": 2374192,
+  "yahoo_receipt_sha256": "dca1ac8661f316eb7e3581ab9c90a5e327b23b28b2ece061b5fa838fc58be81e",
+  "scope": "Retrospective current-member intersection, not historical S&P membership or exact author data."
+}

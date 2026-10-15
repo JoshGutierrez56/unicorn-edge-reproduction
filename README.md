@@ -10,6 +10,8 @@ An independently implemented, explicitly scoped study of Mainak Singha's [*Disco
 
 **Interesting research hypothesis; not established as a deployable investment strategy.** The drift gate helps relative to the ungated blend in this reconstruction, but the extraordinary headline, robustness and wealth claims do not hold up here. A simpler gated-reversal baseline has a higher Sharpe. Results weaken with a realistic additional execution delay, and the inverse-price component depends on arbitrary share-price units.
 
+**Licensed-data follow-up:** the main CRSP comparison produces **0.33 Sharpe with nominal prices / 0.13 with split-adjusted prices**, using a separately disclosed stale-valuation/trading-freeze convention. The matched Yahoo comparison is 0.29; neither provider recovers 13.19. Historical-membership access was denied, strict missing-return cases remain blocked, and the original Yahoo release below is unchanged. [Full CRSP findings, all cases and verification](docs/CRSP_FINDINGS.md).
+
 | Specified comparison | Sharpe | Geometric net return across the three test years |
 |---|---:|---:|
 | Paper's headline | 13.19 | Paper reports about 110.4× final wealth; see arithmetic audit |
@@ -46,7 +48,7 @@ The intuition is to trade relative-value/reversal differences among stocks exper
 - A **1,000-seed descriptive random-gate supplement** matches each day's eligible count, not regime spell lengths or turnover. **142 of 1,000** had Sharpe at least as high as the primary (14.2%); the random-gate mean was −0.19. The original 20 observed seeds were retained, then the fixed extension to seeds 0–999 was completed without outcome-based stopping. **14.2% is not a calibrated p-value**, and this is not an exact replication of the paper's randomization procedure. [Protocol, every seed and receipt](results/2026-10-14/random-gate-1000/).
 - Alternate endpoint interpretation—2011, 2016 and 2021—returns **0.15 Sharpe**. All calendar years 2010–2024 are also reported, rather than selecting only three favorable years.
 - A separate numerical challenger reconciled **100 signal dates**, **3,775 training returns**, training scales and **757 test-day returns**. It uses direct slices/ranks plus a share-and-cash ledger with Brent root-solving, versus the main rolling-signal/dollar-holdings/fixed-point implementation. This is a second implementation by the same authoring agent, **not independent human review**.
-- **31 offline tests** cover signal timing, future perturbations, missing held prices, self-financing fees, short costs, stops, compounding, recorded hashes, consistency of every published case and the complete random-gate supplement. Linux/Windows CI runs without requesting provider data.
+- **51 offline tests** cover signal timing, future perturbations, missing held prices, self-financing fees, short costs, stops, compounding, recorded hashes, every published case, the random-gate supplement, issuer-review gates and quote-constrained holdings. Linux/Windows CI runs without requesting provider data.
 
 ![Distribution across 1,000 daily-count-matched random gates](docs/figures/random-gate-supplement.png)
 
@@ -93,6 +95,7 @@ The downloader requires network access and provider availability; current downlo
 
 - [Implementation plan](docs/IMPLEMENTATION_PLAN.md) and [run ledger](docs/RUN_LEDGER.md)
 - [What data would an exact replication require?](docs/DATA_REQUIREMENTS.md)
+- [CRSP findings](docs/CRSP_FINDINGS.md), [frozen follow-up plan](docs/CRSP_FOLLOWUP_PLAN.md), [licensed-data runbook](docs/CRSP_RUNBOOK.md)
 - [All case summaries](results/2026-10-14/summary.csv), [per-window results](results/2026-10-14/windows.csv), [uncalibratable case](results/2026-10-14/unavailable-cases.json)
 - [Frozen protocol](results/2026-10-14/run-specification.json), [run receipt](results/2026-10-14/run-receipt.json), [numerical audit](results/2026-10-14/numerical-audit.json)
 - [Primary daily record](results/2026-10-14/primary-daily.csv), [all-year evaluation](results/2026-10-14/annual-walk-forward.csv), [coverage](results/2026-10-14/coverage.csv)

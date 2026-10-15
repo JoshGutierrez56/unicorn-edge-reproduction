@@ -1,0 +1,177 @@
+[
+  {
+    "case": "crsp_nominal_gated_blend",
+    "year": 2015,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_nominal_gated_blend",
+    "year": 2020,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_nominal_gated_reversal",
+    "year": 2015,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_nominal_gated_reversal",
+    "year": 2020,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_nominal_ungated",
+    "year": 2010,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_nominal_ungated",
+    "year": 2015,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_nominal_ungated",
+    "year": 2020,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_nominal_extra_day",
+    "year": 2015,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_nominal_extra_day",
+    "year": 2020,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_nominal_cost_10bps",
+    "year": 2015,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_nominal_cost_10bps",
+    "year": 2020,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_split_adjusted_gated_blend",
+    "year": 2020,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_split_adjusted_gated_reversal",
+    "year": 2015,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_split_adjusted_gated_reversal",
+    "year": 2020,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_split_adjusted_ungated",
+    "year": 2010,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_split_adjusted_ungated",
+    "year": 2015,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_split_adjusted_ungated",
+    "year": 2020,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_split_adjusted_extra_day",
+    "year": 2015,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_split_adjusted_extra_day",
+    "year": 2020,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_split_adjusted_cost_10bps",
+    "year": 2015,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_split_adjusted_cost_10bps",
+    "year": 2020,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "yahoo_close_quote_freeze_ungated",
+    "year": 2020,
+    "reason": "Final liquidation is blocked by an unavailable closing quote"
+  },
+  {
+    "case": "crsp_nominal_stale_freeze_ungated",
+    "year": 2020,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_split_stale_freeze_ungated",
+    "year": 2020,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_nominal_annual",
+    "year": 2015,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_nominal_annual",
+    "year": 2016,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_nominal_annual",
+    "year": 2017,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_nominal_annual",
+    "year": 2018,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_nominal_annual",
+    "year": 2019,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_nominal_annual",
+    "year": 2020,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_split_adjusted_annual",
+    "year": 2016,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_split_adjusted_annual",
+    "year": 2017,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_split_adjusted_annual",
+    "year": 2018,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_split_adjusted_annual",
+    "year": 2019,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  },
+  {
+    "case": "crsp_split_adjusted_annual",
+    "year": 2020,
+    "reason": "Unresolved held return; source-security/date detail retained privately"
+  }
+]
