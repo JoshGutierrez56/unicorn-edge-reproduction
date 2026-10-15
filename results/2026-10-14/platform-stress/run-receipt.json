@@ -1,0 +1,36 @@
+{
+  "plan_commit": "a84c3ef",
+  "code_commit": "fbf31215773dfdafb3e3f93138aa51476054f58d",
+  "input_hashes": {
+    "crsp_nominal_stale_freeze-annual-daily.csv": "bc046d011a50f9ea1c7df28e3fa230d8a549f71f14e94f8bc6144d314bdb26c4",
+    "crsp_split_stale_freeze-annual-daily.csv": "b2a04a9dfab608a3f921ae5532aa75f97089c4552757484a5ed57331c600c179",
+    "yahoo_close_quote_freeze-annual-daily.csv": "e41171ebc12dd76b17d97348c2a60f24d0b93199a53e0a2707b477cc3ed0f2ff",
+    "crsp_nominal_stale_freeze_gated_blend-daily.csv": "56babe5a249fe260925533362d9b622b28e63a1b8aacd51cb8e71c714358290b",
+    "crsp_nominal_stale_freeze_gated_reversal-daily.csv": "1ccef6418a97276e41efbbf43cd461744b411c78d269e58c603552522e485446",
+    "crsp_split_stale_freeze_gated_blend-daily.csv": "8ce3d4dad3c6c29fffdfe0ee1606aba8644e8b61994c60b0105ca2a29693b0a1",
+    "crsp_split_stale_freeze_gated_reversal-daily.csv": "1ccef6418a97276e41efbbf43cd461744b411c78d269e58c603552522e485446",
+    "yahoo_close_quote_freeze_gated_blend-daily.csv": "bbc312e702e9990f3453e2b4d3ed777ee0597381de090990da7a7ea9c0c95b6a",
+    "yahoo_close_quote_freeze_gated_reversal-daily.csv": "2b6d245132c256341f10c5d8e6c767d8bf94d962312761baf77f9c5c1bc8dfac"
+  },
+  "factor_archives": {
+    "ff5-daily.zip": "7881223b51929ee0d6d23b8a28524aaec478a2c3d4eeca47224955cc845c5186",
+    "momentum-daily.zip": "ecf82b116e6ec56d2b79a2f27bd1d1598c217b5c6c25caa55b945bdd8a2c0b78"
+  },
+  "factor_first": "2010-01-04",
+  "factor_last": "2024-12-31",
+  "factor_observations": 3774,
+  "python": "3.11.15",
+  "numpy": "2.4.6",
+  "pandas": "3.0.6",
+  "statsmodels": "0.14.6",
+  "factor_vintage": "202608 CRSP database; current-vintage retrospective factors",
+  "scope": "annual-reset current-member reconstruction; modeled missing-quote freezes; no new holdout",
+  "cost_scope": "fixed recorded holdings/decisions; not rerun with new stops/scales; borrow rates illustrative",
+  "cash_convention": "zero cash yield preserved; factor regressions subtract daily RF",
+  "unavailable": [
+    "historical constituent membership",
+    "real borrow quotes and availability",
+    "empirical capacity",
+    "author code/extract"
+  ]
+}

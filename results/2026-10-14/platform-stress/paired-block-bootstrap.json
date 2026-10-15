@@ -1,0 +1,492 @@
+{
+  "annual_nominal_minus_crsp_split": [
+    {
+      "observations": 3774,
+      "block_days": 5,
+      "repetitions": 2000,
+      "seed": 20261014,
+      "segments": [
+        {
+          "first": "2010-01-04",
+          "last": "2024-12-31",
+          "count": 3774
+        }
+      ],
+      "annual_mean_difference": -0.007166413671069599,
+      "annual_mean_difference_95": [
+        -0.027934267615096754,
+        0.0131950313281861
+      ],
+      "sharpe_difference": -0.06208555393756682,
+      "sharpe_difference_95": [
+        -0.2704763598375176,
+        0.1458347616224401
+      ],
+      "undefined_sharpe_resamples": 0,
+      "sharpe_convention": "zero risk-free rate",
+      "scope": "paired descriptive intervals conditional on this sample, not selection-adjusted tests"
+    },
+    {
+      "observations": 3774,
+      "block_days": 20,
+      "repetitions": 2000,
+      "seed": 20261014,
+      "segments": [
+        {
+          "first": "2010-01-04",
+          "last": "2024-12-31",
+          "count": 3774
+        }
+      ],
+      "annual_mean_difference": -0.007166413671069599,
+      "annual_mean_difference_95": [
+        -0.02739808668471357,
+        0.015435184991081928
+      ],
+      "sharpe_difference": -0.06208555393756682,
+      "sharpe_difference_95": [
+        -0.2705347173156418,
+        0.1780923528316318
+      ],
+      "undefined_sharpe_resamples": 0,
+      "sharpe_convention": "zero risk-free rate",
+      "scope": "paired descriptive intervals conditional on this sample, not selection-adjusted tests"
+    },
+    {
+      "observations": 3774,
+      "block_days": 60,
+      "repetitions": 2000,
+      "seed": 20261014,
+      "segments": [
+        {
+          "first": "2010-01-04",
+          "last": "2024-12-31",
+          "count": 3774
+        }
+      ],
+      "annual_mean_difference": -0.007166413671069599,
+      "annual_mean_difference_95": [
+        -0.026315568320284307,
+        0.012083596025244047
+      ],
+      "sharpe_difference": -0.06208555393756682,
+      "sharpe_difference_95": [
+        -0.25040682372951406,
+        0.14302421756691616
+      ],
+      "undefined_sharpe_resamples": 0,
+      "sharpe_convention": "zero risk-free rate",
+      "scope": "paired descriptive intervals conditional on this sample, not selection-adjusted tests"
+    }
+  ],
+  "annual_nominal_minus_yahoo_matched": [
+    {
+      "observations": 3774,
+      "block_days": 5,
+      "repetitions": 2000,
+      "seed": 20261014,
+      "segments": [
+        {
+          "first": "2010-01-04",
+          "last": "2024-12-31",
+          "count": 3774
+        }
+      ],
+      "annual_mean_difference": -0.009645524207434468,
+      "annual_mean_difference_95": [
+        -0.031222124639302937,
+        0.01233472528833822
+      ],
+      "sharpe_difference": -0.08866495848617689,
+      "sharpe_difference_95": [
+        -0.3094194886692932,
+        0.1337760529901615
+      ],
+      "undefined_sharpe_resamples": 0,
+      "sharpe_convention": "zero risk-free rate",
+      "scope": "paired descriptive intervals conditional on this sample, not selection-adjusted tests"
+    },
+    {
+      "observations": 3774,
+      "block_days": 20,
+      "repetitions": 2000,
+      "seed": 20261014,
+      "segments": [
+        {
+          "first": "2010-01-04",
+          "last": "2024-12-31",
+          "count": 3774
+        }
+      ],
+      "annual_mean_difference": -0.009645524207434468,
+      "annual_mean_difference_95": [
+        -0.03089293696945915,
+        0.01378782605874994
+      ],
+      "sharpe_difference": -0.08866495848617689,
+      "sharpe_difference_95": [
+        -0.30414949956681303,
+        0.15263375597457782
+      ],
+      "undefined_sharpe_resamples": 0,
+      "sharpe_convention": "zero risk-free rate",
+      "scope": "paired descriptive intervals conditional on this sample, not selection-adjusted tests"
+    },
+    {
+      "observations": 3774,
+      "block_days": 60,
+      "repetitions": 2000,
+      "seed": 20261014,
+      "segments": [
+        {
+          "first": "2010-01-04",
+          "last": "2024-12-31",
+          "count": 3774
+        }
+      ],
+      "annual_mean_difference": -0.009645524207434468,
+      "annual_mean_difference_95": [
+        -0.029302940538871825,
+        0.010315266504733857
+      ],
+      "sharpe_difference": -0.08866495848617689,
+      "sharpe_difference_95": [
+        -0.2779006873384435,
+        0.12982298875743922
+      ],
+      "undefined_sharpe_resamples": 0,
+      "sharpe_convention": "zero risk-free rate",
+      "scope": "paired descriptive intervals conditional on this sample, not selection-adjusted tests"
+    }
+  ],
+  "three_year_crsp_nominal_blend_minus_reversal": [
+    {
+      "observations": 757,
+      "block_days": 5,
+      "repetitions": 2000,
+      "seed": 20261014,
+      "segments": [
+        {
+          "first": "2010-01-04",
+          "last": "2010-12-31",
+          "count": 252
+        },
+        {
+          "first": "2015-01-02",
+          "last": "2015-12-31",
+          "count": 252
+        },
+        {
+          "first": "2020-01-02",
+          "last": "2020-12-31",
+          "count": 253
+        }
+      ],
+      "annual_mean_difference": -0.03857311629296641,
+      "annual_mean_difference_95": [
+        -0.1553696673265922,
+        0.07552903546988503
+      ],
+      "sharpe_difference": -0.4111861146921875,
+      "sharpe_difference_95": [
+        -1.1208445227889932,
+        0.29465962230571063
+      ],
+      "undefined_sharpe_resamples": 0,
+      "sharpe_convention": "zero risk-free rate",
+      "scope": "paired descriptive intervals conditional on this sample, not selection-adjusted tests"
+    },
+    {
+      "observations": 757,
+      "block_days": 20,
+      "repetitions": 2000,
+      "seed": 20261014,
+      "segments": [
+        {
+          "first": "2010-01-04",
+          "last": "2010-12-31",
+          "count": 252
+        },
+        {
+          "first": "2015-01-02",
+          "last": "2015-12-31",
+          "count": 252
+        },
+        {
+          "first": "2020-01-02",
+          "last": "2020-12-31",
+          "count": 253
+        }
+      ],
+      "annual_mean_difference": -0.03857311629296641,
+      "annual_mean_difference_95": [
+        -0.14919959097858224,
+        0.0656645020578266
+      ],
+      "sharpe_difference": -0.4111861146921875,
+      "sharpe_difference_95": [
+        -1.0070689038209732,
+        0.13487118404045595
+      ],
+      "undefined_sharpe_resamples": 0,
+      "sharpe_convention": "zero risk-free rate",
+      "scope": "paired descriptive intervals conditional on this sample, not selection-adjusted tests"
+    },
+    {
+      "observations": 757,
+      "block_days": 60,
+      "repetitions": 2000,
+      "seed": 20261014,
+      "segments": [
+        {
+          "first": "2010-01-04",
+          "last": "2010-12-31",
+          "count": 252
+        },
+        {
+          "first": "2015-01-02",
+          "last": "2015-12-31",
+          "count": 252
+        },
+        {
+          "first": "2020-01-02",
+          "last": "2020-12-31",
+          "count": 253
+        }
+      ],
+      "annual_mean_difference": -0.03857311629296641,
+      "annual_mean_difference_95": [
+        -0.10283080937106585,
+        0.03127009620749083
+      ],
+      "sharpe_difference": -0.4111861146921875,
+      "sharpe_difference_95": [
+        -0.9027170359230559,
+        -0.021551015847238807
+      ],
+      "undefined_sharpe_resamples": 0,
+      "sharpe_convention": "zero risk-free rate",
+      "scope": "paired descriptive intervals conditional on this sample, not selection-adjusted tests"
+    }
+  ],
+  "three_year_crsp_split_blend_minus_reversal": [
+    {
+      "observations": 757,
+      "block_days": 5,
+      "repetitions": 2000,
+      "seed": 20261014,
+      "segments": [
+        {
+          "first": "2010-01-04",
+          "last": "2010-12-31",
+          "count": 252
+        },
+        {
+          "first": "2015-01-02",
+          "last": "2015-12-31",
+          "count": 252
+        },
+        {
+          "first": "2020-01-02",
+          "last": "2020-12-31",
+          "count": 253
+        }
+      ],
+      "annual_mean_difference": -0.07477745531659549,
+      "annual_mean_difference_95": [
+        -0.18116848183006373,
+        0.03512256868796077
+      ],
+      "sharpe_difference": -0.6113070955328759,
+      "sharpe_difference_95": [
+        -1.3885643023894183,
+        0.08933880751823597
+      ],
+      "undefined_sharpe_resamples": 0,
+      "sharpe_convention": "zero risk-free rate",
+      "scope": "paired descriptive intervals conditional on this sample, not selection-adjusted tests"
+    },
+    {
+      "observations": 757,
+      "block_days": 20,
+      "repetitions": 2000,
+      "seed": 20261014,
+      "segments": [
+        {
+          "first": "2010-01-04",
+          "last": "2010-12-31",
+          "count": 252
+        },
+        {
+          "first": "2015-01-02",
+          "last": "2015-12-31",
+          "count": 252
+        },
+        {
+          "first": "2020-01-02",
+          "last": "2020-12-31",
+          "count": 253
+        }
+      ],
+      "annual_mean_difference": -0.07477745531659549,
+      "annual_mean_difference_95": [
+        -0.15778069667548278,
+        0.009489527228189984
+      ],
+      "sharpe_difference": -0.6113070955328759,
+      "sharpe_difference_95": [
+        -1.3689472535012492,
+        -0.11840482036902138
+      ],
+      "undefined_sharpe_resamples": 0,
+      "sharpe_convention": "zero risk-free rate",
+      "scope": "paired descriptive intervals conditional on this sample, not selection-adjusted tests"
+    },
+    {
+      "observations": 757,
+      "block_days": 60,
+      "repetitions": 2000,
+      "seed": 20261014,
+      "segments": [
+        {
+          "first": "2010-01-04",
+          "last": "2010-12-31",
+          "count": 252
+        },
+        {
+          "first": "2015-01-02",
+          "last": "2015-12-31",
+          "count": 252
+        },
+        {
+          "first": "2020-01-02",
+          "last": "2020-12-31",
+          "count": 253
+        }
+      ],
+      "annual_mean_difference": -0.07477745531659549,
+      "annual_mean_difference_95": [
+        -0.1360678095391954,
+        -0.010234425622750672
+      ],
+      "sharpe_difference": -0.6113070955328759,
+      "sharpe_difference_95": [
+        -1.5410181687637894,
+        -0.2406529888749389
+      ],
+      "undefined_sharpe_resamples": 0,
+      "sharpe_convention": "zero risk-free rate",
+      "scope": "paired descriptive intervals conditional on this sample, not selection-adjusted tests"
+    }
+  ],
+  "three_year_yahoo_matched_blend_minus_reversal": [
+    {
+      "observations": 757,
+      "block_days": 5,
+      "repetitions": 2000,
+      "seed": 20261014,
+      "segments": [
+        {
+          "first": "2010-01-04",
+          "last": "2010-12-31",
+          "count": 252
+        },
+        {
+          "first": "2015-01-02",
+          "last": "2015-12-31",
+          "count": 252
+        },
+        {
+          "first": "2020-01-02",
+          "last": "2020-12-31",
+          "count": 253
+        }
+      ],
+      "annual_mean_difference": -0.05538244423106655,
+      "annual_mean_difference_95": [
+        -0.16101905438144315,
+        0.050180821634767586
+      ],
+      "sharpe_difference": -0.47485707212770406,
+      "sharpe_difference_95": [
+        -1.243636687169516,
+        0.20872113974865644
+      ],
+      "undefined_sharpe_resamples": 0,
+      "sharpe_convention": "zero risk-free rate",
+      "scope": "paired descriptive intervals conditional on this sample, not selection-adjusted tests"
+    },
+    {
+      "observations": 757,
+      "block_days": 20,
+      "repetitions": 2000,
+      "seed": 20261014,
+      "segments": [
+        {
+          "first": "2010-01-04",
+          "last": "2010-12-31",
+          "count": 252
+        },
+        {
+          "first": "2015-01-02",
+          "last": "2015-12-31",
+          "count": 252
+        },
+        {
+          "first": "2020-01-02",
+          "last": "2020-12-31",
+          "count": 253
+        }
+      ],
+      "annual_mean_difference": -0.05538244423106655,
+      "annual_mean_difference_95": [
+        -0.13715614241394258,
+        0.02690575682810809
+      ],
+      "sharpe_difference": -0.47485707212770406,
+      "sharpe_difference_95": [
+        -1.1264744227066406,
+        0.03775524383765163
+      ],
+      "undefined_sharpe_resamples": 0,
+      "sharpe_convention": "zero risk-free rate",
+      "scope": "paired descriptive intervals conditional on this sample, not selection-adjusted tests"
+    },
+    {
+      "observations": 757,
+      "block_days": 60,
+      "repetitions": 2000,
+      "seed": 20261014,
+      "segments": [
+        {
+          "first": "2010-01-04",
+          "last": "2010-12-31",
+          "count": 252
+        },
+        {
+          "first": "2015-01-02",
+          "last": "2015-12-31",
+          "count": 252
+        },
+        {
+          "first": "2020-01-02",
+          "last": "2020-12-31",
+          "count": 253
+        }
+      ],
+      "annual_mean_difference": -0.05538244423106655,
+      "annual_mean_difference_95": [
+        -0.11389723976505707,
+        0.005098295168796281
+      ],
+      "sharpe_difference": -0.47485707212770406,
+      "sharpe_difference_95": [
+        -1.3315987316287814,
+        -0.10051904452499096
+      ],
+      "undefined_sharpe_resamples": 0,
+      "sharpe_convention": "zero risk-free rate",
+      "scope": "paired descriptive intervals conditional on this sample, not selection-adjusted tests"
+    }
+  ]
+}

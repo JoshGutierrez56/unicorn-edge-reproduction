@@ -1,0 +1,615 @@
+{
+  "created_at": "2026-10-15T01:37:02.342332+00:00",
+  "platform_commit": "4d3f162fb5e4fd05ada6276f91f0278799e12709",
+  "platform_files": {
+    "src/backtest_autopsy/__init__.py": "eb13208d97e54cdefd4527277968426ac847115b340db0874f9a4fbc52b18e73",
+    "src/backtest_autopsy/__main__.py": "c1c0ab2f83e31b9d6be7054aa8985ca093d32df1d6d3035b0f7d43ad43743162",
+    "src/backtest_autopsy/audits.py": "b6fc37cfae857a056303efb4281ca5a5ce9e0f7061b95dfc95703e0edcbb71b0",
+    "src/backtest_autopsy/cli.py": "1c6a0adca0833a08f898fd0146dcbda62247904dbcbbadf4b2f2e6acdd7178cf",
+    "src/backtest_autopsy/engine.py": "35590503493a23d31048583f09aaf543343bc25e45c99f7aa5cfd31999683612",
+    "src/backtest_autopsy/fixtures.py": "35be99d5ba7286ba093bb4391e43a08d562dc563d97130d39cde2bc376fb0c31",
+    "src/backtest_autopsy/io.py": "e27b90a3a72af8ed33386ee7e07f8548ac666667de88d1eb63be6274084fd404",
+    "src/backtest_autopsy/metrics.py": "cde8f5a5871ff94839ac2bb98bec3c198508efcb61c9c72084da1c33e7b63326",
+    "src/backtest_autopsy/models.py": "ccaf9c2aa79b1ade0de10b47f3b8ebdd06060ea69dafec379cbae27fbbd059d6",
+    "src/backtest_autopsy/report.py": "e6913c44bffb6d9662210408d89166f7062b44a35491e2713f37d51c151fdf27"
+  },
+  "compatibility_probes": {
+    "initial_loss_drawdown": {
+      "platform": 0.0,
+      "accounting_reference": -0.1,
+      "compatible": false
+    },
+    "active_wealth": {
+      "platform_active_total_return": 0.05,
+      "relative_wealth_reference": 0.04761904761904767,
+      "wealth_difference_reference": 0.05499999999999994,
+      "definition": "platform compounds daily arithmetic active returns; not wealth difference"
+    }
+  },
+  "series": {
+    "crsp_nominal_stale_freeze": {
+      "input_sha256": "bc046d011a50f9ea1c7df28e3fa230d8a549f71f14e94f8bc6144d314bdb26c4",
+      "raw_audit_sha256": "f9862178f883e3daef6e7e7cc11ec96a02f110dc1d78195218e4964d438988a7",
+      "verified_supplied_net_metrics": {
+        "observations": 3774,
+        "total_return": 0.44486868,
+        "annualized_return": 0.02487799,
+        "annualized_volatility": 0.10027041,
+        "sharpe": 0.29513955
+      },
+      "gross_five_day_arithmetic_profit_share": 0.61339247,
+      "gross_leave_one_year_out_sharpe": {
+        "2010": 0.33640123,
+        "2011": 0.34787275,
+        "2012": 0.36158758,
+        "2013": 0.40799301,
+        "2014": 0.39150157,
+        "2015": 0.37843688,
+        "2016": 0.38128933,
+        "2017": 0.36740594,
+        "2018": 0.36190883,
+        "2019": 0.36999419,
+        "2020": 0.49407596,
+        "2021": 0.34794673,
+        "2022": 0.48023742,
+        "2023": 0.37501748,
+        "2024": 0.38116825
+      },
+      "gross_winsorized_1_99_sharpe": 0.40573094,
+      "findings": [
+        {
+          "finding_id": "COST_ZERO_TURNOVER",
+          "module": "implementation_costs",
+          "title": "Turnover basis",
+          "severity": "High",
+          "basis": "deterministic",
+          "summary": "Total absolute weight turnover is 0.0000.",
+          "evidence": {
+            "total_turnover": 0.0
+          },
+          "remediation": "Supply trade-level weight changes to make costs auditable."
+        },
+        {
+          "finding_id": "PROCESS_HOLDOUT",
+          "module": "research_process",
+          "title": "Holdout period",
+          "severity": "High",
+          "basis": "attestation-based",
+          "summary": "No holdout period was attested.",
+          "evidence": {
+            "holdout_present": false,
+            "sample_label": "MIXED"
+          },
+          "remediation": "Freeze specifications before evaluating an untouched chronological holdout."
+        },
+        {
+          "finding_id": "STABILITY_PROFIT_CONCENTRATION",
+          "module": "stability",
+          "title": "Profit concentration in five periods",
+          "severity": "High",
+          "basis": "heuristic",
+          "summary": "More than half of summed gross return comes from five periods.",
+          "evidence": {
+            "share": 0.61339247
+          },
+          "remediation": "Report performance without the largest periods and explain the economic source."
+        },
+        {
+          "finding_id": "PROCESS_MULTIPLE_TESTING",
+          "module": "research_process",
+          "title": "Multiple-testing disclosure",
+          "severity": "Moderate",
+          "basis": "attestation-based",
+          "summary": "The number of tested hypotheses is missing.",
+          "evidence": {
+            "hypotheses_tested": null,
+            "bonferroni_alpha": null
+          },
+          "remediation": "Disclose the full search space and use adjusted inference or a locked holdout."
+        },
+        {
+          "finding_id": "TIME_SIGNALS_UNAVAILABLE",
+          "module": "timestamp_integrity",
+          "title": "Signal timing cannot be verified",
+          "severity": "Moderate",
+          "basis": "attestation-based",
+          "summary": "No signal file was supplied, so look-ahead checks are incomplete.",
+          "evidence": {
+            "signals_supplied": false
+          },
+          "remediation": "Supply creation, information-availability, and intended execution timestamps."
+        },
+        {
+          "finding_id": "PORTFOLIO_POSITIONS_UNAVAILABLE",
+          "module": "portfolio",
+          "title": "Exposure analysis unavailable",
+          "severity": "Informational",
+          "basis": "attestation-based",
+          "summary": "No positions file was supplied.",
+          "evidence": {},
+          "remediation": "Supply positions to measure exposure, leverage, concentration, and persistence."
+        },
+        {
+          "finding_id": "PROCESS_SURVIVORSHIP_ATTESTATION",
+          "module": "research_process",
+          "title": "Survivorship bias cannot be inferred from outputs",
+          "severity": "Informational",
+          "basis": "attestation-based",
+          "summary": "Uploaded outputs cannot prove a point-in-time universe or absence of delisted securities.",
+          "evidence": {
+            "reviewed": true
+          },
+          "remediation": "Retain point-in-time universe construction evidence and delisting treatment."
+        },
+        {
+          "finding_id": "DATA_EXTREME_RETURNS",
+          "module": "data_integrity",
+          "title": "Extreme return observations",
+          "severity": "Passed",
+          "basis": "heuristic",
+          "summary": "Found 0 periods with absolute gross return above 50%.",
+          "evidence": {
+            "threshold_decimal": 0.5,
+            "count": 0
+          },
+          "remediation": "Verify units, corporate actions, leverage, and source records for each observation."
+        },
+        {
+          "finding_id": "DATA_RETURNS_DUPLICATES",
+          "module": "data_integrity",
+          "title": "Returns duplicate rows",
+          "severity": "Passed",
+          "basis": "deterministic",
+          "summary": "Found 0 exact duplicate rows in returns.",
+          "evidence": {
+            "duplicate_rows": 0,
+            "rows": 3774
+          },
+          "remediation": "Remove duplicates with a documented rule before measuring performance."
+        },
+        {
+          "finding_id": "DATA_RETURN_DATE_DUPLICATES",
+          "module": "data_integrity",
+          "title": "Duplicate return dates",
+          "severity": "Passed",
+          "basis": "deterministic",
+          "summary": "Found 0 duplicate return dates.",
+          "evidence": {
+            "duplicate_dates": 0
+          },
+          "remediation": "Aggregate only under an explicit strategy-return convention."
+        },
+        {
+          "finding_id": "DATA_RETURN_ORDER",
+          "module": "data_integrity",
+          "title": "Return chronology",
+          "severity": "Passed",
+          "basis": "deterministic",
+          "summary": "Return dates are monotonic.",
+          "evidence": {
+            "non_monotonic": false
+          },
+          "remediation": "Sort source data and verify that sorting does not mask duplicate or revised observations."
+        },
+        {
+          "finding_id": "PROCESS_WALK_FORWARD",
+          "module": "research_process",
+          "title": "Walk-forward validation",
+          "severity": "Passed",
+          "basis": "attestation-based",
+          "summary": "Walk-forward validation was attested.",
+          "evidence": {
+            "walk_forward_present": true
+          },
+          "remediation": "Add chronological walk-forward evaluation where the strategy design permits it."
+        },
+        {
+          "finding_id": "STABILITY_SHORT_HISTORY",
+          "module": "stability",
+          "title": "History length",
+          "severity": "Passed",
+          "basis": "heuristic",
+          "summary": "The audit contains 3774 return observations.",
+          "evidence": {
+            "observations": 3774,
+            "two_year_threshold": 504
+          },
+          "remediation": "Treat short samples as exploratory and add untouched future observations."
+        }
+      ],
+      "cost_interpretation": "COST_ZERO_TURNOVER means no optional trade file, not zero actual turnover. See separate ledger-based overlays."
+    },
+    "crsp_split_stale_freeze": {
+      "input_sha256": "b2a04a9dfab608a3f921ae5532aa75f97089c4552757484a5ed57331c600c179",
+      "raw_audit_sha256": "f3239ed82465cd7ec8961aece4ac87a977aa042cb9402b62dad94ff320e44599",
+      "verified_supplied_net_metrics": {
+        "observations": 3774,
+        "total_return": 0.60237737,
+        "annualized_return": 0.03198335,
+        "annualized_volatility": 0.1029048,
+        "sharpe": 0.35722511
+      },
+      "gross_five_day_arithmetic_profit_share": 0.50194173,
+      "gross_leave_one_year_out_sharpe": {
+        "2010": 0.40813084,
+        "2011": 0.39495791,
+        "2012": 0.41700717,
+        "2013": 0.4547754,
+        "2014": 0.45158766,
+        "2015": 0.52507522,
+        "2016": 0.49125218,
+        "2017": 0.41792212,
+        "2018": 0.37409693,
+        "2019": 0.4316937,
+        "2020": 0.533084,
+        "2021": 0.38964813,
+        "2022": 0.54558161,
+        "2023": 0.43877656,
+        "2024": 0.44319679
+      },
+      "gross_winsorized_1_99_sharpe": 0.45772639,
+      "findings": [
+        {
+          "finding_id": "COST_ZERO_TURNOVER",
+          "module": "implementation_costs",
+          "title": "Turnover basis",
+          "severity": "High",
+          "basis": "deterministic",
+          "summary": "Total absolute weight turnover is 0.0000.",
+          "evidence": {
+            "total_turnover": 0.0
+          },
+          "remediation": "Supply trade-level weight changes to make costs auditable."
+        },
+        {
+          "finding_id": "PROCESS_HOLDOUT",
+          "module": "research_process",
+          "title": "Holdout period",
+          "severity": "High",
+          "basis": "attestation-based",
+          "summary": "No holdout period was attested.",
+          "evidence": {
+            "holdout_present": false,
+            "sample_label": "MIXED"
+          },
+          "remediation": "Freeze specifications before evaluating an untouched chronological holdout."
+        },
+        {
+          "finding_id": "STABILITY_PROFIT_CONCENTRATION",
+          "module": "stability",
+          "title": "Profit concentration in five periods",
+          "severity": "High",
+          "basis": "heuristic",
+          "summary": "More than half of summed gross return comes from five periods.",
+          "evidence": {
+            "share": 0.50194173
+          },
+          "remediation": "Report performance without the largest periods and explain the economic source."
+        },
+        {
+          "finding_id": "PROCESS_MULTIPLE_TESTING",
+          "module": "research_process",
+          "title": "Multiple-testing disclosure",
+          "severity": "Moderate",
+          "basis": "attestation-based",
+          "summary": "The number of tested hypotheses is missing.",
+          "evidence": {
+            "hypotheses_tested": null,
+            "bonferroni_alpha": null
+          },
+          "remediation": "Disclose the full search space and use adjusted inference or a locked holdout."
+        },
+        {
+          "finding_id": "TIME_SIGNALS_UNAVAILABLE",
+          "module": "timestamp_integrity",
+          "title": "Signal timing cannot be verified",
+          "severity": "Moderate",
+          "basis": "attestation-based",
+          "summary": "No signal file was supplied, so look-ahead checks are incomplete.",
+          "evidence": {
+            "signals_supplied": false
+          },
+          "remediation": "Supply creation, information-availability, and intended execution timestamps."
+        },
+        {
+          "finding_id": "PORTFOLIO_POSITIONS_UNAVAILABLE",
+          "module": "portfolio",
+          "title": "Exposure analysis unavailable",
+          "severity": "Informational",
+          "basis": "attestation-based",
+          "summary": "No positions file was supplied.",
+          "evidence": {},
+          "remediation": "Supply positions to measure exposure, leverage, concentration, and persistence."
+        },
+        {
+          "finding_id": "PROCESS_SURVIVORSHIP_ATTESTATION",
+          "module": "research_process",
+          "title": "Survivorship bias cannot be inferred from outputs",
+          "severity": "Informational",
+          "basis": "attestation-based",
+          "summary": "Uploaded outputs cannot prove a point-in-time universe or absence of delisted securities.",
+          "evidence": {
+            "reviewed": true
+          },
+          "remediation": "Retain point-in-time universe construction evidence and delisting treatment."
+        },
+        {
+          "finding_id": "DATA_EXTREME_RETURNS",
+          "module": "data_integrity",
+          "title": "Extreme return observations",
+          "severity": "Passed",
+          "basis": "heuristic",
+          "summary": "Found 0 periods with absolute gross return above 50%.",
+          "evidence": {
+            "threshold_decimal": 0.5,
+            "count": 0
+          },
+          "remediation": "Verify units, corporate actions, leverage, and source records for each observation."
+        },
+        {
+          "finding_id": "DATA_RETURNS_DUPLICATES",
+          "module": "data_integrity",
+          "title": "Returns duplicate rows",
+          "severity": "Passed",
+          "basis": "deterministic",
+          "summary": "Found 0 exact duplicate rows in returns.",
+          "evidence": {
+            "duplicate_rows": 0,
+            "rows": 3774
+          },
+          "remediation": "Remove duplicates with a documented rule before measuring performance."
+        },
+        {
+          "finding_id": "DATA_RETURN_DATE_DUPLICATES",
+          "module": "data_integrity",
+          "title": "Duplicate return dates",
+          "severity": "Passed",
+          "basis": "deterministic",
+          "summary": "Found 0 duplicate return dates.",
+          "evidence": {
+            "duplicate_dates": 0
+          },
+          "remediation": "Aggregate only under an explicit strategy-return convention."
+        },
+        {
+          "finding_id": "DATA_RETURN_ORDER",
+          "module": "data_integrity",
+          "title": "Return chronology",
+          "severity": "Passed",
+          "basis": "deterministic",
+          "summary": "Return dates are monotonic.",
+          "evidence": {
+            "non_monotonic": false
+          },
+          "remediation": "Sort source data and verify that sorting does not mask duplicate or revised observations."
+        },
+        {
+          "finding_id": "PROCESS_WALK_FORWARD",
+          "module": "research_process",
+          "title": "Walk-forward validation",
+          "severity": "Passed",
+          "basis": "attestation-based",
+          "summary": "Walk-forward validation was attested.",
+          "evidence": {
+            "walk_forward_present": true
+          },
+          "remediation": "Add chronological walk-forward evaluation where the strategy design permits it."
+        },
+        {
+          "finding_id": "STABILITY_SHORT_HISTORY",
+          "module": "stability",
+          "title": "History length",
+          "severity": "Passed",
+          "basis": "heuristic",
+          "summary": "The audit contains 3774 return observations.",
+          "evidence": {
+            "observations": 3774,
+            "two_year_threshold": 504
+          },
+          "remediation": "Treat short samples as exploratory and add untouched future observations."
+        }
+      ],
+      "cost_interpretation": "COST_ZERO_TURNOVER means no optional trade file, not zero actual turnover. See separate ledger-based overlays."
+    },
+    "yahoo_close_quote_freeze": {
+      "input_sha256": "e41171ebc12dd76b17d97348c2a60f24d0b93199a53e0a2707b477cc3ed0f2ff",
+      "raw_audit_sha256": "55dab3271aa5a336d42fe0bc8ed2fab2bdf503ee7a89e19c131c06dfb045e77a",
+      "verified_supplied_net_metrics": {
+        "observations": 3774,
+        "total_return": 0.66461813,
+        "annualized_return": 0.0346126,
+        "annualized_volatility": 0.1022377,
+        "sharpe": 0.38380451
+      },
+      "gross_five_day_arithmetic_profit_share": 0.45231479,
+      "gross_leave_one_year_out_sharpe": {
+        "2010": 0.43320025,
+        "2011": 0.41663599,
+        "2012": 0.44681907,
+        "2013": 0.48614726,
+        "2014": 0.47695702,
+        "2015": 0.55589846,
+        "2016": 0.52519781,
+        "2017": 0.45415669,
+        "2018": 0.41068565,
+        "2019": 0.45147189,
+        "2020": 0.50519087,
+        "2021": 0.45810644,
+        "2022": 0.57700125,
+        "2023": 0.45903862,
+        "2024": 0.47085117
+      },
+      "gross_winsorized_1_99_sharpe": 0.51790815,
+      "findings": [
+        {
+          "finding_id": "COST_ZERO_TURNOVER",
+          "module": "implementation_costs",
+          "title": "Turnover basis",
+          "severity": "High",
+          "basis": "deterministic",
+          "summary": "Total absolute weight turnover is 0.0000.",
+          "evidence": {
+            "total_turnover": 0.0
+          },
+          "remediation": "Supply trade-level weight changes to make costs auditable."
+        },
+        {
+          "finding_id": "PROCESS_HOLDOUT",
+          "module": "research_process",
+          "title": "Holdout period",
+          "severity": "High",
+          "basis": "attestation-based",
+          "summary": "No holdout period was attested.",
+          "evidence": {
+            "holdout_present": false,
+            "sample_label": "MIXED"
+          },
+          "remediation": "Freeze specifications before evaluating an untouched chronological holdout."
+        },
+        {
+          "finding_id": "PROCESS_MULTIPLE_TESTING",
+          "module": "research_process",
+          "title": "Multiple-testing disclosure",
+          "severity": "Moderate",
+          "basis": "attestation-based",
+          "summary": "The number of tested hypotheses is missing.",
+          "evidence": {
+            "hypotheses_tested": null,
+            "bonferroni_alpha": null
+          },
+          "remediation": "Disclose the full search space and use adjusted inference or a locked holdout."
+        },
+        {
+          "finding_id": "TIME_SIGNALS_UNAVAILABLE",
+          "module": "timestamp_integrity",
+          "title": "Signal timing cannot be verified",
+          "severity": "Moderate",
+          "basis": "attestation-based",
+          "summary": "No signal file was supplied, so look-ahead checks are incomplete.",
+          "evidence": {
+            "signals_supplied": false
+          },
+          "remediation": "Supply creation, information-availability, and intended execution timestamps."
+        },
+        {
+          "finding_id": "PORTFOLIO_POSITIONS_UNAVAILABLE",
+          "module": "portfolio",
+          "title": "Exposure analysis unavailable",
+          "severity": "Informational",
+          "basis": "attestation-based",
+          "summary": "No positions file was supplied.",
+          "evidence": {},
+          "remediation": "Supply positions to measure exposure, leverage, concentration, and persistence."
+        },
+        {
+          "finding_id": "PROCESS_SURVIVORSHIP_ATTESTATION",
+          "module": "research_process",
+          "title": "Survivorship bias cannot be inferred from outputs",
+          "severity": "Informational",
+          "basis": "attestation-based",
+          "summary": "Uploaded outputs cannot prove a point-in-time universe or absence of delisted securities.",
+          "evidence": {
+            "reviewed": true
+          },
+          "remediation": "Retain point-in-time universe construction evidence and delisting treatment."
+        },
+        {
+          "finding_id": "DATA_EXTREME_RETURNS",
+          "module": "data_integrity",
+          "title": "Extreme return observations",
+          "severity": "Passed",
+          "basis": "heuristic",
+          "summary": "Found 0 periods with absolute gross return above 50%.",
+          "evidence": {
+            "threshold_decimal": 0.5,
+            "count": 0
+          },
+          "remediation": "Verify units, corporate actions, leverage, and source records for each observation."
+        },
+        {
+          "finding_id": "DATA_RETURNS_DUPLICATES",
+          "module": "data_integrity",
+          "title": "Returns duplicate rows",
+          "severity": "Passed",
+          "basis": "deterministic",
+          "summary": "Found 0 exact duplicate rows in returns.",
+          "evidence": {
+            "duplicate_rows": 0,
+            "rows": 3774
+          },
+          "remediation": "Remove duplicates with a documented rule before measuring performance."
+        },
+        {
+          "finding_id": "DATA_RETURN_DATE_DUPLICATES",
+          "module": "data_integrity",
+          "title": "Duplicate return dates",
+          "severity": "Passed",
+          "basis": "deterministic",
+          "summary": "Found 0 duplicate return dates.",
+          "evidence": {
+            "duplicate_dates": 0
+          },
+          "remediation": "Aggregate only under an explicit strategy-return convention."
+        },
+        {
+          "finding_id": "DATA_RETURN_ORDER",
+          "module": "data_integrity",
+          "title": "Return chronology",
+          "severity": "Passed",
+          "basis": "deterministic",
+          "summary": "Return dates are monotonic.",
+          "evidence": {
+            "non_monotonic": false
+          },
+          "remediation": "Sort source data and verify that sorting does not mask duplicate or revised observations."
+        },
+        {
+          "finding_id": "PROCESS_WALK_FORWARD",
+          "module": "research_process",
+          "title": "Walk-forward validation",
+          "severity": "Passed",
+          "basis": "attestation-based",
+          "summary": "Walk-forward validation was attested.",
+          "evidence": {
+            "walk_forward_present": true
+          },
+          "remediation": "Add chronological walk-forward evaluation where the strategy design permits it."
+        },
+        {
+          "finding_id": "STABILITY_PROFIT_CONCENTRATION",
+          "module": "stability",
+          "title": "Profit concentration in five periods",
+          "severity": "Passed",
+          "basis": "heuristic",
+          "summary": "The five-period concentration rule did not trigger.",
+          "evidence": {
+            "share": 0.45231479
+          },
+          "remediation": "Report performance without the largest periods and explain the economic source."
+        },
+        {
+          "finding_id": "STABILITY_SHORT_HISTORY",
+          "module": "stability",
+          "title": "History length",
+          "severity": "Passed",
+          "basis": "heuristic",
+          "summary": "The audit contains 3774 return observations.",
+          "evidence": {
+            "observations": 3774,
+            "two_year_threshold": 504
+          },
+          "remediation": "Treat short samples as exploratory and add untouched future observations."
+        }
+      ],
+      "cost_interpretation": "COST_ZERO_TURNOVER means no optional trade file, not zero actual turnover. See separate ledger-based overlays."
+    }
+  },
+  "withheld_statistics": {
+    "drawdown_and_calmar": "Initial wealth omitted by reused metric. Use validated study ledger.",
+    "sortino": "Different downside convention; not used.",
+    "active_total_return": "Not relative wealth or wealth difference; no benchmark supplied.",
+    "IID_bootstrap": "Use separate dependence-aware paired blocks.",
+    "platform_cost_scenarios_and_COST_ECONOMIC_ERASURE": "No instrument trade records supplied; zero inferred turnover is not actual turnover."
+  },
+  "scope": "Same-agent independent component, not an external review or clean audit badge. Only aggregate returns supplied."
+}

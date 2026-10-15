@@ -31,10 +31,14 @@ def main():
     panel = pd.concat(series,axis=1)
     module.validate_panel(panel,universe=names)
     failures = {}
-    for name,corrupt in [('missing',panel.mask(np.arange(len(panel))[:,None]==3)),
+    missing = panel.copy()
+    missing.iloc[3,0] = np.nan
+    bankrupt = panel.copy()
+    bankrupt.iloc[0,0] = -1
+    for name,corrupt in [('missing',missing),
                          ('duplicate',pd.concat([panel.iloc[:1],panel])),
                          ('unsorted',panel.iloc[::-1]),
-                         ('bankrupt',panel.where(panel.index!=panel.index[0],-1,axis=0))]:
+                         ('bankrupt',bankrupt)]:
         try:
             module.validate_panel(corrupt,universe=names)
         except ValueError:

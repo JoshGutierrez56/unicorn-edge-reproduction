@@ -1,0 +1,12 @@
+{
+  "alpha-panel-contract.json": "01b261a647a5608f05106a9831b668a3658a961c9922287160309d67d3ad724e",
+  "autopsy-qualified-receipt.json": "f818a263d3929fe7e20665decf5fa2fede1a4d295a941ce73076caf11614e46b",
+  "factor-regressions.json": "b7efeac55e11189beb73391dcf0ae9d15bf8c931f517299105fa3dae50975dfa",
+  "factor-source-receipt.json": "f08adee3deab6037460cdbd76ecd4dc96b59783e5786b92bc2c119ab38dff2bb",
+  "fixed-path-cost-overlays.csv": "6f76723b4de910b366be33e8b5af1e435dbdefec529f2749a34d257445bbe1f7",
+  "ledger-and-economic-summary.json": "2905a6ce7bd332932f5e3df4d5642b3acccc2ba726fe2320188ba2d6f4a2508d",
+  "paired-block-bootstrap.json": "73a83561e38053e4e07eaf665f52b8409ef06a20e268e79543f69852d943b0fc",
+  "periods.csv": "1e8a7f248e3a03ac361f0224fa2514ca9560ca624c78517883d9205284b2a574",
+  "reuse-receipt.json": "8f07421eb2164a811f0962e1b9ac55eeb071205f2c2713d63abb3a32fc4d65e5",
+  "run-receipt.json": "00cf6906864ab6d8f8c41dc5f937cde0d3d4424e0668408aaaae53b54b8739ac"
+}

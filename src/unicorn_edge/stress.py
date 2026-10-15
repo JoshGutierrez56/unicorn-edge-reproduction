@@ -7,7 +7,6 @@ are changed here. See the frozen PLATFORM_STRESS_TEST_PLAN and reuse receipt.
 from __future__ import annotations
 
 import csv
-import io
 import re
 from pathlib import Path
 from zipfile import ZipFile

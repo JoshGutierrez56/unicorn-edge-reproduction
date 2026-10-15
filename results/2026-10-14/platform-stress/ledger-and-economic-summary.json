@@ -1,0 +1,98 @@
+{
+  "crsp_nominal": {
+    "max_return_identity_error": 4.0245584642661925e-16,
+    "max_base_cost_error": 9.278060091044704e-17,
+    "annualized_turnover": 145.70310016733808,
+    "mean_gross_exposure": 0.937403314537891,
+    "mean_short_exposure": 0.46871458861627674,
+    "arithmetic_break_even_fee_bps_zero_borrow": 2.631100601507635,
+    "gross_metrics": {
+      "observations": 3774,
+      "annual_mean": 0.03833595144918104,
+      "annual_volatility": 0.10028644993367758,
+      "sharpe": 0.3822645180334307,
+      "total_return": 0.64692658087336,
+      "cagr": 0.03387471522263197,
+      "max_drawdown": -0.2540053330888774,
+      "winning_fraction": 0.48622151563328037,
+      "best_day": 0.0868186863839446,
+      "worst_day": -0.099067447648466
+    },
+    "net_metrics": {
+      "observations": 3774,
+      "annual_mean": 0.029593765439141065,
+      "annual_volatility": 0.10027041454595623,
+      "sharpe": 0.29513955410623705,
+      "total_return": 0.4448686842016023,
+      "cagr": 0.024877986995664125,
+      "max_drawdown": -0.25484943547670913,
+      "winning_fraction": 0.4814520402755697,
+      "best_day": 0.0867599837166901,
+      "worst_day": -0.0991328179070871
+    }
+  },
+  "crsp_split": {
+    "max_return_identity_error": 4.0245584642661925e-16,
+    "max_base_cost_error": 9.69276742202041e-17,
+    "annualized_turnover": 151.29062584466442,
+    "mean_gross_exposure": 0.987867235318286,
+    "mean_short_exposure": 0.493933617659143,
+    "arithmetic_break_even_fee_bps_zero_borrow": 3.029772426743308,
+    "gross_metrics": {
+      "observations": 3774,
+      "annual_mean": 0.045837616660890285,
+      "annual_volatility": 0.10292517659308131,
+      "sharpe": 0.44534892412291976,
+      "total_return": 0.8356350666621757,
+      "cagr": 0.04139074723630398,
+      "max_drawdown": -0.21733440544671956,
+      "winning_fraction": 0.45654478007419186,
+      "best_day": 0.0819607005540896,
+      "worst_day": -0.0820991498624205
+    },
+    "net_metrics": {
+      "observations": 3774,
+      "annual_mean": 0.036760179110210664,
+      "annual_volatility": 0.10290480227303349,
+      "sharpe": 0.35722510804380386,
+      "total_return": 0.6023773689224856,
+      "cagr": 0.03198334779705725,
+      "max_drawdown": -0.22056068636577342,
+      "winning_fraction": 0.45363010068892423,
+      "best_day": 0.0819027206599551,
+      "worst_day": -0.0821857845404048
+    }
+  },
+  "yahoo_matched": {
+    "max_return_identity_error": 4.208872833588728e-16,
+    "max_base_cost_error": 9.812029660993815e-17,
+    "annualized_turnover": 153.1395488393917,
+    "mean_gross_exposure": 1.0007933479456603,
+    "mean_short_exposure": 0.5003966739728302,
+    "arithmetic_break_even_fee_bps_zero_borrow": 3.1623224009709454,
+    "gross_metrics": {
+      "observations": 3774,
+      "annual_mean": 0.04842766257693926,
+      "annual_volatility": 0.10225859693939968,
+      "sharpe": 0.47358035437977286,
+      "total_return": 0.9101019774698595,
+      "cagr": 0.044159615854028944,
+      "max_drawdown": -0.21086990833613228,
+      "winning_fraction": 0.4605193428722841,
+      "best_day": 0.078234823102927,
+      "worst_day": -0.0799919315280644
+    },
+    "net_metrics": {
+      "observations": 3774,
+      "annual_mean": 0.03923928964657553,
+      "annual_volatility": 0.10223769747138485,
+      "sharpe": 0.38380451259241394,
+      "total_return": 0.6646181260335602,
+      "cagr": 0.03461260376003006,
+      "max_drawdown": -0.2177855426243489,
+      "winning_fraction": 0.4557498675145734,
+      "best_day": 0.0781767636500878,
+      "worst_day": -0.0800758100080152
+    }
+  }
+}

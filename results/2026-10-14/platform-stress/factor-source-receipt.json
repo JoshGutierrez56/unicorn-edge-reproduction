@@ -1,0 +1,34 @@
+[
+  {
+    "file": "ff5-daily.zip",
+    "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_5_Factors_2x3_daily_CSV.zip",
+    "http_status": 200,
+    "bytes": 150292,
+    "sha256": "7881223b51929ee0d6d23b8a28524aaec478a2c3d4eeca47224955cc845c5186",
+    "retrieved_utc": "2026-10-15T01:25:31.909503+00:00",
+    "archive_member": "F-F_Research_Data_5_Factors_2x3_daily.csv",
+    "header": [
+      "This file was created by using the 202608 CRSP database.",
+      "The Tbill return is the simple daily rate that, over the number of trading days",
+      "compounds to 1-month TBill rate. The 1-month TBill rate data until 202405 are from Ibbotson Associates. Starting from 202406, the 1-month TBill rate is from ICE BofA US 1-Month Treasury Bill Index.",
+      "",
+      ",Mkt-RF,SMB,HML,RMW,CMA,RF"
+    ]
+  },
+  {
+    "file": "momentum-daily.zip",
+    "url": "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Momentum_Factor_daily_CSV.zip",
+    "http_status": 200,
+    "bytes": 85269,
+    "sha256": "ecf82b116e6ec56d2b79a2f27bd1d1598c217b5c6c25caa55b945bdd8a2c0b78",
+    "retrieved_utc": "2026-10-15T01:25:32.007809+00:00",
+    "archive_member": "F-F_Momentum_Factor_daily.csv",
+    "header": [
+      "This file was created by using the 202608 CRSP database.  It",
+      "contains a momentum factor, constructed from six value-weight portfolios formed",
+      "using independent sorts on size and prior return of NYSE, AMEX, and NASDAQ stocks.",
+      "MOM is the average of the returns on two (big and small) high prior return portfolios",
+      "minus the average of the returns on two low prior return portfolios.  The portfolios"
+    ]
+  }
+]

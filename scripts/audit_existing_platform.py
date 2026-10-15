@@ -31,11 +31,11 @@ def main():
     from backtest_autopsy.metrics import performance_metrics, benchmark_metrics
     # Compatibility probes occur before the actual strategy audit.
     initial_loss = performance_metrics(np.array([-.1,.1]),252)['max_drawdown']
-    active = benchmark_metrics(np.array([.1,.1]),np.array([0.,.1]),252)['active_total_return']
+    active = benchmark_metrics(np.array([.1,.1]),np.array([.05,.1]),252)['active_total_return']
     probes = {'initial_loss_drawdown':{'platform':initial_loss,'accounting_reference':-.1,
                'compatible':bool(np.isclose(initial_loss,-.1))},
-              'active_wealth':{'platform_active_total_return':active,'relative_wealth_reference':1.21/1.1-1,
-               'wealth_difference_reference':1.21-1.1,
+              'active_wealth':{'platform_active_total_return':active,'relative_wealth_reference':1.21/1.155-1,
+               'wealth_difference_reference':1.21-1.155,
                'definition':'platform compounds daily arithmetic active returns; not wealth difference'}}
     sources = ['crsp_nominal_stale_freeze','crsp_split_stale_freeze','yahoo_close_quote_freeze']
     receipt = {'created_at':datetime.now(timezone.utc).isoformat(),

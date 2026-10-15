@@ -1,0 +1,20 @@
+{
+  "platform_commit": "3479650a99bc21bf94a49977a6953b06157c037f",
+  "source_file": "portfolio_lab/accounting.py",
+  "source_sha256": "dd9423bd35290e41ee981373e9147c01553cd95c2fdde0ce340d2b4c0c9713a8",
+  "observations": 3774,
+  "series": [
+    "crsp_nominal_stale_freeze",
+    "crsp_split_stale_freeze",
+    "yahoo_close_quote_freeze"
+  ],
+  "panel_validation": "passed",
+  "injected_faults": {
+    "missing": "rejected",
+    "duplicate": "rejected",
+    "unsorted": "rejected",
+    "bankrupt": "rejected"
+  },
+  "not_used": "Long-only funded ledger: incompatible with this signed long/short portfolio.",
+  "scope": "Aggregate-return contract only; not security identity, holdings or strategy validation."
+}

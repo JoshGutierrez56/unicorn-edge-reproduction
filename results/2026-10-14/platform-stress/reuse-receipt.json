@@ -1,0 +1,24 @@
+{
+  "paired_bootstrap": {
+    "project": "personalized-model-portfolios",
+    "commit": "412cb55c647141a4d5fa9466556f8d485242a226",
+    "file": "walkforward.py",
+    "function": "paired_block_bootstrap",
+    "sha256": "05e204db8debb8f70f93b4156c79280f5c81f1a84f24f2f1179470e960811193",
+    "adaptation": "Shared circular dates; new return/Sharpe differences and separated-year segmentation. No source repository modification."
+  },
+  "autopsy_component_verification": {
+    "targeted_test_files": [
+      "test_engine.py",
+      "test_integrity.py",
+      "test_contracts.py"
+    ],
+    "passed": 11,
+    "scope": "Existing local suite; not external review."
+  },
+  "adapter_hashes": {
+    "scripts/audit_existing_platform.py": "4aae4723664b2b3e613f30fe811734699b3d44989f48269f1360089c40372ec8",
+    "scripts/check_platform_panel.py": "2265fda2de54c1f12ab67da74e60665d9166b9646928ee16473138608fc69a03"
+  },
+  "private_sources": "Not redistributed. Read-only imports used only for compatible checks."
+}
