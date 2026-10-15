@@ -1,0 +1,5019 @@
+{
+  "provider": "Yahoo Finance through yfinance",
+  "yfinance_version": "1.7.0",
+  "start": "2003-01-01",
+  "end_exclusive": "2025-01-01",
+  "universe_sha256": "a8045f043ea7e68d4254a07470a5e95ca5759ded4656657eac514162e6e82e06",
+  "symbols": {
+    "MMM": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:31.763871+00:00",
+      "sha256": "0a28dc204b4a3d97d565b8a5a0c95e515697fe643b3dbf199054c5bd2bb5b095",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AOS": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:32.595083+00:00",
+      "sha256": "027d5fb5a858cdb00c4771cbbb96315da9b0140af873113689fb63d42fa9ca5e",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ABT": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:33.342481+00:00",
+      "sha256": "10006b0ad18a23b8505b83ac7fe2f2b3a607dc087cef66f81bf26aaf0f8e7d1a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ABBV": {
+      "status": "downloaded",
+      "rows": 3020,
+      "first": "2013-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:34.068108+00:00",
+      "sha256": "bf7742ee8bf674309ef85b7499ba61adf0bda30ac72da80b56b228ce98052735",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ACN": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:34.716673+00:00",
+      "sha256": "6bc9c4ea199513b845b8b8f77fc9ee12c4044bc95bdec126e0037dece6e4ca67",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ADBE": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:35.367425+00:00",
+      "sha256": "5a20fe57bbde7315682a7cf78dd9ae98634f821a5d7101adf04b0b9065eb5fa5",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AMD": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:35.999298+00:00",
+      "sha256": "149cb28fc97cb485ad2e597c5b8876057148746cee9871c9f982c7261f2fbb61",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AES": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:36.755791+00:00",
+      "sha256": "a52a238a3646f84f2e668925c311981a6faa0bb3bd9509455b683aa5a0afc219",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AFL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:37.525505+00:00",
+      "sha256": "a2a5e1b461f1908947d2f6127364fe0ec27a9aa793944c93f8c0b17f65318bc7",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "A": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:38.226868+00:00",
+      "sha256": "84df668c1165fbb4a91f70bfc8cc0c4f7e05047bcb8bd905bea00d3aa7f589a0",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "APD": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:38.973416+00:00",
+      "sha256": "b10d659dd7d9624398c132d4a649a69ece2ffa9197308284017a1aaf78331780",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ABNB": {
+      "status": "downloaded",
+      "rows": 1020,
+      "first": "2020-12-10",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:39.556084+00:00",
+      "sha256": "0a7f19b8f06d884911911c70392fb4118110f37feac4adc57f12c8001e1111c8",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AKAM": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:40.272253+00:00",
+      "sha256": "0b1fd5f9484dce5d0042f399097cd413ca0b4532618dfdb93cc47e0555066f11",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ALB": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:41.085721+00:00",
+      "sha256": "5a174028f1ea6f894ddc0cb1aec2829e16c56117f38b6f265d004a28eab40d02",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ARE": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:41.872119+00:00",
+      "sha256": "c66863c3bc3f652724b90f50a0768dd9a0691e64d87c1a49f60be81b1f439de4",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ALGN": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:42.546043+00:00",
+      "sha256": "0d495fe084babe0cf51d1f58036e2a16c2f40c32775ab8c5d131c0e001dca15e",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ALLE": {
+      "status": "downloaded",
+      "rows": 2798,
+      "first": "2013-11-18",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:43.310706+00:00",
+      "sha256": "884a48600b55df1f0982d7c8aadd484951d0c5e379f1a93ea48f8b58aef4b67f",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "LNT": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:44.112062+00:00",
+      "sha256": "fcec5292d1532461515e9f3ac7fe737e869211035dcf987b433f7f9fe6b045c4",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ALL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:44.820759+00:00",
+      "sha256": "629751c1f57d1a611daccde77f3e0b34027fcd872d927301fc71105c301ebc70",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "GOOGL": {
+      "status": "downloaded",
+      "rows": 5127,
+      "first": "2004-08-19",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:45.596547+00:00",
+      "sha256": "5812d12aa515708ff1c396f939fd9793c6e514201ddbfb165d4ab1297bfbeadf",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "GOOG": {
+      "status": "downloaded",
+      "rows": 5127,
+      "first": "2004-08-19",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:46.291911+00:00",
+      "sha256": "b7f0743fdd78c54a725cbda30a329dae1e759e6820f08fe9d4ede0bed8b3d500",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MO": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:47.017759+00:00",
+      "sha256": "7b1ce171b140e182a3366e71b7a560867f519aba88872a7390180c8231018943",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AMZN": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:47.701910+00:00",
+      "sha256": "86a93367d9810c245b5247a0ca1628923d91820d27b1ade1d4bdbcd7448def41",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AMCR": {
+      "status": "downloaded",
+      "rows": 3178,
+      "first": "2012-05-15",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:48.379636+00:00",
+      "sha256": "3dcdf91b8751f9a34009526befc1d585018a75d2d51ab76399058b4147d29afc",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AEE": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:49.203957+00:00",
+      "sha256": "8beabc92db05a10ddd5cd7e148c66830a85ef681a275fc7b768510eab126422a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AEP": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:50.128734+00:00",
+      "sha256": "8e7e0dfca8e1622304131a069280045171eb2934f47755c90ca29693bce792ff",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AXP": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:50.831546+00:00",
+      "sha256": "9dc29171d3b79884d3201a6fae3bf8f2bf85449411d0910357bab2cbc4f54625",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AIG": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:51.554342+00:00",
+      "sha256": "3e2263b5ab64003a43ae2d03c7b058852fe81cdda5f5e00a830f4b0818e8eafa",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AMT": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:52.320407+00:00",
+      "sha256": "8ea2944c387d74b6f72e6a802af16d73a15377ad6d330265b3c2f42fceb61fd0",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AWK": {
+      "status": "downloaded",
+      "rows": 4202,
+      "first": "2008-04-23",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:53.512763+00:00",
+      "sha256": "0b1c50829d3cf111a2ef13617969a6ba749e799160154248104a37efc3ae7546",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AMP": {
+      "status": "downloaded",
+      "rows": 4856,
+      "first": "2005-09-15",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:54.324089+00:00",
+      "sha256": "c611433dd546b19eebb21ea9af7cb152a4f128da5111223e1b63bc040b28cd15",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AME": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:55.230211+00:00",
+      "sha256": "18bc37e62667e35eb960dc23e95c376deeabb2890f45730c1d2049316dca8855",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AMGN": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:55.893441+00:00",
+      "sha256": "324c83b999f4405cbfe8318011bc7946083f88c901bffb7466047ddccdaab59e",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "APH": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:56.687495+00:00",
+      "sha256": "2c593565c53d7867dd060d59b0297478df801e3197ecd8cb49eaaf7a3c06f6d7",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ADI": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:57.360980+00:00",
+      "sha256": "cd80502288232a69b52b6b9cc3875ee73d05cca6daf09235c39cc58bed230c35",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AON": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:30:58.086404+00:00",
+      "sha256": "107fc8b9f06a94be22795fd7159c2a3a041b1a21aef5d8939bc4d268bebba35d",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "APA": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:00.037166+00:00",
+      "sha256": "e72d4ad8c57477eaf23f23fc8ac31e92a925624580aa408c5a5de47b5698ef48",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "APO": {
+      "status": "downloaded",
+      "rows": 3462,
+      "first": "2011-03-30",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:05.015766+00:00",
+      "sha256": "0c365b19eef3c5bd9681647f7ea382300d66ee8cb94feb55b85e823c384aba98",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AAPL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:05.949438+00:00",
+      "sha256": "ace4998c698abb4c6db2f975feed6ca7e08050c3d3b6feba5bc5af4452133280",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AMAT": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:06.679510+00:00",
+      "sha256": "0c8cf2252369e7973270a7172c4852000e0378f956ca1b0b65c6cf7a71b40eaa",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "APP": {
+      "status": "downloaded",
+      "rows": 935,
+      "first": "2021-04-15",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:07.370049+00:00",
+      "sha256": "053c1bf3ae921d873832a3d79c3239a1ffe8a536d52a7922dce4da0c9e72e871",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "APTV": {
+      "status": "downloaded",
+      "rows": 3300,
+      "first": "2011-11-17",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:08.135427+00:00",
+      "sha256": "5e35dd27b683716fd2bcb52bcf3b9260b9bebaba33fe9f6077b03a532b409b27",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ACGL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:08.946719+00:00",
+      "sha256": "f8e9453c6dca4b7636df7e9231d57a1f50da65021f32e85767f3e7e90e68d7d4",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ADM": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:09.787530+00:00",
+      "sha256": "b823df2eaf88746171d3b98b616e762a1a8628a336076b54bae2ffd1ce4e116c",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ARES": {
+      "status": "downloaded",
+      "rows": 2685,
+      "first": "2014-05-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:10.561765+00:00",
+      "sha256": "51b94f81a228558fbea255e54e6b8a89c76f582bf10f364a06fd28f25bf00a64",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ANET": {
+      "status": "downloaded",
+      "rows": 2661,
+      "first": "2014-06-06",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:11.294472+00:00",
+      "sha256": "35a553c0615e1fb4b72adda08dc38ce2aabe5bb392d00c4aa5516d35c7047349",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AJG": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:12.168714+00:00",
+      "sha256": "af84f9bd5f90efe96c301bee89cd68027ffe9fa0f8df78c26d9ef7269e990724",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AIZ": {
+      "status": "downloaded",
+      "rows": 5262,
+      "first": "2004-02-05",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:13.081893+00:00",
+      "sha256": "668031b658f8edfe47954ccb04a08a1f556c9333aa1546625d7c841d8ab50614",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "T": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:13.888815+00:00",
+      "sha256": "de07058782058bf266ad5378202f06015c700a7b3098da54da3e9d6f8575893b",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ATO": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:14.738124+00:00",
+      "sha256": "60eda61f74fab5ca9eb93de0e6ad82e69f75cdd66e81a92883f1aa8ea8e572b7",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ADSK": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:16.052231+00:00",
+      "sha256": "ab30f5ac7353a6d36d43e109ea0c78bb8263719983f5d7e3f405f5157164dd94",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ADP": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:16.873868+00:00",
+      "sha256": "6a744bc3314685115d8e317a4c5cfe70bb103a05e43dd77534062ff5297ea78b",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AZO": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:17.592652+00:00",
+      "sha256": "cd609b9192d503f6a3ac668be224a6b86409abc01a66dbc340cb1ec7640e6d4f",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AVY": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:18.521312+00:00",
+      "sha256": "9dd9408b890e2fa5f84f77fce0ca1d0783e8d1734b941ab764c405001d1b86b0",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AXON": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:19.328774+00:00",
+      "sha256": "b53782720c65fbe79a9a20fcc156500666f80d15c7141065da0394f673b1801d",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "BKR": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:20.191634+00:00",
+      "sha256": "fc9c817a359af24ecc6a4e899b03c9ddb16edddd37ec14ee32158eed6dfd7724",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "BALL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:21.309262+00:00",
+      "sha256": "70a5553d0b2a0f711d748180b2a04b630ec5f51cfdd9485028950c94cb75d266",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "BAC": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:22.116529+00:00",
+      "sha256": "a0693ba165ceede7f6baf25166c67330dd4d1db6e5560c5e8d4624fea676557c",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "BAX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:22.928853+00:00",
+      "sha256": "c868e663dadf051deadda53052d1854479708eb2bbb80d25fbfaa94ef927d087",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "BDX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:26.451995+00:00",
+      "sha256": "dc20a4c17602844e225bf3a034282c90f82b36812068c926338ba013b6e15e06",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "BRK-B": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:27.285119+00:00",
+      "sha256": "9e2fd9609a04085b72c318e3af3699d5d9b41b27a2d35452090beb05fa8c96c4",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "BBY": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:28.093932+00:00",
+      "sha256": "3ef00afbb647729870cfc1884c7caaa16bcae9784e37d5cd5fc8b0f9dccc76b7",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TECH": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:28.934504+00:00",
+      "sha256": "c512b7030340d4255b47c05e8cc0b5325e668a678fbb33fb12e3e882a1d82acb",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "BIIB": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:29.998466+00:00",
+      "sha256": "00ffa193c421962341301845c8ec864c5e91a1397d855eac7e557002de9e03c2",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "BLK": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:30.965833+00:00",
+      "sha256": "1440cbdfc84acd46ed1c11e0bf113a90fcb21d956ee1aeaa3b778fecc41192ff",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "BX": {
+      "status": "downloaded",
+      "rows": 4412,
+      "first": "2007-06-22",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:31.791473+00:00",
+      "sha256": "36a55a78927f7e241ee8692c90c41ac5691858bfc6b470177d220cad86a7a6a9",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "XYZ": {
+      "status": "downloaded",
+      "rows": 2293,
+      "first": "2015-11-19",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:32.594059+00:00",
+      "sha256": "1db929b3212ed681aea248d2f6d059e0fef8a9cb2aaebb853b6ebc5308249a9f",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "BE": {
+      "status": "downloaded",
+      "rows": 1620,
+      "first": "2018-07-25",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:33.283260+00:00",
+      "sha256": "2bc0d05889142aace3e4caab43ed5e0e173f6bafcd69d6c69f41c54958d54175",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "BNY": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:34.231191+00:00",
+      "sha256": "7032ca71a2ba1fea263e207c38aff97a83c458f7199517223a7e0a12e6c6458f",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "BA": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:35.033644+00:00",
+      "sha256": "261f6e36111287d30bfc19186c9a501b11433467000263da251396e7436bbc83",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "BKNG": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:35.777757+00:00",
+      "sha256": "ed092b92aae327195c8a225e03dbcddfa3f46bd8a60293cf006b3bb02dc471cb",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "BSX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:36.534853+00:00",
+      "sha256": "c2c0b94ed3a2088535b5e42b690d149c79679dc47114d406d882c4cb4b0bdb74",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "BMY": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:37.421956+00:00",
+      "sha256": "6ef0c97d2fff781ef6e70be5bca74af1bd040091490da2549d365dd8e389cb8a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "AVGO": {
+      "status": "downloaded",
+      "rows": 3877,
+      "first": "2009-08-06",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:38.166140+00:00",
+      "sha256": "ad3ada8d9ef8ebbb39b1a99fb02c3b07d23b105d2bdac6e2e3861fc5be129143",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "BR": {
+      "status": "downloaded",
+      "rows": 4476,
+      "first": "2007-03-22",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:39.225724+00:00",
+      "sha256": "c0e506c0dc053c1a6de964928806fbe6089e6859bd85c1ec3247c82a1378ca99",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "BRO": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:40.079253+00:00",
+      "sha256": "2aa97037383cf4d441768c6d98597dfe1d6823ccf2596be090825e777d6876b5",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "BF-B": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:40.984352+00:00",
+      "sha256": "a05d5f461a3fc5cfdab18fc2c15a7da5521625cf5a89348313045117762beac5",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "BG": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:41.765365+00:00",
+      "sha256": "fc93be55bab825cdaed609f38940f2e6c94cf187d9b5240004149b8125c3642b",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "BXP": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:42.548254+00:00",
+      "sha256": "c967ea785b8f5ea7fd23f92d9263345c05a5c15347c9d12290d250bbee6d7655",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CHRW": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:43.540922+00:00",
+      "sha256": "7ce5a1657312c57c4b2c9cf6b0f3770d9c37d2370986c7d10175361e4cfbed65",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CDNS": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:44.301574+00:00",
+      "sha256": "205a9a4f3fa56166e80c3b543b1ffa0e19630a57092876dfd4fa996d9715ee90",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CPT": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:45.335503+00:00",
+      "sha256": "a06d8069a5ddc7f5a5c15af6793cc05948b8acbc2917da0cfe4c9eef23fc0d8e",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "COF": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:46.287451+00:00",
+      "sha256": "3d73e27105965def8197b6e05c8fbe6ae5958df5dcbc5f07ba9ed72729a5a50e",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CAH": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:47.381162+00:00",
+      "sha256": "36b28fe90c0be4416cdffa677d2e6246adcb5aa1c6cb93deebd6a53b8d2a17ae",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CCL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:48.205975+00:00",
+      "sha256": "c86e011c59abed7a93b19e2e29b4b3a2ffd5167e1c173ff55c6f4ca34d5329a2",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CARR": {
+      "status": "downloaded",
+      "rows": 1205,
+      "first": "2020-03-19",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:48.965989+00:00",
+      "sha256": "a4783ec73f99d7f79a90b40daa5e59295173d30215fbf8fe1f5b219669dd0aa2",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CVNA": {
+      "status": "downloaded",
+      "rows": 1932,
+      "first": "2017-04-28",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:49.712930+00:00",
+      "sha256": "9b934d1dc3dd7159c03313e28581df0832e4530b73e4ea0e1d91123b726aad5e",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CASY": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:50.626139+00:00",
+      "sha256": "f475f0e13ce19b9fcbb3e0891945523896a364c63cccc8651236f66f3ff0884a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CAT": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:51.409123+00:00",
+      "sha256": "74d5e3f349280ba485225cd40c301c0c597aa822e9852175a9d2cf8bb0011368",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CBOE": {
+      "status": "downloaded",
+      "rows": 3662,
+      "first": "2010-06-15",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:52.121497+00:00",
+      "sha256": "180d85154c5cb7bbadfa1ecdd9d311d93bb9197d2a9fb23ee66e56247480a261",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CBRE": {
+      "status": "downloaded",
+      "rows": 5175,
+      "first": "2004-06-10",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:52.852394+00:00",
+      "sha256": "efd32dbb76940bc6b50b763b7815cf7c82d70ee65f8bc113c1517e3949e206ab",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CDW": {
+      "status": "downloaded",
+      "rows": 2898,
+      "first": "2013-06-27",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:53.525430+00:00",
+      "sha256": "c7a1ff089e76f114a450cac6672003bcf400f01346c237bcc212db1bf89b856a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "COR": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:54.349221+00:00",
+      "sha256": "db85fe491c7af2238680086d3b513b8817f5111eac16378ee3fee650416cef64",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CNC": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:55.038350+00:00",
+      "sha256": "7abccf2b89e71b9a0bbadb6aacde2122185c6c96b1b78079d96f6b6cccbeb59c",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CNP": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:55.882679+00:00",
+      "sha256": "982ea0fc0247a2a94b0a7d7d10a13dbe2329506617bf0223e61e51f9d83b03bc",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CF": {
+      "status": "downloaded",
+      "rows": 4880,
+      "first": "2005-08-11",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:56.615228+00:00",
+      "sha256": "112a77621407bab7cc4a759f7dc9d36c8dbbfaf819edc2b6f5026083bbfdd224",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CRL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:57.304376+00:00",
+      "sha256": "87e3801c7c97a4f6222686cedcdbade378f4a7b40dc47b4f749914ca1dbfa913",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "SCHW": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:57.987687+00:00",
+      "sha256": "d338a0bdb494de9d5008cb8828f8840dfd5b98644bc0b51dc896f8ecb9a09edf",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CHTR": {
+      "status": "downloaded",
+      "rows": 3773,
+      "first": "2010-01-05",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:58.749596+00:00",
+      "sha256": "992621f16246d6e4e95298993fbab5815acd3d3bf21471082e1f3e892daa70ad",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CVX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:31:59.508514+00:00",
+      "sha256": "fbcd3378f055aa7473a2c73e21944fdf1cc5960fd95f65b8dd2529487d47d13d",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CMG": {
+      "status": "downloaded",
+      "rows": 4765,
+      "first": "2006-01-26",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:00.231653+00:00",
+      "sha256": "a0a1c854ee8b046458c5cabdf44471c832c2231aca73512906f7d8abc6445da2",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CB": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:00.935956+00:00",
+      "sha256": "96e5c3f545d8b6afdb4fe9ab4cbe39fb44cf159f5beb3ec9992bfaaa13fa1f4d",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CHD": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:01.768056+00:00",
+      "sha256": "6bad116ba081a6fbc0037dbc01a29c423a510702c405ab8ec89f40ec6c33e677",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CIEN": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:02.474367+00:00",
+      "sha256": "32efd7bb39f364de5ee8e95fc5a7b6eb5867cfbc76c5540d62463c10d2545579",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CI": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:03.143321+00:00",
+      "sha256": "e702396a5b6a29899048768caf739d3eab7f1f76b67a87b30f49b3ad3a33ff68",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CINF": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:04.017270+00:00",
+      "sha256": "9505492f3b618d01ba25dbc5da9f450699d2a57c4cb0fd9628d7d4c13e98ac2f",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CTAS": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:04.860385+00:00",
+      "sha256": "84822cbc31b94e2d7d92f83d518a941eca1727937d28cc97bd08980bcc968dae",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CSCO": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:05.536681+00:00",
+      "sha256": "2a486a278b886b885d63cd94a79a80ae0379cfd386c50502ad0543b54930fb94",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "C": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:06.220530+00:00",
+      "sha256": "028668ed433eac5b80b35ccd0f4e777b58b2bd7da9b4a1ede2070b3f1bdfdacf",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CFG": {
+      "status": "downloaded",
+      "rows": 2585,
+      "first": "2014-09-24",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:06.924912+00:00",
+      "sha256": "076a44c071f1ebf50ee847b39a711b9449511a6ec850b7a586a69ba5b1313dcd",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CLX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:07.716107+00:00",
+      "sha256": "bc3b9070709e0b3d65c97d585eb8df31772a2643b7fd478d2314787972480673",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CME": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:08.391822+00:00",
+      "sha256": "2cceea2135543b4917ba78ca6979ccc98b8de8b93aeea7e7e1ae2468096561fb",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CMS": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:09.189137+00:00",
+      "sha256": "e7c617ceb5c12a82260fc0ea33d711ef22c2649e3f70282527f122e39f6b79f6",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "KO": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:10.018590+00:00",
+      "sha256": "b8267b4d374b890b194491f4ba019e0e9af91c8639f67a45794faf663cfc406f",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CTSH": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:10.773413+00:00",
+      "sha256": "ea64cf3de0dac227f3a661e595a3e197db17c9275414e994bdbeb28a981949d2",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "COHR": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:11.497005+00:00",
+      "sha256": "201b20c7ad3e09dcaccf17d405a3784de9c6141dbd52d88b6cd9aa88bb063d31",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "COIN": {
+      "status": "downloaded",
+      "rows": 936,
+      "first": "2021-04-14",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:12.091892+00:00",
+      "sha256": "bcd9e86c2272aa8dafde0684a926eb60bbdc312a665a566af06846e508c4de6b",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:12.800465+00:00",
+      "sha256": "cea3105cfb0f9823e2f5b81434ea1340f6c62a4daa13e599058abdacad3bbde2",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CMCSA": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:13.574732+00:00",
+      "sha256": "2047398375eecc827ee4d0ccfbca374328153b311f12d0f88ab437151fcb7aeb",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "FIX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:14.255197+00:00",
+      "sha256": "5cdf292c445f69e12a8b63b6abca505fe01da02fe9e28cd41500413d421fa236",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "COP": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:14.987774+00:00",
+      "sha256": "18002fa33a27155944ef7dcc913711f6347a136fc0b7985ad14cded66a74fba1",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ED": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:15.851960+00:00",
+      "sha256": "6bf0e1b67907c32922235b250ee159b6aef73e3a757fb627954a5cf3587c03fc",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "STZ": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:16.623597+00:00",
+      "sha256": "b2975a4acebde1d97a6399172cd65d11417ac206c8d3c2148b6db29f8443fa46",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CEG": {
+      "status": "downloaded",
+      "rows": 742,
+      "first": "2022-01-19",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:17.362883+00:00",
+      "sha256": "2da3ef5b9904d730c168bbf002199bd59683bf38bce07604c43dcb1cac87d173",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "COO": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:18.148714+00:00",
+      "sha256": "5b5bcce76034ceb8cf6e06cefcfbd606b876249de3323d5d999435e5ce04eb0d",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CPRT": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:18.854326+00:00",
+      "sha256": "97cbed0e68eade32c5d9e334623056157ca2966bbc89445a62720f4f5761cf8f",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "GLW": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:19.639005+00:00",
+      "sha256": "02f122253c58a1c5e2d872defd02ca8b5cfb0bc15fea78aa9b028ad2d21113de",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CPAY": {
+      "status": "downloaded",
+      "rows": 3534,
+      "first": "2010-12-15",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:20.337330+00:00",
+      "sha256": "37c0fcbd5c468b13ac468fc264357615619d7903aeec1cc55d49d1741c96b1b3",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CSGP": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:21.052000+00:00",
+      "sha256": "f3f4d20ca46ba795f8a091f2bf6e22b18158011b06be3037191341d9e73d0acd",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "COST": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:21.752102+00:00",
+      "sha256": "41df0ddb4e51ef23a887fbd08bf159708c89057df0de99dd6942eabdef9a393a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CRH": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:22.501109+00:00",
+      "sha256": "dd7c40d05e57c25a444e5d2cf08a7a957bcff2e04fc0a2ed974992ee38a90640",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CRWD": {
+      "status": "downloaded",
+      "rows": 1399,
+      "first": "2019-06-12",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:23.263923+00:00",
+      "sha256": "aca22287756699ae02964c23e5cb50c74eaf4512bf127bf4cab5109081573912",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CCI": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:24.151792+00:00",
+      "sha256": "23f2e9b4d4e599ace33adfc9e4e128a9cf35ffde1699df492f841d18782b316c",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CSX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:24.856634+00:00",
+      "sha256": "b4ed1d4e1658c4b5aa423058634578f8b8545abeeadc4f4d745f5362e3b7dab4",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CMI": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:25.612953+00:00",
+      "sha256": "043881d58ac7d0adc9589217800541608d3cd5b024979f6e54db13bbb6674fca",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CVS": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:26.348501+00:00",
+      "sha256": "b12d7970ed42e856c82758c701832aec66a60856e0746dc8b82d628dd86e732a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "DHR": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:27.069519+00:00",
+      "sha256": "400e50266b4c0f32e43051ee8352484083ba815b8f161f8fce48f853cfc5f703",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "DRI": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:27.845429+00:00",
+      "sha256": "828e30241a70b2f6760792c698beed2a7100ab8be521154ce663728e2fd52fef",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "DDOG": {
+      "status": "downloaded",
+      "rows": 1330,
+      "first": "2019-09-19",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:28.461937+00:00",
+      "sha256": "1d8c39b90575ef9792dfd1c98dfc5510142650ec7522bc6f0046076840d31af6",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "DVA": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:29.160569+00:00",
+      "sha256": "1d18050d25b931adea5e5d1d40b3bbe7334282315f7959440b04320159e82b1c",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "DECK": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:29.852773+00:00",
+      "sha256": "918affe446ecf389794313b5421fa9b6d731ea885b6264b487f26832ea2446a6",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "DE": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:30.563433+00:00",
+      "sha256": "41d44c5efcff5b9375f8f9ed030c963664c8bb67608bd05613ba3e100eb788b3",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "DELL": {
+      "status": "downloaded",
+      "rows": 2107,
+      "first": "2016-08-17",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:31.297724+00:00",
+      "sha256": "c88fe01b666202559254afdad11a5ca8e63eaa6b35aadf785253b1275cc30e68",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "DAL": {
+      "status": "downloaded",
+      "rows": 4447,
+      "first": "2007-05-03",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:31.994962+00:00",
+      "sha256": "4d5d499ba77a8019806262837902ca11fc7d37106d4a5c8a4e45320078171c6f",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "DVN": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:32.809385+00:00",
+      "sha256": "c9548fbf05e324edee602b9be92f3b39250892ce9fda7519871835ae98936de5",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "DXCM": {
+      "status": "downloaded",
+      "rows": 4963,
+      "first": "2005-04-14",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:33.467317+00:00",
+      "sha256": "06e56a68b1ab949ff124fc56886a09fb92f35ffcd6457bf50cb6615e61e31e0e",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "FANG": {
+      "status": "downloaded",
+      "rows": 3073,
+      "first": "2012-10-12",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:34.144648+00:00",
+      "sha256": "63cb07fe8e5aa27caf1fede37f18a5ea0c896bdb501b580178c67adc37abdf9a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "DLR": {
+      "status": "downloaded",
+      "rows": 5077,
+      "first": "2004-10-29",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:34.799236+00:00",
+      "sha256": "fc4f57c26ac1caa49f4ff6c9da5282a06cf042ca9342f1cb1431083ba2129a5f",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "DG": {
+      "status": "downloaded",
+      "rows": 3807,
+      "first": "2009-11-13",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:35.430393+00:00",
+      "sha256": "9eeeb711c39e4a3992629124490f2c44b018ec7ce68a4238b92e8c1dc23dfd1d",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "DLTR": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:36.143158+00:00",
+      "sha256": "40f3a744dc79d7cdd663d056abdfacbb7cfc552e57bb7d61f95a3f710d9eae34",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "D": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:37.045709+00:00",
+      "sha256": "cff9962949bfc69f4c979617f61c1650ec73b4af19f276f13480be47b56d511e",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "DPZ": {
+      "status": "downloaded",
+      "rows": 5154,
+      "first": "2004-07-13",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:37.805040+00:00",
+      "sha256": "d49f33ede508b25037e4b66c60b54684b142be92df5d52c1e86f95b014dbe58b",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "DASH": {
+      "status": "downloaded",
+      "rows": 1021,
+      "first": "2020-12-09",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:38.439870+00:00",
+      "sha256": "f9024e8e14e97f93e86b6647db90b6a8ac3a381ecc3be0fe192c6b03468832e4",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "DOV": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:39.189574+00:00",
+      "sha256": "152845c151c245cf3bf308ff307da0198cf81ddccedea8fd839665e72eb729cd",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "DOW": {
+      "status": "downloaded",
+      "rows": 1457,
+      "first": "2019-03-20",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:39.839282+00:00",
+      "sha256": "b63937e0b07aae1f9bb3ce6ccec38f14ec2c05f8cba895d8d916a0833bf61d2c",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "DHI": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:40.718297+00:00",
+      "sha256": "8ee9efc7f659ab701ef1ed49747b75e8e1029fe19c63927d5a32d8f9987a0804",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "DTE": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:41.569801+00:00",
+      "sha256": "ee8bdc23d73e4a2fb2edb1216e0ac12d655d7af3aa2bed85321b3d16fd1c0629",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "DUK": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:42.280527+00:00",
+      "sha256": "cbcb7e6dc2bb9e3d74db204953c32f05329b0f4e18b4d47a363c2cfd493bee40",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "DD": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:43.105932+00:00",
+      "sha256": "028f7a3b2ec865d4a26daaaf5e85ce76d83bbc36c9939cb56ed7390328164a63",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ETN": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:43.853994+00:00",
+      "sha256": "63fb739b3d70617d44d98dacd4c9e09bfc995a10086024624fea3ab476d97cae",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "EBAY": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:44.557084+00:00",
+      "sha256": "be39cf2bf580d9ff8c64a1ffeb2ab7105322cdd1055a0af3b972db0c169034dc",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ECHO": {
+      "status": "downloaded",
+      "rows": 4279,
+      "first": "2008-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:45.206865+00:00",
+      "sha256": "e35168b071781f131425788e2397b20d7edfa3ac3cf30a1d11c0b349a91e2e02",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ECL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:45.928024+00:00",
+      "sha256": "425a6f93fd2b85ac1db4e111d82115daa5711865a42b51bc3852b42d40eed459",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "EIX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:46.745731+00:00",
+      "sha256": "d050d68e554e528428adeabfcd1156274aa6f293e0237c4825e3e2fd949a28ba",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "EW": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:47.493597+00:00",
+      "sha256": "f83d127edea78cbab7d275ca2daf38af021c1fc16ae7ab5473fbcd3ff4efcecf",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ELV": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:48.250491+00:00",
+      "sha256": "1998436935ac966d43770223e573cb64648a6f2a71d9f4dc5e724f01b01614a2",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "EME": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:49.067770+00:00",
+      "sha256": "a00e79643dd5fec3bcc972d2a19746aa0fe422bc31f16a1238dcc2f044399c18",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "EMR": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:49.751639+00:00",
+      "sha256": "2ea66a83799ec99a5dd69cefc0b02699f2a410ce4e5c6c66d895d55ac4e238ee",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ETR": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:50.572504+00:00",
+      "sha256": "40c745fd65fdcecacdbcb6336738bcd5fada4dd41dd348e976bc3fa0836c43d0",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "EOG": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:51.289763+00:00",
+      "sha256": "6979a2c83a392d777a9ae4fb001dd59d5566bea43ce7ece4657df4cc265475f3",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "EQT": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:52.100355+00:00",
+      "sha256": "1eeca9d2a6f8e601979f9f6cf87ecbc898e03db90b4415bcc645f2f06f27958f",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "EFX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:52.950548+00:00",
+      "sha256": "64c289def4fcdd520dff7ea27c649ec13f0d3c37fb8079573edb2b70d49078eb",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "EQIX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:53.713166+00:00",
+      "sha256": "8d41c0addea295eb915f3f64ffb6a3ea228ed990f6de9f63a15310496fbd7599",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ERIE": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:54.602603+00:00",
+      "sha256": "daa30ed7413902470f5acb9c1be0149d7be24e4df01efddeb2e0c6075ffc4ccc",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ESS": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:55.355137+00:00",
+      "sha256": "433a5e6374f7cc27b2143e7c0f49ee69c65d4aeb587006be10e5f754c033bd00",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "EL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:56.132781+00:00",
+      "sha256": "2f5e4bef87648d24bbed5a8c490272f2b64ea257e16f9aab64cd7888ec49326b",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "EG": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:56.914572+00:00",
+      "sha256": "66ca7febef1f893740780f1a019c7d73b2edcad84a6b3f29d066d5708ce670c4",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "EVRG": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:57.757754+00:00",
+      "sha256": "bc449463273b37ebde7bacd0b9baaa632c4975b306db3055573acd666f8d4604",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "P": {
+      "status": "downloaded",
+      "rows": 2325,
+      "first": "2015-10-06",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:58.453234+00:00",
+      "sha256": "32505b634f6342509e70593d66c85efaafd847c7153146d89e0ec1aeb2b40bc8",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ES": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:32:59.275197+00:00",
+      "sha256": "1a41b230a35b9272f20d2b783690b333057d73fb9b36619d4fcf96102cbbd3b6",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "EXC": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:00.062899+00:00",
+      "sha256": "a8349b1980f80822a4b1925ab3fe034c9b4bdb89afa09054802aedc2fd923411",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "EXE": {
+      "status": "downloaded",
+      "rows": 979,
+      "first": "2021-02-10",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:00.714158+00:00",
+      "sha256": "88cf0b64cade7f8f4eb7df42a86ea8d554c29c47dd7993f26fc1fa20fe02f094",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "EXPE": {
+      "status": "downloaded",
+      "rows": 4895,
+      "first": "2005-07-21",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:01.457815+00:00",
+      "sha256": "c2b56b8955402e6e8dfa0f19b69634505f59e9f8687737986f25e14315df4cc2",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "EXPD": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:02.228641+00:00",
+      "sha256": "e7b28511267bab620fe586055c050e7a54e345cc5850be385fba21652ef3eaaf",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "EXR": {
+      "status": "downloaded",
+      "rows": 5130,
+      "first": "2004-08-16",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:02.953177+00:00",
+      "sha256": "fac5315fecff6862062b622974c0aa5aea955d4a565c0aaeb24d0ea0b5a2430a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "XOM": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:03.772343+00:00",
+      "sha256": "6dece11539336ffe899e96dcc7d388fb09ce3aac9a387aeed86bb74ec7ea96c9",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "FFIV": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:04.493605+00:00",
+      "sha256": "f3aba93195303983f52c271283ed35d1d0964f39149db0b8e81690f4fe1f8f3e",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "FDS": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:05.295564+00:00",
+      "sha256": "e5cf204c89e8500aeabdbada1847c1210a39fd0ace9164a767fb78d37b1c4d44",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "FICO": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:06.047727+00:00",
+      "sha256": "08b8f1968b691793a9b52304ded49276a3a5edfa3fdfc583b61e6536347f6fdb",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "FAST": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:06.827294+00:00",
+      "sha256": "c3030e912c1086b5d0d1dca726b25edd2b1b4e079e907e1f549842c45817d68a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "FRT": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:07.624368+00:00",
+      "sha256": "d6fd8801fd292474348a6ae06f8c83e1d7b4855c6a7a965c37bfef45fde6e23a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "FDX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:08.376725+00:00",
+      "sha256": "87ff2e878fb0e90a4afa543a05bcb52e41b9b67d6b6e057b46edab6968ebb156",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "FDXF": {
+      "status": "failed",
+      "error": "ValueError: Provider returned no complete price schema"
+    },
+    "FERG": {
+      "status": "downloaded",
+      "rows": 3773,
+      "first": "2010-01-05",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:11.716723+00:00",
+      "sha256": "def2c599f3801c5569ee34c7e988b5fa075e0431e79e38497fd9c0e6e4b707d1",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "FIS": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:12.474562+00:00",
+      "sha256": "66399923ed1bd0ff50a77e00636175e8396244de5caa207a07001064da3f3f15",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "FITB": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:13.229665+00:00",
+      "sha256": "c30e73c9acb7813e05719e11d88b735805726ef571826d3d8b13aa16177fc03d",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "FSLR": {
+      "status": "downloaded",
+      "rows": 4559,
+      "first": "2006-11-17",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:13.929404+00:00",
+      "sha256": "8f4911e63851ebabfc07adc064e0ae8b49a9813949e206244dbaa729d71c9cd4",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "FE": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:14.758000+00:00",
+      "sha256": "551d384b82df61156ec1c0e3cf9d45af663f1cd12f555d8c0f74bcd2a7a96741",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "FISV": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:15.465292+00:00",
+      "sha256": "c1cd805dc191553da15d994229e862160f97b817cc82ec337a36183488493c0d",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "FLEX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:16.182277+00:00",
+      "sha256": "1294eb5a54fc1554d11efe834278abd7beae21df9ad0ebd0a83eb35ef37a6352",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "F": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:16.854821+00:00",
+      "sha256": "0c4e6665a5aab7e06f68e9019350db3c2b2455aafa879b43a33fbd74d638c31e",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "FTNT": {
+      "status": "downloaded",
+      "rows": 3804,
+      "first": "2009-11-18",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:17.502450+00:00",
+      "sha256": "002741c411a09897cd3a6b4242ed28633de6cb6dc7386e4c99da9d4a9cae2fd7",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "FTV": {
+      "status": "downloaded",
+      "rows": 2138,
+      "first": "2016-07-05",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:18.132894+00:00",
+      "sha256": "88ae78a503a5217be6a250f272c3acdc49bf4827c1a3c53ccccd92b99f68e3cc",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "FOXA": {
+      "status": "downloaded",
+      "rows": 1463,
+      "first": "2019-03-12",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:18.938477+00:00",
+      "sha256": "13b5d1926c61aa836b66fbd9224bd282bf7eeefe3de9415ab4c0197390ae9a43",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "FOX": {
+      "status": "downloaded",
+      "rows": 1462,
+      "first": "2019-03-13",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:19.589510+00:00",
+      "sha256": "5417723efe95542e9989470dee5cc96975de63a573ae1499035a9b6f2aa9d7cf",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "BEN": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:20.421642+00:00",
+      "sha256": "bbc567e16880ab745e4c848a549e13df4b257db2746c25305534515fc2085789",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "FCX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:21.188798+00:00",
+      "sha256": "0be98e45b846be77a8b9df413ab7198402bb2a98325150af91edef266a9e28aa",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "GRMN": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:21.984687+00:00",
+      "sha256": "4e455a42d868b2f1078eb7d861d038f1f2e50586c60d6d14a1dd02a74a928fd5",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "IT": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:22.744797+00:00",
+      "sha256": "d60a727bf6261defe9f44327d528c06c420ea7b7681a9477777d4622cec1b468",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "GE": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:23.555577+00:00",
+      "sha256": "b2e4af013c8dc1183670c1b1397c3a050edbc5218aed6c099db5f2213cc0e7ca",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "GEHC": {
+      "status": "downloaded",
+      "rows": 513,
+      "first": "2022-12-15",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:24.086303+00:00",
+      "sha256": "06553b023db0cdd9c98d895138f3f9ed8fd207d506ec41efb0ff3eec886cc4d9",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "GEV": {
+      "status": "downloaded",
+      "rows": 193,
+      "first": "2024-03-27",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:24.672116+00:00",
+      "sha256": "87a50947dd71eb48e5df641bfc16e3ff056acddad6afe321b128e2c2d0a43bc5",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "GEN": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:25.404544+00:00",
+      "sha256": "0e5eeb9d5630886bc757a55af94d03ab1f49418989af6bb24f31f915b8778db7",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "GNRC": {
+      "status": "downloaded",
+      "rows": 3747,
+      "first": "2010-02-11",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:26.015356+00:00",
+      "sha256": "d7aa736b03d4f71efb173da82d8252a9a068a4ab3bf978a23d8354635a6fe2fa",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "GD": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:26.819437+00:00",
+      "sha256": "b1dc4e16ec0a50efac09f84e9eda705a381b8071679dce80437106a8fd87f225",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "GIS": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:27.633259+00:00",
+      "sha256": "ecd4f80a377dcc49aaf424ee7ef25ef4a61f59b87d842dfa227b4bd87f4c91a8",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "GM": {
+      "status": "downloaded",
+      "rows": 3552,
+      "first": "2010-11-18",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:28.270419+00:00",
+      "sha256": "4e5d90829240d1bcf96325b407b361ddc70dedfe91c6565118b5e0fd04c9d89e",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "GPC": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:29.233966+00:00",
+      "sha256": "305e3f9ed3b20932fd52369605dee7ff1fac85c83e3125ff5938e41f45754583",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "GILD": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:29.935276+00:00",
+      "sha256": "cc1ee8ad88f200f45ed578a84e922653bb064944cdfad525094790a987b0b6e0",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "GPN": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:30.740722+00:00",
+      "sha256": "9bbe0c53b51d4f0034a44afc4de3429da8aa4f34bba6ee87877e10479d2026e0",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "GL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:31.579700+00:00",
+      "sha256": "b0b88415309be7ab32d44719b213230d625a9600b3d4efd7078a88bc43252ac5",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "GDDY": {
+      "status": "downloaded",
+      "rows": 2456,
+      "first": "2015-03-31",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:32.223298+00:00",
+      "sha256": "f399469d3fcf0ef58e3f71d3fb71cd98609da29f0d4db1d2fa7f62afb4506da9",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "GS": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:32.924096+00:00",
+      "sha256": "26d196e040f37dc8889dc03fc8b7149b3288d461883bd58048959587dc149f27",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "HAL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:33.723669+00:00",
+      "sha256": "0fbd29be045005fab67109abc4db4a6a7ff99f61783acfe4a7b209110d8b7aad",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "HIG": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:34.473091+00:00",
+      "sha256": "ea6e2c9ff43ae72ce3922090a55d9afa8c1b53f724fc303669fd1fd1a4ef77ec",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "HAS": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:35.266282+00:00",
+      "sha256": "f82f6e30580184f87af236be42c073ca8f77a6966193035bca0544ad4a23ce98",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "HCA": {
+      "status": "downloaded",
+      "rows": 3476,
+      "first": "2011-03-10",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:35.903367+00:00",
+      "sha256": "bcc5258f9f16806e5b37ae176b2a8aacacacd7b1e75c20dd73246091f3bd6b00",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "DOC": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:36.683819+00:00",
+      "sha256": "c098391030fab566766296356cb71fd447a31c22d3f8884c7f1219e02a937d7f",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "HSIC": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:37.393207+00:00",
+      "sha256": "d9d205142996e0f10a7bdacd44998f43da49115b51000cbb335128bad45abc98",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "HSY": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:38.143016+00:00",
+      "sha256": "d92bbc0067a44d0e399936fcb702dc75510a3b6d607c38a87187b1cb07275376",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "HPE": {
+      "status": "downloaded",
+      "rows": 2316,
+      "first": "2015-10-19",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:38.836121+00:00",
+      "sha256": "d19e69c5e99dd6cda6a3bc302d05a582fe9a09593477264e1428066d1e313acd",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "HLT": {
+      "status": "downloaded",
+      "rows": 2781,
+      "first": "2013-12-12",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:39.547418+00:00",
+      "sha256": "2ce8a1bfa413d544ada95af34177c8aed8f5ba609b1ba40cedcbe68701b37f91",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "HD": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:40.241021+00:00",
+      "sha256": "984840b45668db0c1064fa947ad4845c651f6b5a62a15357836ad796b0ed0ca0",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "HONA": {
+      "status": "failed",
+      "error": "ValueError: Provider returned no complete price schema"
+    },
+    "HON": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:43.972156+00:00",
+      "sha256": "abe08b164a3f0ccdab8dbb1c7dda1ca119fd824fa8cf0ce8491dac327086aaa1",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "HRL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:44.730973+00:00",
+      "sha256": "71f9fd10e0df4a231bdde31d8603cb44a137d1bdfc49442ea573ca8b8bbaaef5",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "HST": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:45.528965+00:00",
+      "sha256": "0ac27318a3c4d1af1424a274ad7447c9ab44a340305947dcc17c643fec9b6670",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "HWM": {
+      "status": "downloaded",
+      "rows": 2054,
+      "first": "2016-11-01",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:46.125384+00:00",
+      "sha256": "8cd1b7f3f2219ec41107b48ecf57e00f9df44f0874f7ab49ea57612fb7380cd6",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "HPQ": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:46.944857+00:00",
+      "sha256": "e76f9f9628f674205c6fff9e21322d6fa4ddf3cafd7af923ffb964533f7b5e1f",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "HUBB": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:47.745213+00:00",
+      "sha256": "00969c9c2becac4e3961e22d4a7832cad5de22a71381942842259ccb4972de9a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "HUM": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:48.463934+00:00",
+      "sha256": "f7919cfe534a473308300374b46d9140572821c580e29848670e3e7e28cbc4a1",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "HBAN": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:49.180117+00:00",
+      "sha256": "25eb49e42429d9b42e9402c019c586b79122cc9ceeb7cbde04616e300d294fbb",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "HII": {
+      "status": "downloaded",
+      "rows": 3468,
+      "first": "2011-03-22",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:49.857459+00:00",
+      "sha256": "5c9742c4122e27c79e04eac3e40cb7cd71241692dda59d588a8905c68cd788af",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "IBM": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:50.677929+00:00",
+      "sha256": "949706232b46695b02256da331118a9aeb1d4db1f74d230e10490ca0567d9744",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "IEX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:51.449878+00:00",
+      "sha256": "449c8a02823e0fb59ec1482fd575f81c5fa1ce7da0801f7b3bcd9bd131b132d0",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "IDXX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:52.169497+00:00",
+      "sha256": "2c0ec22ceb99177002bfb2596602e0f4d1c9f83b0c108bb979d92457707e3e0d",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ITW": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:52.886625+00:00",
+      "sha256": "672ed8f1c8be1c775a2b0df2174cdf30255b3c437249e6c3de3e23e7638605ee",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ILMN": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:53.543367+00:00",
+      "sha256": "111e52a15d264717eb3005f3113a5b132a464d133194213a7ab87f00fffe355b",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "INCY": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:54.236794+00:00",
+      "sha256": "df7b026277b60a63761dc8d65798f0fb1e3c2e452c5e58ffe606e827466ad4e6",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "IR": {
+      "status": "downloaded",
+      "rows": 1922,
+      "first": "2017-05-12",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:54.811531+00:00",
+      "sha256": "d85a87bb3a090523913a4609c792954ff2ec7329101cdebd2a2a44535559003b",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PODD": {
+      "status": "downloaded",
+      "rows": 4439,
+      "first": "2007-05-15",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:55.537393+00:00",
+      "sha256": "9d15d457c9a81ef5392666e3baf50ec2d60693da8c2d9e71697d5ce5636496b8",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "INTC": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:56.252770+00:00",
+      "sha256": "658fa747446fb2d0324f201e1b83f7f632a1179f9c740ebb476efe6c31d6a9ea",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "IBKR": {
+      "status": "downloaded",
+      "rows": 4446,
+      "first": "2007-05-04",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:56.934612+00:00",
+      "sha256": "009b921541ebae145af422bfc1af83b2a4a0a3058cde3303737f0ce3bdc35984",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ICE": {
+      "status": "downloaded",
+      "rows": 4812,
+      "first": "2005-11-16",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:57.595556+00:00",
+      "sha256": "68a922a7df6643886cda7349dc18de410513e315db69a60409553bceb9ffc110",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "IFF": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:58.399392+00:00",
+      "sha256": "b09f000a8508980bcfe2ead358a424eed797f5da9de5ce3ab4110f1739192d2b",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "IP": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:59.266948+00:00",
+      "sha256": "1c940c2dd2c05aae288ccf0af65ff283f0d41137002481abdbf8de7b426d74f8",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "INTU": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:33:59.965058+00:00",
+      "sha256": "9406c87a2d4b6adf8caabc13d02a3e9c3152f7c545dc4c6d05c2f843fdcaa8e8",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ISRG": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:00.603163+00:00",
+      "sha256": "07cf4dc6deb9b568b072c4b0cb9c5855775dbfdb2be9c98e848fd8ef1e6e03f9",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "IVZ": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:01.399911+00:00",
+      "sha256": "e65d83904180a7d74c23e085d582aaa48f24778cde7c1fdd3827e6014b7a666c",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "INVH": {
+      "status": "downloaded",
+      "rows": 1992,
+      "first": "2017-02-01",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:02.093092+00:00",
+      "sha256": "5c0b462830702396818d1cabd43e293a829aded66d7ac0909458ab62197e45c2",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "IQV": {
+      "status": "downloaded",
+      "rows": 2932,
+      "first": "2013-05-09",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:02.742367+00:00",
+      "sha256": "d79d38b917ef2cdf087b1ecd6e2713a10d051d5419283569d209d40b64697915",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "IRM": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:03.488750+00:00",
+      "sha256": "7ba6bed1beec445213f011ccecfe9bcf6113833a822e31bf3f893b9c1d92c7d3",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "JBHT": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:04.272271+00:00",
+      "sha256": "c1fd6cceec6ee21e92fbb7a33a4c96eb6f057e5ee387022bf3ab7fc96deb2dde",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "JBL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:05.012793+00:00",
+      "sha256": "5ce3516204634d3b1bcaa87416b3ea89704f4b41123f024a95c2403464900da7",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "JKHY": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:05.770232+00:00",
+      "sha256": "d31fcaa0707e0428db73d72a1a583ef6884d3b5a41f41a520c1f59c81c3d33d1",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "J": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:06.568322+00:00",
+      "sha256": "779fdcdbec1a1acd90b1394ed0068d91a7481b701860ecef71483fd17cba9782",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "JNJ": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:07.285182+00:00",
+      "sha256": "843f7b9051ead41f69b76f4da9b3fe508b48c6f663ba9799509325571de35470",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "JCI": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:08.005763+00:00",
+      "sha256": "1148011ec8cac96a195124376243f74740eed776009e27d94172a4f8b2ddd814",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "JPM": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:08.732155+00:00",
+      "sha256": "d54e448ed1c485d5240bf1599699ead81865e7ec75d18aa0b19753ecb2728067",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "KVUE": {
+      "status": "downloaded",
+      "rows": 418,
+      "first": "2023-05-04",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:09.410610+00:00",
+      "sha256": "0094ee5c034051c7c98ecce4f67c5f9e3946a63a1faf4857102b0e35771aa8a2",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "KDP": {
+      "status": "downloaded",
+      "rows": 4192,
+      "first": "2008-05-07",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:10.051994+00:00",
+      "sha256": "24fec01715051b853978abf53023b3d0be1ac09818b8a3d07b37d2f42bf4a53c",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "KEY": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:10.841488+00:00",
+      "sha256": "fbe9c5e02bdb7256dd6a027decefa28e9276910b1c2f5840943df3d354582e3b",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "KEYS": {
+      "status": "downloaded",
+      "rows": 2567,
+      "first": "2014-10-20",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:11.446833+00:00",
+      "sha256": "1a3f8ebeb9d41d9a186666ef6da2f9075df97f5d905935530b3b9d712b7f83eb",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "KMB": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:12.232322+00:00",
+      "sha256": "89fd30d8d43612e9dfe83b824bb687d79217247a0d206380ad94a2cf5cdfffc4",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "KIM": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:13.078680+00:00",
+      "sha256": "d6b0c1b56804bf75d69c35d3949a79d364683909aa809e4019d398481aff7986",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "KMI": {
+      "status": "downloaded",
+      "rows": 3494,
+      "first": "2011-02-11",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:13.725079+00:00",
+      "sha256": "fb728513b3cd952e87d0935da9cb161bf82a7c79df4b701dc49bf82fcbfb637c",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "KKR": {
+      "status": "downloaded",
+      "rows": 3641,
+      "first": "2010-07-15",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:14.445794+00:00",
+      "sha256": "24cd3935db2de16da3479021944b58941930d50ff619b69c51c4b406afb8233a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "KLAC": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:15.117926+00:00",
+      "sha256": "1bad30d1f690115adc38a89f396982cd579fa3f071443c4f4bf9b8fafa801a9a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "KHC": {
+      "status": "downloaded",
+      "rows": 2390,
+      "first": "2015-07-06",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:15.801386+00:00",
+      "sha256": "a341080e66709f52db580f79cc16a809fc44aa6e79c4de84a44ac173ed97cec2",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "KR": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:16.586076+00:00",
+      "sha256": "3214b03d43e3b9f28feadcec4406c359216097f9b20ae88577d8abd3f0dd6271",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "LHX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:17.425927+00:00",
+      "sha256": "267421b9f40ccae87269a5e8797f11a51ae133c8388ccdbdf6b74026846bf207",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "LH": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:18.196111+00:00",
+      "sha256": "8ff7ec6600ae246c293e72064f88f8b5c1cd2708af973451bfaf56ba24cc11fc",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "LRCX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:18.941035+00:00",
+      "sha256": "fe0d744744ba56d1e5464f1c442e708d216539a238573ea580ba7b79f15f42c5",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "LVS": {
+      "status": "downloaded",
+      "rows": 5045,
+      "first": "2004-12-15",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:19.678405+00:00",
+      "sha256": "301c6a342f97d6159cad90d77fc547c59d63e0859c7e3bbcbcd2c7d40d037205",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "LDOS": {
+      "status": "downloaded",
+      "rows": 4582,
+      "first": "2006-10-17",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:20.391690+00:00",
+      "sha256": "8291ad5572db46940fc24d17f5c543df12984cf01fd91d4a8844aee875832316",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "LEN": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:21.295541+00:00",
+      "sha256": "9c63de39c2fa65509fa188925166cd6f5daa3d7f28e5ddab27694135cebe2834",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "LII": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:22.088989+00:00",
+      "sha256": "1ede912798bf9a26e184ee343b42e70c3ae10580ac574a4f6640c16154445e9a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "LLY": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:22.910325+00:00",
+      "sha256": "f1b825be20e557201e40117b7b0b679bff920e22d6fa347529a3b10393e1c62b",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "LIN": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:24.038139+00:00",
+      "sha256": "f6680312a32e836e8a663a61344aa6932a3cdaff8a2ac7fe29a068609b5de3e5",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "LYV": {
+      "status": "downloaded",
+      "rows": 4788,
+      "first": "2005-12-21",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:24.714921+00:00",
+      "sha256": "004446f2450c1e41ed38ee60844a95dddfb35f98fffc4ae29d1e10d34002e490",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "LMT": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:25.493214+00:00",
+      "sha256": "6a0fae81953d2e312f722cc72330dcb56630ab054fd6c1dffdb4f437235b4cda",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "L": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:26.274873+00:00",
+      "sha256": "677762def208d496ba76c8c14b5ca9d52954b3b2d2b63247a95b44c818a1eb89",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "LOW": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:27.007678+00:00",
+      "sha256": "3e71d4ad992ee0d22a0d51b359df6c9eafdf438ec70bc4d1769fd254f50a2841",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "LULU": {
+      "status": "downloaded",
+      "rows": 4388,
+      "first": "2007-07-27",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:27.717277+00:00",
+      "sha256": "f671ccd4096c18b6a76aad03866ac70a2a98d95a3dcdd9e56b1ef08846b8ed4b",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "LITE": {
+      "status": "downloaded",
+      "rows": 2377,
+      "first": "2015-07-23",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:28.377213+00:00",
+      "sha256": "ffc4ad501a26c79684dcec69a5cfbea30919369311c2b699427fb8ebfc5a6ace",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "LYB": {
+      "status": "downloaded",
+      "rows": 3695,
+      "first": "2010-04-28",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:29.100461+00:00",
+      "sha256": "3a0164a3d821adc9efc48dc0953744d2ee6fbbed36d1d4e75e4a2d4061b5e65d",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MTB": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:29.884716+00:00",
+      "sha256": "13c64b3bdac32a7ff075a2b3c5bf77435a263460a66fcd9d7c1cff39d71bbe49",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MPC": {
+      "status": "downloaded",
+      "rows": 3402,
+      "first": "2011-06-24",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:30.598480+00:00",
+      "sha256": "b9a12bf493030bbfcb60f72d0c5ecb2dc09a96d9b24683ba35d129665ae63d24",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MAR": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:31.414562+00:00",
+      "sha256": "781ce4296560889e88021abfdea760c204bd05b5f1251cb0ab2e5d02fe8e6983",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MRSH": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:32.200440+00:00",
+      "sha256": "7d4a90acf40de2a2db0f0d30a1e40afbae6942cc81e25f03ecf068017bfdf231",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MLM": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:32.963309+00:00",
+      "sha256": "80d23d0d23a657d0c0d4adb1396f1d342f96e01380ef0c75d8f3d49a128ebbdb",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MRVL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:33.715637+00:00",
+      "sha256": "8ef08c2615b65f5a0a4ee4552eeb09ba3224964fab5bcfa8fd971c5cac8fcd5b",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MAS": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:34.508365+00:00",
+      "sha256": "344b95a821a68debf7b12909493e5387484834276997b1c8ac9aeb1c33874a25",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MA": {
+      "status": "downloaded",
+      "rows": 4682,
+      "first": "2006-05-25",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:35.208031+00:00",
+      "sha256": "214adb385e8f7e0e2cb566f68a91ce16f78516015dafcd0b5d724c4b0916c492",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MKC": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:36.018087+00:00",
+      "sha256": "df0c71304b7c771685113f2c4e39de31e6ec979b0d0b7f4b6d04830c988e5675",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MCD": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:36.701364+00:00",
+      "sha256": "2950628e4a4c13c153728f2dd04f68339af1b4ce8ceef2bdbc7f6f8de8dce42d",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MCK": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:37.436960+00:00",
+      "sha256": "36f14f0c23a8e548d66ea989b81de9edf6f0649c85025c7f02cbdd2501dc462e",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MDT": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:38.209275+00:00",
+      "sha256": "0b662f97a548973f3a6683e12ce25cad1cbc69a2ac7da5a9f2f7d39daaae1f63",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MRK": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:38.968866+00:00",
+      "sha256": "4873648d168471a7654075ddfcfbd62d23bade376645fb2e116da76391c3f3a6",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "META": {
+      "status": "downloaded",
+      "rows": 3175,
+      "first": "2012-05-18",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:39.571373+00:00",
+      "sha256": "8ea1b80c40e3dd281db93f140f98ca20f065a123488a5aeb2f7a1cda985f20a9",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MET": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:40.336547+00:00",
+      "sha256": "e5e9ac7a4a725a207cf887992f0963bee99b88b7a9c25d9313b8d177415c337b",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MTD": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:41.070903+00:00",
+      "sha256": "22bdfc890b08f967eb1ae695f92a36e98a4cd792f057d810f2f39ac637b29b91",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MGM": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:41.850853+00:00",
+      "sha256": "9d73f21a5aa78d0f4c9ce8031e904d32b9558e31f4e83c2326a225ffda709604",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MCHP": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:42.663080+00:00",
+      "sha256": "839f22a29f0621b7d0756b692fcf930af312bed8963723f745b32e606f31a3d8",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MU": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:43.410441+00:00",
+      "sha256": "38ef966dba109858f3da06cb5a76a71b1be5f0351b9270ca36a199e6b58bf129",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MSFT": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:44.080268+00:00",
+      "sha256": "476dedbb0a960c16a736d7252152080963f378ffdb8115a6ab80136e775c74f0",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MAA": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:44.841284+00:00",
+      "sha256": "b2772acffdb3bad9a9b0541c98e966888216e578ed47d00eaed1077a221c02c0",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MRNA": {
+      "status": "downloaded",
+      "rows": 1526,
+      "first": "2018-12-07",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:45.458155+00:00",
+      "sha256": "1ad7b30655b8e8533e577c67c7ad21f06ffc1e60190af11fb1db94392a46fe33",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MDLZ": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:46.174428+00:00",
+      "sha256": "1e3bd62beeb901860461a6f6ac42e003ef5c7596244ec89f32be2818781e2eeb",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MPWR": {
+      "status": "downloaded",
+      "rows": 5062,
+      "first": "2004-11-19",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:46.880505+00:00",
+      "sha256": "5087c4e526ccd38377cfac479caf0adedb028c50a99195d5f06633ed91c3258e",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MNST": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:47.586467+00:00",
+      "sha256": "432778cc51096a0f7ba7c22fe600a9b97b5e9d45e2d0fce481625ed5444afbdf",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MCO": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:48.261739+00:00",
+      "sha256": "8e3231600ca7614e293cb594ced4638882c93825ee16c4998fdd40de073f4419",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MS": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:48.906063+00:00",
+      "sha256": "56ef9ed280ee124da505b3f8307d38fa5d1efeffbcba5d77695f17d8be867f32",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MOS": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:49.755632+00:00",
+      "sha256": "7c7857af1a1633155415c42bf0a1cbde70decbd8d0333f15730f4cba4e736cb1",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MSI": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:50.470781+00:00",
+      "sha256": "aa78c9e1f2e364ea47e4627a2a3b502d7577114e07ce66fe7601dc76607afb0c",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "MSCI": {
+      "status": "downloaded",
+      "rows": 4310,
+      "first": "2007-11-15",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:51.172334+00:00",
+      "sha256": "dba1883b21c33e80064c5f82996b711f573f690f8c12ca1b3533bbf01c4ad10f",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "NDAQ": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:51.973571+00:00",
+      "sha256": "ea5586ec62c59541fa65b9cd067bccea8ab09c863c5d4242c2eb75b484dddd49",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "NTAP": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:52.736973+00:00",
+      "sha256": "4f488aba529cf10f5bace1f67224a873d10f38a046a4445d71e770478575a4a0",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "NFLX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:53.482284+00:00",
+      "sha256": "b340418e3d93fca469418400e7f83fde75b2bce2afdea70dce2c188a84d1c9f3",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "NEM": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:54.263422+00:00",
+      "sha256": "0b446e3af30882b10df8da8851628dc1a394c37d0da818fa911b782a735e0ee8",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "NWSA": {
+      "status": "downloaded",
+      "rows": 2904,
+      "first": "2013-06-19",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:54.914354+00:00",
+      "sha256": "162856e410da2de282c7ff26bf2ca203a8a7deb481dc0c7ff8eeb7be1d28f284",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "NWS": {
+      "status": "downloaded",
+      "rows": 2904,
+      "first": "2013-06-19",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:55.639846+00:00",
+      "sha256": "36a1e824239416aa6c9a09c7875d16cd2feccdc7768ea3dc2c18f2484d755cab",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "NEE": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:56.337852+00:00",
+      "sha256": "ded65d56e348879846caeb2dd97b67275b6ebf50bdf0007a1ff3c1acf80d60c3",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "NKE": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:57.477463+00:00",
+      "sha256": "7a10ddfed8532332c9919ce9ec855cc9775efef3d42c49a737832da143150dcd",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "NI": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:58.318312+00:00",
+      "sha256": "ce74ab3d56346b88063d21a0c601b1bb038c726c144851073381062e7a41783e",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "NDSN": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:59.106486+00:00",
+      "sha256": "8d343a26e920cb93aa1ad85d855ff1bfb9396f64d85bc1b9c745098927511801",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "NSC": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:34:59.872980+00:00",
+      "sha256": "63f3ad742873a91e4157451173852b75bf46bd67ad2c90097968aed02470bf27",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "NTRS": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:00.650462+00:00",
+      "sha256": "ccfd7f29b3387335f2333b1f4b30bbeb2d1baac062a3f4858523c7ebffdeeed1",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "NOC": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:01.386737+00:00",
+      "sha256": "e9d3bdca855d2bae693a3a192cd843d1a92b7ab8bff6703a6840ce9f1a333135",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "NCLH": {
+      "status": "downloaded",
+      "rows": 3008,
+      "first": "2013-01-18",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:02.117569+00:00",
+      "sha256": "39a1b6dfb52f11fdf2500464f2aa0819e79ebb7fce18c4f704b39e23b4c95b48",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "NRG": {
+      "status": "downloaded",
+      "rows": 5306,
+      "first": "2003-12-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:02.858216+00:00",
+      "sha256": "c7639eda0472753a8d7ec877b5b6f511d8e97ebea6664e8b466d663691019d71",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "NUE": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:03.734579+00:00",
+      "sha256": "f782344e50b656349f18fe7eb724150676dfcf080928c9d7a2cea6fe56097030",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "NVDA": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:04.459629+00:00",
+      "sha256": "a0fdc983fdef96402353c7e4b7162a89181ea93ae86f3b647f4c7f9e9743e0e4",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "NVR": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:05.187042+00:00",
+      "sha256": "d30fded74a474813ddbc8c1a45652edb15cade4d704a410f1444abc218f9aa9a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "NXPI": {
+      "status": "downloaded",
+      "rows": 3625,
+      "first": "2010-08-06",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:05.926102+00:00",
+      "sha256": "99cadc71ae4ece3fedc6dcd78fbfb0646961780dbcb3523b47a19732af69af88",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ORLY": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:06.740589+00:00",
+      "sha256": "26ea475005b2bbe67526625a4c14746c1518a24685235b911429a118ed7582d6",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "OXY": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:07.556156+00:00",
+      "sha256": "0e0c5ae8c3fa01a5f96da0f3eccb479f6bc055178f32d4e9f573c788df41a2a4",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ODFL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:08.392838+00:00",
+      "sha256": "45b386c447ade900dc2b452f18e41bc460ad4a9c75380ef0052dd6ee9cc08caa",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "OMC": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:09.167951+00:00",
+      "sha256": "9492a82cfd4f408be9ec1f64f0f75e2b13f97968941b8278219f104a175a17c2",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ON": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:09.915386+00:00",
+      "sha256": "c2937501d366b9ffff9fb9076d05f3151afe70b7e58e298429c1444439a151d7",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "OKE": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:10.748838+00:00",
+      "sha256": "543a364f87062d0c557e207eebd27dfe32a9c59f99c62ea84e82f2a736a95294",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ORCL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:11.396552+00:00",
+      "sha256": "cc8a19ffe8ddda99ec78b5448bdee5b2e8918bb81145b37f6a0bb5a409d45244",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "OTIS": {
+      "status": "downloaded",
+      "rows": 1205,
+      "first": "2020-03-19",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:11.951528+00:00",
+      "sha256": "2b62320bf3e4fd17c7c4f769b874856796101f3ab3bcdcb80510ae8586e59811",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PCAR": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:12.641084+00:00",
+      "sha256": "3ae39f0205b8ffd5e05fe25d66b60ba4221a5815c1a0d6151b37993a5c14f85e",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PKG": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:13.423439+00:00",
+      "sha256": "682efb3619b7a5e104c89ca1f93e2a3aba4f78919d42cbefc9d62ac812a4b931",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PLTR": {
+      "status": "downloaded",
+      "rows": 1070,
+      "first": "2020-09-30",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:14.091642+00:00",
+      "sha256": "4ae34dff5969ff53c79a81e77e5249acbf6197a505b9d504173656864fbfaa65",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PANW": {
+      "status": "downloaded",
+      "rows": 3132,
+      "first": "2012-07-20",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:14.698311+00:00",
+      "sha256": "d4a9f9a40d083d6e918db390cfbc4302ecc9b9ea6c415d760e34a56814088b6a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PH": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:15.509674+00:00",
+      "sha256": "b1c0d19678f605adccd6b4bab2b95be67ba54b9682ac86c4a2d6a365673091a9",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PAYX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:16.280960+00:00",
+      "sha256": "40976aa8ca6210dcf1fba68b19826b745c92db45eb443ad00c0a6b21281c6d62",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PYPL": {
+      "status": "downloaded",
+      "rows": 2390,
+      "first": "2015-07-06",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:16.950059+00:00",
+      "sha256": "0887e1c9a619a541dbc225efe8faefd524c4c9fd6c19971ccdd56d994cadf4f7",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PNR": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:17.743986+00:00",
+      "sha256": "7ec9dfd68f4fc208d73b6ea5bba265fc015d1f39c65eff9fa5ee266604c7c296",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PEP": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:18.479003+00:00",
+      "sha256": "a03247a04fa55e9cdd160bd8b9d1c75cbcea04f6bbea520b72f8a7e178fc0c91",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PFE": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:19.195110+00:00",
+      "sha256": "93d529692934a0f0c9229f9f9a79d6acac53ee0df0c6a4558bb2f364cb8cd34a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PCG": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:20.034680+00:00",
+      "sha256": "e4e44fb810537bb488415e4e7457715769232c28880232d4c47576e9326a0c8c",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PM": {
+      "status": "downloaded",
+      "rows": 4228,
+      "first": "2008-03-17",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:20.693667+00:00",
+      "sha256": "1bfa654c7e6706814ea7797aacaa97e11d5d7939e7a00cad20a3e458134d24bd",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PSX": {
+      "status": "downloaded",
+      "rows": 3201,
+      "first": "2012-04-12",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:21.439058+00:00",
+      "sha256": "cff65fa7b86b5e488bfc28ab69c2f09a439113d7b36bc70bee53987e0238ab94",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PNW": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:22.344086+00:00",
+      "sha256": "731a544194fd6aeba788f16e23b42c5bbc0a777198d82ba753a1be9458614106",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PNC": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:23.043777+00:00",
+      "sha256": "c9c76a45a6a8de92434ce915e4194388f56c869efaa18c55931582260e6d8fa5",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PPG": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:23.834917+00:00",
+      "sha256": "a4df88b7d97bc35df90db6614d62926dffa405a3461e6c04d6d10ec3f29c8a65",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PPL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:24.718688+00:00",
+      "sha256": "5006aa22bb7de9d854957be189abcd711866d4a957e7c7fc6d7e062c67ae142f",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PFG": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:25.588733+00:00",
+      "sha256": "7f8b186233535755eccefd5e4f039052ea2ec3af5dabbb40f40dffd809b4a69f",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PG": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:26.284074+00:00",
+      "sha256": "73547a4f378823a97f5ddde497d17fc3df386ecab9af9f6263eb70d589a4a6f5",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PGR": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:27.018385+00:00",
+      "sha256": "933c153012c409c69aab104a9e19f73ef89a519dbfcc167c1e2b9527f8a64a76",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PLD": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:27.717264+00:00",
+      "sha256": "88598e11f2294477389e26ca93566c9c855f7ef0860106546b22caac73c797b8",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PRU": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:28.415032+00:00",
+      "sha256": "10bf472830207d2cb42543e6d0b91221869775784f1111a55a1955f1ce2d4486",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PEG": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:29.270618+00:00",
+      "sha256": "1b90e9488006d36fe32cecb3c952b96492b981976b534188c4ab737927a5115e",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PTC": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:29.973269+00:00",
+      "sha256": "dd7802737d1c56510d09f5b8563f124249ed960b95a6e413d45b17783e5d7eda",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PSA": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:30.675399+00:00",
+      "sha256": "570dc457b96a2851c19d191ecf7c4cf29556ac58762584130baceb445f9f92d6",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PHM": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:31.502271+00:00",
+      "sha256": "06d6f504a36fc69251308697e1b413db410861552c8da6f378aedfa93b33506a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "PWR": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:32.268471+00:00",
+      "sha256": "fb6b5329e6ee904e0e35b9d667e487e31d1b2dc524865328ec3119b00baf424d",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "QCOM": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:32.948257+00:00",
+      "sha256": "f476f01a8f86d1c8f5526610877c8ae6d3f55ff62258d6c0e07521c6235cb58a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "DGX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:33.705780+00:00",
+      "sha256": "903068affc8f5ea066767ff83a13cd0d5ea701f989d96594261c5bbd986d44c3",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "Q": {
+      "status": "failed",
+      "error": "ValueError: Provider returned no complete price schema"
+    },
+    "RL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:37.251374+00:00",
+      "sha256": "444851818d57dc6c786d3e5c86c5c356d6aecc04e60b3c428c493ca2b5e1f27c",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "RJF": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:38.130219+00:00",
+      "sha256": "e212041e15fa59bfeb7ce08f4178c726eab9a050f88ac45ffe38f10e9962d323",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "RDDT": {
+      "status": "downloaded",
+      "rows": 197,
+      "first": "2024-03-21",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:38.709035+00:00",
+      "sha256": "417a370e581b0751626d6f44e402f51c50d8defd07cc42cd25f96225940ab579",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "RTX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:39.481395+00:00",
+      "sha256": "d4b19958644e69b093fed4a612267e2fb8b1766fe9b065babe4de3b3e074c754",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "O": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:40.311927+00:00",
+      "sha256": "6f2b16b0710f842d69ff813a5f6e41fec56f77fe0e474dd5f836e593d92f9c1e",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "REG": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:41.121688+00:00",
+      "sha256": "2ab59c09736ebacc41b6c2d42700c328a219cf7f346996c6c0a6b8c43ead7750",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "REGN": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:41.728785+00:00",
+      "sha256": "ff51a529512c3de6f87990edb4c2bff638461d36032d58f4f0501027db6a5d57",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "RF": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:42.603653+00:00",
+      "sha256": "14e0a0de7395e667ac1642ae76d67ada2f4d5c2ff7e02b435eafa00ab70f6312",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "RSG": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:43.452065+00:00",
+      "sha256": "dffc3e217a18774b5e7069bf473d21381f3663514b184d700326f85db51efe51",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "RMD": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:44.231933+00:00",
+      "sha256": "56c012648f5ba199e5574a43f7bfd78694160fd36d450396ca4195c99926864b",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "RVTY": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:45.114146+00:00",
+      "sha256": "4cdb4d9beee9a3946c46cc1cefb31b2ac37875261f319a7a6b7be10f9d0f28c5",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "HOOD": {
+      "status": "downloaded",
+      "rows": 862,
+      "first": "2021-07-29",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:45.709218+00:00",
+      "sha256": "adde6bb4c5d22351b3b8b82d09b2aed422fda6a9e4417ca3d8525bced14c75ea",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ROK": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:46.402910+00:00",
+      "sha256": "b0bbf9e9debc92b0bc254b37581de340513987784e37b6dfb999875cbe866559",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ROL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:47.208889+00:00",
+      "sha256": "eda85c3bdd22726ff6ab0ee5ea86caf3e95d7aba91055c4c3fa608417b15a7d5",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ROP": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:48.053163+00:00",
+      "sha256": "e35a49831acb507c16f900811ef88a8359fb40b1a0aa2822ad53ea79e5e369bd",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ROST": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:48.897269+00:00",
+      "sha256": "8a277cb4c47a9a64a19cf793d3218b2f6bd57f113b49c299b576b0d51d584ba7",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "RCL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:49.710429+00:00",
+      "sha256": "c12856b80f3a4d12bb2947e31015ea514cb7c7b5193437ba60e94ac170aca2d7",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "SPGI": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:50.482289+00:00",
+      "sha256": "76adf12b1c4bb13513739ed0c64a992e25a1c03f1622a6255a929478fc3e90e6",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "CRM": {
+      "status": "downloaded",
+      "rows": 5167,
+      "first": "2004-06-23",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:51.177672+00:00",
+      "sha256": "c21f599b4a56a17cba5823f69fcd5dfbd8555a0da73ffabd1e5774ecaaf9877b",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "SNDK": {
+      "status": "failed",
+      "error": "ValueError: Provider returned no complete price schema"
+    },
+    "SBAC": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:54.883912+00:00",
+      "sha256": "991fcd217bc4c322aff11919043f51add3329b80cefd01c3d4ae667ed133c669",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "SLB": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:55.584947+00:00",
+      "sha256": "77d9260d8f80e25e0c90b4104eff0f8c13fa0f92a07fcf06a74c3a8709ec55d3",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "STX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:56.423513+00:00",
+      "sha256": "9b2a1d776dfb373fe84ba05d41d4a846042361abbb1c01af4c5983fdd5d918e5",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "SRE": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:57.239181+00:00",
+      "sha256": "333f31de6630cfa78f8e5fdb78e3dad2e0e2ab1aa8c1d08ed25b23f2e5d40962",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "NOW": {
+      "status": "downloaded",
+      "rows": 3146,
+      "first": "2012-06-29",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:57.828983+00:00",
+      "sha256": "498a5db1967c81bf4cd75df10ab6e51d8cfc9dffc68f8abac34d9382fb6381bd",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "SHW": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:58.528405+00:00",
+      "sha256": "0c890affaec4a8e63550271ce4bc2971ec9618f20e08727665da5441d5822eef",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "SPG": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:35:59.342058+00:00",
+      "sha256": "203055ce345207bf11c4a3220e7e16f0f9887f3ef9d1e89f09a3e61b9a886ded",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "SKYD": {
+      "status": "downloaded",
+      "rows": 4800,
+      "first": "2005-12-05",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:00.074991+00:00",
+      "sha256": "279e36fc04d9ece5525e8f21625e4943543cf69e8a97f5654fa305c3f7d571e0",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "SWKS": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:00.895182+00:00",
+      "sha256": "18a511a28e3a1b9efe46f777312819543c71d23eae0a91b54ddc9f944621b446",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "SJM": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:01.647563+00:00",
+      "sha256": "8c2e51d14257f6c97be72a08b7ac55193ffcaf7cccb5c6166688269437239bc0",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "SW": {
+      "status": "downloaded",
+      "rows": 4164,
+      "first": "2008-06-17",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:02.332994+00:00",
+      "sha256": "ac5a87e0c2742da9cd5d32c1d47ac8cadf269a922a79cafbc60d5f044ab64714",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "SNA": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:03.164570+00:00",
+      "sha256": "4ff6002a32685b2ff13788b298050d867bfb57de6cf9c0a4a815f9b07ec2a554",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "SOLV": {
+      "status": "downloaded",
+      "rows": 194,
+      "first": "2024-03-26",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:03.877748+00:00",
+      "sha256": "25b3793c5cf8f814e594503c9f6985897bc6d49c0812942e52a47c18ccf8ad01",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "SO": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:04.580046+00:00",
+      "sha256": "77376cffd15a762d1078225c7fff36ec2854b372fd0d512829f68e4e4ba980da",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "LUV": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:05.569065+00:00",
+      "sha256": "6534643a83c97dd8da0e63ec286005583628e74947e35022836a9b8a7e20b025",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "SWK": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:06.402615+00:00",
+      "sha256": "73d5416c6260309c7094b2697bf52c2c490e6359adae11cd72a42dd04534505f",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "SBUX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:07.045925+00:00",
+      "sha256": "ffd3ca3e8fedb8fcea7a8f87c656479f3128629729c71f4ad48d9771dcb4920d",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "STT": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:07.829035+00:00",
+      "sha256": "b4946b03d08806e321b59d25bb79f1f1a9fc5d595dc427ca4546953ef49d628d",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "STLD": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:08.591182+00:00",
+      "sha256": "707ae7ac4cc0b699bf053bce6f2b9c6ba2706e2636cef67148c9b0903725b78e",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "STE": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:09.352704+00:00",
+      "sha256": "43242b81c75fa1a9af391abd9d50a9afa8ba1583cdaf165865387a4eae3469e1",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "SYK": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:10.063151+00:00",
+      "sha256": "1b89a4a7ddbca8def13bb952ef9d5a0e19e40c277fd0d598c951b3d8e1d73e04",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "SMCI": {
+      "status": "downloaded",
+      "rows": 4471,
+      "first": "2007-03-29",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:10.766615+00:00",
+      "sha256": "9de3978110c518e11595fb47731328ec850a782d12a5ab86b5582773e2cbbcfe",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "SYF": {
+      "status": "downloaded",
+      "rows": 2623,
+      "first": "2014-07-31",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:11.448229+00:00",
+      "sha256": "c5f7f940e6fdc25104160352f568fa74f768de618713a838777baf8705440b2a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "SNPS": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:12.083117+00:00",
+      "sha256": "7800115a302f60f2ce4148c3dd4b20355c824075025da7da4fedf2bb139d63a4",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "SYY": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:12.901231+00:00",
+      "sha256": "7c9abb0eaa7f55ea44ce6c9f9298c17ba6983d3346c5bced7e52853a914b99aa",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TMUS": {
+      "status": "downloaded",
+      "rows": 4457,
+      "first": "2007-04-19",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:13.544370+00:00",
+      "sha256": "125806719babb01b78f523169c16050ee14d7653448a1a5e40fb2c47595edf22",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TROW": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:14.360836+00:00",
+      "sha256": "c4a1bfb917e67b00e7b4058267b9fa9e3266fa3b4f60de93a8b2639613f0bcae",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TTWO": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:15.050391+00:00",
+      "sha256": "40750d8516b2fd58d22d0d0c62ce3ded563e30db9feeed64b5fdd2fbabaa7a61",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TPR": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:15.828611+00:00",
+      "sha256": "515ffe203e53ef6735e2c3b404ca5bcfe2beffd52235137a0ddbcc5cbfb9c40a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TRGP": {
+      "status": "downloaded",
+      "rows": 3540,
+      "first": "2010-12-07",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:16.548343+00:00",
+      "sha256": "5acb98ff39513c66ce6407c7de66d672fa1ffc7eaf11657c8bbe4d867a36869b",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TGT": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:17.417297+00:00",
+      "sha256": "91eecbd1fb9280663e33e99e3fe877ac219588762a8baa5c2b6a33d429dc34f0",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TEL": {
+      "status": "downloaded",
+      "rows": 4418,
+      "first": "2007-06-14",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:18.158005+00:00",
+      "sha256": "676ec20d7b9ba5df2bb39e28adf2b1a02e1b94470e289a8d21be1bb7a8c188e3",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TDY": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:18.951810+00:00",
+      "sha256": "3d6984d43f8f6daf496f9002bf4598e0fee50321770a36ed273929ff4c4b917f",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TER": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:19.654689+00:00",
+      "sha256": "900ce6fba647aaa09b1960b4e0bc91713d23045e2cfef1ccdf239f9ee38ddf0c",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TSLA": {
+      "status": "downloaded",
+      "rows": 3652,
+      "first": "2010-06-29",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:20.243199+00:00",
+      "sha256": "b1898af8bd8abc5a153723a11ae2e35ad64cce59b066d83a2c2bd401a872753b",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TXN": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:20.947534+00:00",
+      "sha256": "02dcb6c5f71986f0156944b6e44e8a3398dd993f5b6c112690693b51ff612ba5",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TPL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:21.866260+00:00",
+      "sha256": "6dbeb7ce4ab7f7e0dc40351d9eb135d7ac56bcfc3ace1417346510de089fbe4e",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TXT": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:22.612981+00:00",
+      "sha256": "508ad42925636df55f36fa0dfc5d86bfb56fd830e439d0fa957e287ebed99671",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TMO": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:23.332843+00:00",
+      "sha256": "7e06509afe78d6a848464b5a77883807695d6efebd507d2232647d0ba4189a33",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TJX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:24.132148+00:00",
+      "sha256": "e5fe6e97b2e82826ceaebdd4b1ba6f0167035b5ceb186359fc2ce311c4f38963",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TKO": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:24.963959+00:00",
+      "sha256": "ff617103eff5d6aee58a5d6e3f95be50083634a35c01b57132d97e66f8e1a12d",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TSCO": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:25.701451+00:00",
+      "sha256": "9875be5d3839a97e6bb22748f2188662512a7a9eebd307c0e0c343ac3025b6f1",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TT": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:26.449232+00:00",
+      "sha256": "2878194bddcd490b80b51abd2fed65be00597f3182b9a60c0551e2a87f95b20d",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TDG": {
+      "status": "downloaded",
+      "rows": 4732,
+      "first": "2006-03-15",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:27.182118+00:00",
+      "sha256": "2e9f26f643049ae41ea178b3f5fb197d274b4597f9f77192bd055dc956c6fa1b",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TRV": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:28.169309+00:00",
+      "sha256": "01199d5235d23cc1b0dfba746302b7f5d6c4bfec8e584037225fd78a4b0eab44",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TRMB": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:28.910571+00:00",
+      "sha256": "88240eb714d6195c63fb8c24569e83e8f55e3e215932f10a17e2f665c14488c3",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TFC": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:29.620019+00:00",
+      "sha256": "ad6c8d5db409a5f6298f158d45fbf3f62b5b4193085de72308aee4ae5f3f3343",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TWLO": {
+      "status": "downloaded",
+      "rows": 2145,
+      "first": "2016-06-23",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:30.317494+00:00",
+      "sha256": "7502e1377c7e0ca3a7a9ba6ab233bb20abf8ff29c75a28ccaf4a7e39682ff334",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TYL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:31.064852+00:00",
+      "sha256": "c381191d584c43a3e1e383837bd6bb31de5d6e4da028fa08507d6db7534d8560",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "TSN": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:31.927945+00:00",
+      "sha256": "d94abaf0777488ac5459eb26e7c5191d1746c2bd25ce2123c4914c0606ff7216",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "USB": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:32.660311+00:00",
+      "sha256": "61a338c5b19cff89f74b716d66f2fdd49669f34f3b442404ee50d6548b352965",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "UBER": {
+      "status": "downloaded",
+      "rows": 1421,
+      "first": "2019-05-10",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:33.275512+00:00",
+      "sha256": "d0c4a59164f54fd0003c526b37aead33f284d24c8d45eb714233b5c7142ad621",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "UDR": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:34.081707+00:00",
+      "sha256": "ac1f51de105eaeca19c3696b368d590e60b9f4bdc2d929e2b47bd8e4019173fd",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ULTA": {
+      "status": "downloaded",
+      "rows": 4325,
+      "first": "2007-10-25",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:34.836480+00:00",
+      "sha256": "eedd29f51de91c732d4cbf4d2cdd7db15f8d7e493bd2531a6d9eeb20a2d0c9ea",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "UNP": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:35.557827+00:00",
+      "sha256": "e774406d5eaacfa312f57512cb2ccb1632fa3fe93ec581042f8531ce6e2af237",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "UAL": {
+      "status": "downloaded",
+      "rows": 4758,
+      "first": "2006-02-06",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:36.274715+00:00",
+      "sha256": "b278584d065b5f035724946342aa3acd3e0c7ddd829d9c4f47bbabf2c74b0104",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "UPS": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:36.970814+00:00",
+      "sha256": "16d7da775bef92282116c4e1edc10cddbf05deb2638ad16326d0305a5fc97620",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "URI": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:37.789740+00:00",
+      "sha256": "4151cef34d497935a61d1fdf23dab60fa3c683e7efa228e4b54b01f3da8b148f",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "UNH": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:38.499695+00:00",
+      "sha256": "b1586404c0c7c8ece41d99ee5bcdc7bfb2dd3e1e411b0963f49c9a1f53136d79",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "UHS": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:39.284990+00:00",
+      "sha256": "fb624dc4f4d7f40e9414b057ef7030c6e93bf8291e4bc0f6a125efee74c6b216",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "VLO": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:40.177568+00:00",
+      "sha256": "a0c3977ba8044f0f81af867a7adb2164711298724967bbe1ac995cc3323e5e7b",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "VEEV": {
+      "status": "downloaded",
+      "rows": 2821,
+      "first": "2013-10-16",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:40.859185+00:00",
+      "sha256": "d0ded10551ce29d5ee4c9f7c1c984c443a0aa1cb2a6cf05b228ceb8929165b6e",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "VTR": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:41.759955+00:00",
+      "sha256": "63d99fa560c30041372d0dc0c5d561a1d2f1c5d2cd224ca66e54dbf0438e4cd2",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "VLTO": {
+      "status": "downloaded",
+      "rows": 313,
+      "first": "2023-10-04",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:42.295430+00:00",
+      "sha256": "e144afe4d75d62694c9211c58f8fef2395b0e593fd267d877d96aa168c5688cd",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "VRSN": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:43.042173+00:00",
+      "sha256": "eb01e93cac1fa966c463b684db116632e78751660ee371a39cd0fdc6829d7655",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "VRSK": {
+      "status": "downloaded",
+      "rows": 3834,
+      "first": "2009-10-07",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:43.724866+00:00",
+      "sha256": "780eb00a12fdfbbf06d5697c575a4a8492a9499c217fc1653021832db50d42b1",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "VZ": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:44.425413+00:00",
+      "sha256": "2107cd769a2354b8f6039abed0d0c46798c2738b23dad672809da6357cb66c5e",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "VRTX": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:45.052272+00:00",
+      "sha256": "37991a48c99f24560b74fb13a9beea515f1e7ca12b4e3229f219b7a668a22b77",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "VRT": {
+      "status": "downloaded",
+      "rows": 1614,
+      "first": "2018-08-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:45.698237+00:00",
+      "sha256": "d84a16a00435f14eba2930efacdb870c95a0ab3d41c8cc9c041ff716b48a9dca",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "VTRS": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:46.474388+00:00",
+      "sha256": "a298a8dda82b47e272401c1eb049b639997868be5c31af604ddbd5e10b4b071b",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "VICI": {
+      "status": "downloaded",
+      "rows": 1761,
+      "first": "2018-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:47.193732+00:00",
+      "sha256": "f52f2699e2976e6ffaa8763c7ff1ece04b00059173fc64ffc7429f849734026c",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "V": {
+      "status": "downloaded",
+      "rows": 4226,
+      "first": "2008-03-19",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:47.869397+00:00",
+      "sha256": "310ca41b8d350e9128aea8275e89c7ab09b4a94c1b9d7f4cd37e9d660f69046a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "VST": {
+      "status": "downloaded",
+      "rows": 2073,
+      "first": "2016-10-05",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:48.451146+00:00",
+      "sha256": "d2344bbb7adc22f364bec4b6390a00173b5e539cb5c718d6991731b6cad3b51a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "VMRK": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:49.215105+00:00",
+      "sha256": "9c58b6151742c9bb894bdf8533e1100b8a7a4c83fc0632999b2b7e2e3c93d9ec",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "VMC": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:50.076696+00:00",
+      "sha256": "9fabfe48da0e9c388f03eaf44988ef08d7ebbceafebfb55b74335e816cd729e8",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "VYLR": {
+      "status": "failed",
+      "error": "ValueError: Provider returned no complete price schema"
+    },
+    "WRB": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:53.799784+00:00",
+      "sha256": "bb5b262dfa4e52879f6f679b1896363ccce73497234464221f2cdcb4b9e2363b",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "GWW": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:54.611244+00:00",
+      "sha256": "535449e1d540f01ee86d5fa68f1fff51cd7da61bc734ed6d9f3ab503ffb5f43a",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "WAB": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:55.442667+00:00",
+      "sha256": "811d96b3f5e0c61c357e234e53eb595e5f8564376bf5417dfd1b6979aeb65235",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "WMT": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:56.133939+00:00",
+      "sha256": "0f5a95dd9f58a5caa4adad2fc349a833baf8d236064e7490c4ec265ae93dca48",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "DIS": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:56.874117+00:00",
+      "sha256": "bf878e382dd3955efdf9bcf105016636f92c5c5e8b48c52afe3511e0ca1d7dd9",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "WM": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:57.578009+00:00",
+      "sha256": "a5311bba78632f427e170defde50c5636ce5ae76bfc268fa1383cd9f79f11bba",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "WAT": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:58.284672+00:00",
+      "sha256": "6543523317d01bd38c38baa804c07b5f4adf671df41293cbfb2e5ed0b87d2fea",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "WEC": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:59.139311+00:00",
+      "sha256": "eae984815d5ac59c6d6e34e6afcbc21987677e58c0473a2599db3d3af84a3b31",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "WFC": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:36:59.959269+00:00",
+      "sha256": "d73bf197e1e6cea89f2be9b349aa7e4d22c4d8ae7d168ca0fc997fb05c7b32b8",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "WELL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:37:00.754608+00:00",
+      "sha256": "5431f91d9a16c4847a1f46f4ca37f59416cf986f2384f951eeff1b181604cba5",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "WST": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:37:01.608206+00:00",
+      "sha256": "0c2e219c8678a3e42768098a607398f781c4b51906e052cf4988585eadcb1e28",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "WDC": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:37:02.380059+00:00",
+      "sha256": "6f6c204b91a30a720abd64d5cf8c01ca1319a2ca225eb5c4ff379d092316894c",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "WY": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:37:03.153058+00:00",
+      "sha256": "848ac05ef312e24b9a750b1dd2c6bddadaf18ca583ed7cdfb3f6b863b134a2b9",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "WSM": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:37:03.944594+00:00",
+      "sha256": "7087bcf2727ceb1e166f78be1621d55915abd8561f8d9b9f6f5cd3706bbdb2c1",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "WMB": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:37:04.805149+00:00",
+      "sha256": "8ecf9de3ebd8e700d68aba6444f7ff292c5dd81fe3586d9c72ea8521bed84b4f",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "WTW": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:37:05.547715+00:00",
+      "sha256": "23b95e2ea6cd8ef8ead568c89ddd06426e05faf5d16f9f6557f49cea9e277e60",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "WDAY": {
+      "status": "downloaded",
+      "rows": 3073,
+      "first": "2012-10-12",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:37:06.223759+00:00",
+      "sha256": "b81eb5dc0d72a5c2433c5ba764d20c925184b1909b2b636dd6ed21ae21aadfb7",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "WYNN": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:37:06.929950+00:00",
+      "sha256": "054201f1c5802e34b3d99c14319b472cccbc7f6d0fa090ad9bb65059beb4bd53",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "XEL": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:37:07.695800+00:00",
+      "sha256": "08fc5a07ef3de98f6546cccd539da280a6230ef580132d9082e0e902ca7a9ebe",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "XYL": {
+      "status": "downloaded",
+      "rows": 3325,
+      "first": "2011-10-13",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:37:08.354651+00:00",
+      "sha256": "5405b090fd5f2b2a9c0c7537a8dabef8de22373971c1d533749f6c1ad83fe582",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "YUM": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:37:09.247767+00:00",
+      "sha256": "99dc7eccee48b79c65f457b3d1bc1732841db8b963b0a529adecbef8a98d731e",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ZBRA": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:37:09.929483+00:00",
+      "sha256": "d0d0769f0556afe7d6b3685b0be1e719c0c6e181d5a447444e2cc51d466bfd76",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ZBH": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:37:10.721114+00:00",
+      "sha256": "9826142e2b7148c6115b3d94950800de28ae85ea72e865b88d6804285474230e",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "ZTS": {
+      "status": "downloaded",
+      "rows": 2999,
+      "first": "2013-02-01",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:37:11.347952+00:00",
+      "sha256": "810dc7bb68e5ae152c83cec587e173e849702574a5c6568fde4e66f7f1e7de39",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    },
+    "SPY": {
+      "status": "downloaded",
+      "rows": 5537,
+      "first": "2003-01-02",
+      "last": "2024-12-31",
+      "downloaded_at": "2026-10-14T23:37:12.048436+00:00",
+      "sha256": "bc0865de4746f5525623b7db2b3c79adcd3f98d6c935a3ab1da975bca5d7ed3f",
+      "missing_close": 0,
+      "missing_adj_close": 0
+    }
+  }
+}

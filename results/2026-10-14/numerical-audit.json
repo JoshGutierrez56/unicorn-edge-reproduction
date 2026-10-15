@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "signal_dates_checked": 100,
+  "signal_weight_max_absolute_error": 1.1102230246251565e-16,
+  "training_return_observations": 3775,
+  "evaluation_return_observations": 757,
+  "training_scale_max_absolute_error": 1.1102230246251565e-14,
+  "ledger_comparisons": [
+    {
+      "year": 2010,
+      "observations": 252,
+      "maximum_absolute_errors": {
+        "nav": 2.886579864025407e-15,
+        "net_return": 4.2847669856627135e-16,
+        "trading_cost": 1.1384122811097797e-18
+      }
+    },
+    {
+      "year": 2015,
+      "observations": 252,
+      "maximum_absolute_errors": {
+        "nav": 7.771561172376096e-16,
+        "net_return": 3.1051550219984847e-16,
+        "trading_cost": 8.337514706413529e-17
+      }
+    },
+    {
+      "year": 2020,
+      "observations": 253,
+      "maximum_absolute_errors": {
+        "nav": 2.4424906541753444e-15,
+        "net_return": 4.3194614551822497e-16,
+        "trading_cost": 9.641267818827348e-17
+      }
+    }
+  ],
+  "method": "Direct array slices and scipy rankdata versus pandas rolling/rank; independent share/cash ledger and Brent root versus dollar-holdings fixed-point engine.",
+  "scope": "Separate numerical implementation by the same authoring agent; not independent human validation and not a repair of membership/price-vintage bias.",
+  "audited_run_sha256": "fe1362032c8cfcb5643ad926160ee4393a7887ec43cb38f89b5208d43bb45285"
+}

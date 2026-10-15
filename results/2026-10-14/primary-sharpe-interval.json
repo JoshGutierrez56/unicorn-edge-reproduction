@@ -1,0 +1,8 @@
+{
+  "low": -0.3943129672963623,
+  "high": 1.536940778334279,
+  "replications": 1000,
+  "block_sessions": 20,
+  "seed": 426,
+  "scope": "Conditional on these selected, survivor-biased years; not a correction for selection or data bias."
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "case": "threshold_0.78",
+    "status": "uncalibratable",
+    "failed_windows": [
+      {
+        "test_year": 2010,
+        "reason": "No training variation; cannot calibrate scale",
+        "training_observations": 1259,
+        "training_nonzero_returns": 0
+      },
+      {
+        "test_year": 2015,
+        "reason": "No training variation; cannot calibrate scale",
+        "training_observations": 1258,
+        "training_nonzero_returns": 0
+      },
+      {
+        "test_year": 2020,
+        "reason": "No training variation; cannot calibrate scale",
+        "training_observations": 1258,
+        "training_nonzero_returns": 0
+      }
+    ],
+    "completed_windows": 0,
+    "aggregate_reported": false
+  }
+]

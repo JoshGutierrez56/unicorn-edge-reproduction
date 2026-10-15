@@ -1,0 +1,1202 @@
+{
+  "alternate_endpoints": [
+    2011,
+    2016,
+    2021
+  ],
+  "cases": [
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "primary",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_blend",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "ungated_blend",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "ungated",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "gated_inverse_price",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_value",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "gated_reversal",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_reversal",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "equal_side_weights",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": true,
+        "mode": "gated_blend",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 2
+      },
+      "name": "extra_execution_day",
+      "price_mode": "close",
+      "scale_source": "primary",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_blend",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 1.2,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "double_cost",
+      "price_mode": "close",
+      "scale_source": "primary",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_blend",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 10,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "cost_10bps",
+      "price_mode": "close",
+      "scale_source": "primary",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_blend",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 100,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "borrow_100bps",
+      "price_mode": "close",
+      "scale_source": "primary",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_blend",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "leverage_capped",
+      "price_mode": "close",
+      "scale_source": "capped",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_blend",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "adjusted_price_rank",
+      "price_mode": "adjusted",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_blend",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "close_return_signals",
+      "price_mode": "close_signals",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_blend",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "nominal_unit_change",
+      "price_mode": "units",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_blend",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": false,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "no_kill_switch",
+      "price_mode": "close",
+      "scale_source": "primary",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_blend",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 0
+      },
+      "name": "INVALID_same_day_leakage",
+      "price_mode": "close",
+      "scale_source": "primary",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_blend",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "threshold_0.42",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_blend",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.42,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "threshold_0.51",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_blend",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.51,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "threshold_0.69",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_blend",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.69,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "threshold_0.78",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_blend",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.78,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "window_44",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_blend",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 44
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "window_54",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_blend",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 54
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "window_72",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_blend",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 72
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "window_82",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_blend",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 82
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "value_weight_0.49",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_blend",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.49,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "value_weight_0.60",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_blend",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.6,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "value_weight_0.81",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_blend",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.81,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "value_weight_0.91",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "gated_blend",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.91,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "random_gate_00",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "random_gate",
+        "random_seed": 0,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "random_gate_01",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "random_gate",
+        "random_seed": 1,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "random_gate_02",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "random_gate",
+        "random_seed": 2,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "random_gate_03",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "random_gate",
+        "random_seed": 3,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "random_gate_04",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "random_gate",
+        "random_seed": 4,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "random_gate_05",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "random_gate",
+        "random_seed": 5,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "random_gate_06",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "random_gate",
+        "random_seed": 6,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "random_gate_07",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "random_gate",
+        "random_seed": 7,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "random_gate_08",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "random_gate",
+        "random_seed": 8,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "random_gate_09",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "random_gate",
+        "random_seed": 9,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "random_gate_10",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "random_gate",
+        "random_seed": 10,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "random_gate_11",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "random_gate",
+        "random_seed": 11,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "random_gate_12",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "random_gate",
+        "random_seed": 12,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "random_gate_13",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "random_gate",
+        "random_seed": 13,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "random_gate_14",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "random_gate",
+        "random_seed": 14,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "random_gate_15",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "random_gate",
+        "random_seed": 15,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "random_gate_16",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "random_gate",
+        "random_seed": 16,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "random_gate_17",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "random_gate",
+        "random_seed": 17,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "random_gate_18",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "random_gate",
+        "random_seed": 18,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    },
+    {
+      "engine": {
+        "borrow_bps_annual": 0,
+        "cost_bps": 0.6,
+        "kill_switch": true,
+        "liquidate_final": true,
+        "max_drawdown": 0.3,
+        "rolling_days": 63,
+        "rolling_loss": 0.1,
+        "scale": 1,
+        "signal_lag": 1
+      },
+      "name": "random_gate_19",
+      "price_mode": "close",
+      "scale_source": "own",
+      "signal": {
+        "equal_side": false,
+        "mode": "random_gate",
+        "random_seed": 19,
+        "reversal_window": 10,
+        "threshold": 0.6,
+        "value_weight": 0.7,
+        "window": 63
+      }
+    }
+  ],
+  "notes": [
+    "Signal-lag1 is optimistic same-close execution; lag2 adds a full session.",
+    "Cost, borrow and lag stress cases hold the primary training scale fixed.",
+    "Other specification baselines calibrate their own scale on their own five-year training sample.",
+    "Training scaling excludes kill switches; evaluation includes them except the named ablation.",
+    "20 random gates match daily counts, not spell lengths; this does not replicate the paper's 1000-gate null distribution.",
+    "Additional annual evaluation is retrospective, with year-end liquidation and annual restart, not an untouched holdout.",
+    "Missing provider histories are explicitly recorded; no substitution or synthetic fallback.",
+    "Amendment after partial v1: zero-variation training is recorded as uncalibratable, never assigned an invented scale or dropped silently. No aggregate is reported for an incomplete case."
+  ],
+  "random_gate_replicates": 20,
+  "training_years": 5,
+  "unit_change_seed": 314,
+  "windows": [
+    2010,
+    2015,
+    2020
+  ]
+}

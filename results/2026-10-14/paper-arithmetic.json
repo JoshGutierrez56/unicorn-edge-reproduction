@@ -1,0 +1,23 @@
+{
+  "paper": "arXiv:2511.12490v1",
+  "reported_year_returns": [
+    2.067,
+    2.072,
+    0.62
+  ],
+  "wealth_multiple_if_geometric": 15.263354880000003,
+  "reported_table3_final_multiple": 110.376,
+  "table3_implied_year3_return": 10.723420074349443,
+  "reported_year3_return": 0.62,
+  "upper_wealth_if_annual_arithmetic_mean_62pct_253_sessions": 1.863507225778383,
+  "table3_year3_wealth_multiple": 11.723420074349443,
+  "reason": "For daily returns above -100%, log(wealth) <= sum(simple returns). The final table3 step cannot be reconciled to a one-year 62% arithmetic annual mean, nor to a 62% geometric annual return.",
+  "threshold_sensitivity": {
+    "abstract_claim": "Sharpe above 7 under 30% perturbations",
+    "table6_values": [
+      3.2,
+      4.1
+    ]
+  },
+  "scope": "Arithmetic incompatibility under the paper's stated one-year windows; no claim about intent."
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "file": "paper.html",
+    "url": "https://arxiv.org/html/2511.12490v1",
+    "sha256": "30875462fcb9fcc5f622f1beb542e12d3656688fba524075d2fa412ef2f2f846"
+  },
+  {
+    "file": "paper.pdf",
+    "url": "https://arxiv.org/pdf/2511.12490v1",
+    "sha256": "d111645342bb8ed54e0e695cbe0d864a8114095acf6e29288ce482695f0aa75a"
+  }
+]
