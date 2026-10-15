@@ -1,0 +1,22 @@
+# Existing-platform stress tests — frozen extension
+
+Owner requested reuse of the existing research platform after seeing the corrected CRSP results. The main reproduction and CRSP outcomes are already known. This extension is **retrospective diagnosis, not a fresh holdout, strategy optimization or another attempt to recover Sharpe 13**. Freeze this plan before new factor regressions or platform audit outcomes.
+
+## Reuse, with compatibility checks
+
+- Run the existing local **Backtest Autopsy** on aggregate gross/net daily output, with honest no-holdout, current-universe and optimistic-execution declarations. Keep optional holdings/trades/timestamps absent unless actual aligned ledger records are available; never fabricate them to pass controls. Record original component versions/hashes and limitations.
+- Reuse the **Personalized Model Portfolios** paired circular-block resampling design, adapting the estimand from tracking-risk differences to paired strategy return/Sharpe differences. Check calendar alignment and dependence assumptions; do not reuse its hardcoded output labels as evidence.
+- Inspect the **Portfolio Alpha & Risk Attribution Lab** accounting/data contracts. Its implemented funded ledger is long-only and cannot validate a long/short position by relabeling or bypassing checks. Use only compatible validators/control principles. This extension does not advance that private lab's gated P1 work or change its source files.
+- Reuse the saved official **Kenneth French** daily factor source/manifest where sufficient. Retrieve missing FF5/momentum factors only from the official public library, recording exact bytes/vintage and percent-to-decimal conversion. No vendor subscriptions or paid calls.
+
+## Fixed analyses
+
+1. **Independent audit:** full 2010–2024 annual-restart CRSP nominal, CRSP split-adjusted and matched Yahoo primary series. Compare supplied net metrics with the study ledger. Inspect gross-profit concentration, leave-one-year-out and clipped-tail diagnostics. Treat absent input warnings and process attestations as such. Check reused metrics on hand examples first; withhold any incompatible statistic rather than promote it.
+2. **Risk adjustment:** CAPM and FF5+momentum regressions of daily net return minus daily RF on the same dated observations. Report intercept, market beta, other exposures, R², HAC standard errors at predeclared lags 5 and 20, and actual sample coverage. The zero-yield cash convention is preserved. These retrospective regression intercepts are not proof of tradable alpha, causal mechanism or a correctly priced short book.
+3. **Dependence-aware uncertainty:** paired circular-block bootstrap with 2,000 resamples, fixed seed 20261014, block lengths 5/20/60. Report main-versus-split/Yahoo and main-versus-gated-reversal comparisons on their actual common dates. No unreported block selection or significance threshold search. Three separated test years must be resampled within their year segments, not treated as adjacent dates. Full annual-restart history has a continuous exchange calendar but disclosed annual resets.
+4. **Economic burden with fixed decisions:** use recorded gross P&L, actual turnover, gross/short exposure and existing base-cost ledger. Report fixed-path fee sensitivities at 0.6/1/2/5/10 bp and illustrative annual borrow rates 0/1%/3%. Report arithmetic break-even trading cost where defined. These are post-hoc cost overlays on fixed recorded holdings/decisions, **not a reoptimized/rescaled or fully rerun execution backtest**, not real borrow quotes and not empirical capacity. Keep them distinct from the already published full 10-bp rerun.
+5. **Regime/period dependence:** report each year and fixed eras 2010–2014, 2015–2019, 2020–2024 for the annual-restart primaries. Do not choose favorable cutoffs afterward. If an annual gated-reversal series is not already available, do not invent it; retain its original three-year comparison or declare a separate frozen run.
+
+## Publication and stopping rule
+
+Publish every completed diagnostic, undefined result and unavailable check with aggregate-only artifacts. Keep licensed security data and private platform code private. Original source repositories remain unmodified. A library test count or an audit badge does not establish strategy quality; do not call the strategy good unless the actual economic evidence supports that conclusion. No new model training, external reviewers, author outreach, trading or purchases are part of this extension.
