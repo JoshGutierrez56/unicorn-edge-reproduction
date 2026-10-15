@@ -31,25 +31,27 @@ def main():
     versions=subprocess.check_output(['git','status','--porcelain'],text=True)
     if versions.strip():raise ValueError('Freeze/commit the implementation before evaluating outcomes.')
     cases=[]
-    for source in ('yahoo_close','crsp_nominal','crsp_split_adjusted'):
+    sources=('yahoo_close','crsp_nominal','crsp_split_adjusted',
+             'yahoo_close_quote_freeze','crsp_nominal_stale_freeze','crsp_split_stale_freeze')
+    for source in sources:
         for mode in ('gated_blend','gated_reversal','ungated'):
             cases.append({'name':f'{source}_{mode}','source':source,'mode':mode,'lag':1,'cost_bps':.6})
         cases.extend([{'name':f'{source}_extra_day','source':source,'mode':'gated_blend','lag':2,'cost_bps':.6},
                       {'name':f'{source}_cost_10bps','source':source,'mode':'gated_blend','lag':1,'cost_bps':10.}])
     specification={'cases':cases,'test_years':[2010,2015,2020],'training_years':5,
-                   'annual_retrospective':{'years':list(range(2010,2025)),'modes':['gated_blend'],'sources':['yahoo_close','crsp_nominal','crsp_split_adjusted']},
+                   'annual_retrospective':{'years':list(range(2010,2025)),'modes':['gated_blend'],'sources':sources},
                    'signal':asdict(SignalConfig()),'engine_default':asdict(BacktestConfig()),
-                   'common_observation_rule':'Same permanent-ID-resolved current symbols, with valid observed Yahoo/CIZ prices and returns on the signal date; same mask applies before cross-sectional ranking. Past return lookbacks retain each provider observations. Missing held returns fail, never zero fill.',
+                   'common_observation_rule':'Issuer-reviewed permanent-ID current symbols, with valid observed Yahoo/CIZ prices and returns on the signal date; same mask applies before cross-sectional ranking. Past return lookbacks retain each provider observations. Missing held returns fail in strict cases. Separate stale_freeze cases bridge only documented P1/P2 price gaps and prohibit trading without a quote; modeled zeros never enter signal histories. Matched Yahoo quote-freeze cases retain Yahoo observed returns.',
                    'original_results_seen':True,'historical_membership':'BLOCKED: crsp_a_indexes permission denied; no PIT membership result',
                    'commit':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),
                    'started_utc':datetime.now(timezone.utc).isoformat()}
     dump(out/'specification.json',specification)
-    nominal,adjusted,crsp_returns,quality=load_crsp_cache(args.crsp)
+    nominal,adjusted,crsp_returns,valuation_returns,tradable,quality=load_crsp_cache(args.crsp)
     yahoo_close,yahoo_adjusted,_,yahoo_receipt=load_cache(args.yahoo,Path('docs/universe.csv'))
     if not nominal.index.equals(yahoo_close.index):raise ValueError('Provider calendars differ; inspect before pairing.')
     common=sorted(set(nominal.columns)&set(yahoo_close.columns))
     common=[s for s in common if nominal[s].notna().any() and adjusted[s].notna().any()]
-    nominal,adjusted,crsp_returns=[f[common] for f in (nominal,adjusted,crsp_returns)]
+    nominal,adjusted,crsp_returns,valuation_returns,tradable=[f[common] for f in (nominal,adjusted,crsp_returns,valuation_returns,tradable)]
     yahoo_close,yahoo_adjusted=yahoo_close[common],yahoo_adjusted[common]
     yahoo_returns=yahoo_adjusted.pct_change(fill_method=None)
     mask=nominal.notna()&adjusted.notna()&crsp_returns.notna()&yahoo_close.notna()&yahoo_adjusted.notna()&yahoo_returns.notna()
@@ -66,22 +68,26 @@ def main():
          'mean_absolute_difference':float(differences.abs().mean()),
          'fraction_abs_difference_above_1bp':float(differences.abs().gt(.0001).mean()),
          'note':'Aggregate observation comparison, not proof of equivalent security histories, prices or execution.'})
-    inputs={'yahoo_close':(yahoo_close,yahoo_returns),
-            'crsp_nominal':(nominal,crsp_returns),'crsp_split_adjusted':(adjusted,crsp_returns)}
+    inputs={'yahoo_close':(yahoo_close,yahoo_returns,yahoo_returns,None),
+            'crsp_nominal':(nominal,crsp_returns,crsp_returns,None),
+            'crsp_split_adjusted':(adjusted,crsp_returns,crsp_returns,None),
+            'yahoo_close_quote_freeze':(yahoo_close,yahoo_returns,yahoo_returns,tradable),
+            'crsp_nominal_stale_freeze':(nominal,crsp_returns,valuation_returns,tradable),
+            'crsp_split_stale_freeze':(adjusted,crsp_returns,valuation_returns,tradable)}
     weights_cache={};summaries=[];windows=[];failures=[]
     for case in cases:
         key=(case['source'],case['mode'])
         if key not in weights_cache:
-            price,returns=inputs[case['source']]
-            signal=make_signals(price,None,SignalConfig(mode=case['mode']),explicit_returns=returns,universe_mask=mask)
+            price,signal_returns,_,_=inputs[case['source']]
+            signal=make_signals(price,None,SignalConfig(mode=case['mode']),explicit_returns=signal_returns,universe_mask=mask)
             weights_cache[key]=signal['weights']
             pd.DataFrame({'eligible':signal['eligible'].sum(axis=1),'active_gate':signal['gate'].sum(axis=1)}).to_csv(out/f"{case['name']}-gate-counts.csv",index_label='date')
-        weights=weights_cache[key];returns=inputs[case['source']][1];paths=[];bad=[]
+        weights=weights_cache[key];returns=inputs[case['source']][2];quotes=inputs[case['source']][3];paths=[];bad=[]
         for year in (2010,2015,2020):
             try:
-                train=backtest(returns,weights,f'{year-5}-01-01',f'{year}-01-01',BacktestConfig(signal_lag=case['lag'],cost_bps=case['cost_bps'],kill_switch=False))
+                train=backtest(returns,weights,f'{year-5}-01-01',f'{year}-01-01',BacktestConfig(signal_lag=case['lag'],cost_bps=case['cost_bps'],kill_switch=False),close_tradable=quotes)
                 scale=training_scale(train.net_return)
-                daily=backtest(returns,weights,f'{year}-01-01',f'{year+1}-01-01',BacktestConfig(signal_lag=case['lag'],cost_bps=case['cost_bps'],scale=scale))
+                daily=backtest(returns,weights,f'{year}-01-01',f'{year+1}-01-01',BacktestConfig(signal_lag=case['lag'],cost_bps=case['cost_bps'],scale=scale),close_tradable=quotes)
                 paths.append(daily)
                 windows.append({'case':case['name'],'year':year,'scale':scale,**metrics(daily.net_return)})
             except ValueError as e:
@@ -96,12 +102,12 @@ def main():
     pd.DataFrame(windows).to_csv(out/'windows.csv',index=False)
     annual=[]
     for source in inputs:
-        weights=weights_cache[(source,'gated_blend')];returns=inputs[source][1];paths=[]
+        weights=weights_cache[(source,'gated_blend')];returns=inputs[source][2];quotes=inputs[source][3];paths=[]
         for year in range(2010,2025):
             try:
-                train=backtest(returns,weights,f'{year-5}-01-01',f'{year}-01-01',BacktestConfig(kill_switch=False))
+                train=backtest(returns,weights,f'{year-5}-01-01',f'{year}-01-01',BacktestConfig(kill_switch=False),close_tradable=quotes)
                 scale=training_scale(train.net_return)
-                path=backtest(returns,weights,f'{year}-01-01',f'{year+1}-01-01',BacktestConfig(scale=scale))
+                path=backtest(returns,weights,f'{year}-01-01',f'{year+1}-01-01',BacktestConfig(scale=scale),close_tradable=quotes)
                 paths.append(path);annual.append({'source':source,'year':year,'scale':scale,**metrics(path.net_return)})
             except ValueError as e:failures.append({'case':source+'_annual','year':year,'reason':str(e)})
         if len(paths)==15:

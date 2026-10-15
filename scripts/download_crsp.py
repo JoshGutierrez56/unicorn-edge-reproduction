@@ -72,7 +72,11 @@ def fetch_small(db, query, params):
 
 
 def resolve_identity(symbol, rows):
-    """Latest available matching identity, with explicit share-class handling."""
+    """Provisional ticker candidate only; mandatory issuer review precedes research.
+
+    Reused tickers and renamed companies cannot be established from strings.
+    prepare_identity_review.py creates the separate fail-closed review template.
+    """
     base,separator,shareclass=symbol.partition('-')
     matches=[]
     for row in rows:

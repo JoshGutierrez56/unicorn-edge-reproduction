@@ -33,7 +33,8 @@ class BacktestConfig:
             raise ValueError("Stop thresholds must lie in (0,1)")
 
 
-def rebalance(nav: float, held: np.ndarray, target: np.ndarray, rate: float) -> tuple[np.ndarray, float, float, float]:
+def rebalance(nav: float, held: np.ndarray, target: np.ndarray, rate: float,
+              tradable: np.ndarray | None = None) -> tuple[np.ndarray, float, float, float]:
     """Solve fee = rate * sum(abs(target * (NAV-fee) - held)).
 
     Target weights are relative to post-cost NAV. Signed holdings and a separate
@@ -41,11 +42,15 @@ def rebalance(nav: float, held: np.ndarray, target: np.ndarray, rate: float) -> 
     """
     if nav <= 0 or not np.isfinite(nav) or not np.isfinite(held).all() or not np.isfinite(target).all():
         raise ValueError("Nonfinite holdings/targets or nonpositive NAV")
-    if rate < 0 or rate * np.abs(target).sum() >= 1:
+    if tradable is None:
+        tradable = np.ones(held.shape, dtype=bool)
+    if tradable.shape != held.shape or tradable.dtype != bool:
+        raise ValueError("Tradability must be a matching boolean vector")
+    if rate < 0 or not np.isfinite(rate) or rate * np.abs(target[tradable]).sum() >= 1:
         raise ValueError("Cost equation is not contractive")
     fee = 0.
     for _ in range(100):
-        next_fee = rate * np.abs(target*(nav-fee)-held).sum()
+        next_fee = rate * np.abs(target[tradable]*(nav-fee)-held[tradable]).sum()
         if abs(next_fee-fee) <= 1e-14 * max(nav, 1e-12):
             fee = next_fee
             break
@@ -54,7 +59,7 @@ def rebalance(nav: float, held: np.ndarray, target: np.ndarray, rate: float) -> 
         raise ValueError("Cost equation did not converge")
     if fee >= nav:
         raise ValueError("Fees exhaust NAV")
-    holdings = target * (nav-fee)
+    holdings = np.where(tradable, target * (nav-fee), held)
     cash = nav-fee-holdings.sum()
     turnover = np.abs(holdings-held).sum()
     if not np.isclose(fee, rate*turnover, rtol=1e-11, atol=1e-14):
@@ -63,7 +68,8 @@ def rebalance(nav: float, held: np.ndarray, target: np.ndarray, rate: float) -> 
 
 
 def backtest(returns: pd.DataFrame, weights: pd.DataFrame, start: str, end: str,
-             config: BacktestConfig = BacktestConfig()) -> pd.DataFrame:
+             config: BacktestConfig = BacktestConfig(), *,
+             close_tradable: pd.DataFrame | None = None) -> pd.DataFrame:
     """Half-open date interval; prior-close trading, then today's close-to-close return.
 
     lag=1 assumes signals computed at the close can transact at that same close.
@@ -76,6 +82,17 @@ def backtest(returns: pd.DataFrame, weights: pd.DataFrame, start: str, end: str,
         raise ValueError("Return dates must be sorted and unique")
     if not np.isfinite(weights.to_numpy(float)).all():
         raise ValueError("Target weights must be finite before the explicit lag")
+    if close_tradable is not None:
+        if not returns.index.equals(close_tradable.index) or not returns.columns.equals(close_tradable.columns):
+            raise ValueError("Tradability labels differ")
+        if close_tradable.isna().any().any() or not all(t == bool for t in close_tradable.dtypes):
+            raise ValueError("Tradability must contain nonmissing booleans")
+        if config.signal_lag < 1:
+            raise ValueError("Tradability modeling cannot use the invalid same-day diagnostic")
+        at_close = close_tradable.to_numpy(bool)
+        before_return = close_tradable.shift(1, fill_value=False).to_numpy(bool)
+    else:
+        at_close = before_return = np.ones(returns.shape, dtype=bool)
     targets = weights.shift(config.signal_lag).fillna(0).to_numpy(float) * config.scale
     locations = np.flatnonzero((returns.index >= pd.Timestamp(start)) & (returns.index < pd.Timestamp(end)))
     if not len(locations):
@@ -90,7 +107,7 @@ def backtest(returns: pd.DataFrame, weights: pd.DataFrame, start: str, end: str,
     for j, t in enumerate(locations):
         opening_nav = nav
         target = np.zeros_like(held) if stopped else targets[t]
-        held, cash, fee, traded = rebalance(nav, held, target, rate)
+        held, cash, fee, traded = rebalance(nav, held, target, rate, before_return[t])
         current_return = raw_returns[t]
         exposed = np.abs(held) > 1e-14
         bad = exposed & ~np.isfinite(current_return)
@@ -120,11 +137,14 @@ def backtest(returns: pd.DataFrame, weights: pd.DataFrame, start: str, end: str,
                 stop_reason = "rolling_loss"
             if stop_reason:
                 stopped = True
-        if stop_reason or (config.liquidate_final and j==len(locations)-1):
-            held, cash, exit_fee, exit_traded = rebalance(nav, held, np.zeros_like(held), rate)
-            nav = cash
+        final_exit = config.liquidate_final and j == len(locations)-1
+        if stopped or final_exit:
+            held, cash, exit_fee, exit_traded = rebalance(nav, held, np.zeros_like(held), rate, at_close[t])
+            nav = float(cash + held.sum())
             fee += exit_fee
             traded += exit_traded
+            if final_exit and np.any(np.abs(held) > 1e-14):
+                raise DataGapError("Final liquidation is blocked by an unavailable closing quote")
         # Independent balance identity uses opening NAV and monetary P&L/fees.
         reconciliation = nav - (opening_nav + gross_pnl - fee - borrow)
         if abs(reconciliation) > 1e-10*opening_nav:
