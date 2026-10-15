@@ -28,3 +28,7 @@ For both the common current-member and historical-member experiments, report nom
 Test historical-membership boundary dates, ticker/share-class ambiguity, direct CIZ returns versus reconstructed cumulative indices, split-factor treatment, lagged exits, and rejection of unresolved held returns. Reconcile aggregate returns against the independent share/cash challenger where applicable. Compare eligible counts and source coverage before attributing performance differences to the strategy.
 
 Higher-quality data can strengthen the test without improving results. CRSP is not identified as the author's original vendor; even a matching headline would require the author's code and daily records to establish an exact replication.
+
+## Access amendment before market-panel retrieval
+
+The catalog exposed the `dsp500list` view, but the first actual membership query returned `permission denied for schema crsp_a_indexes`. Table visibility is not proof of licensed access. Record this refusal and continue only the separately specified current-constituent comparison when daily stock-data access succeeds. Historical-membership cases remain blocked unless an authorized source is obtained; an empty membership table is never treated as successful point-in-time reconstruction. No alternative membership history is invented or inferred from current constituents.
