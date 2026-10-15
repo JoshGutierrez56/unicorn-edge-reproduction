@@ -30,31 +30,54 @@ def cross_section_zscore(frame: pd.DataFrame) -> pd.DataFrame:
     return frame.sub(mean, axis=0).div(scale, axis=0)
 
 
-def make_signals(prices: pd.DataFrame, total_return_prices: pd.DataFrame, config: SignalConfig) -> dict[str, pd.DataFrame]:
+def make_signals(prices: pd.DataFrame, total_return_prices: pd.DataFrame | None, config: SignalConfig,
+                 *, explicit_returns: pd.DataFrame | None = None,
+                 universe_mask: pd.DataFrame | None = None) -> dict[str, pd.DataFrame]:
     """Weights labeled t use only observations through t; the gate excludes t.
 
     These are target weights, not portfolio returns. The accounting engine applies
     an explicit decision-to-return lag. Prelisting NaNs remain missing throughout.
     """
-    if not prices.index.equals(total_return_prices.index) or not prices.columns.equals(total_return_prices.columns):
+    reference = explicit_returns if explicit_returns is not None else total_return_prices
+    if reference is None:
+        raise ValueError("Total-return prices or explicit total returns are required")
+    if not prices.index.equals(reference.index) or not prices.columns.equals(reference.columns):
         raise ValueError("Price panels must have identical labels")
     if prices.index.has_duplicates or not prices.index.is_monotonic_increasing:
         raise ValueError("Dates must be sorted and unique")
-    for panel in (prices, total_return_prices):
+    for panel in (prices,) if explicit_returns is not None else (prices, total_return_prices):
         if ((panel <= 0) | np.isinf(panel)).any().any():
             raise ValueError("Observed prices must be positive and finite")
-    returns = total_return_prices.pct_change(fill_method=None)
+    returns = explicit_returns if explicit_returns is not None else total_return_prices.pct_change(fill_method=None)
+    if (np.isinf(returns) | returns.le(-1)).any().any():
+        raise ValueError("Invalid return or total-loss event needs explicit treatment")
+    if universe_mask is not None:
+        if not prices.index.equals(universe_mask.index) or not prices.columns.equals(universe_mask.columns):
+            raise ValueError("Universe mask labels differ")
+        if universe_mask.isna().any().any() or not all(t==bool for t in universe_mask.dtypes):
+            raise ValueError("Universe mask must contain nonmissing booleans")
+        rank_prices=prices.where(universe_mask)
+    else:
+        rank_prices=prices
     positive = (returns > 0).astype(float).where(returns.notna())
     up_fraction = positive.shift(1).rolling(config.window, min_periods=config.window).mean()
-    value = (1 / prices).rank(axis=1, pct=True, method="average")
-    reversal = cross_section_zscore(-total_return_prices.pct_change(config.reversal_window, fill_method=None))
+    value = (1 / rank_prices).rank(axis=1, pct=True, method="average")
+    if explicit_returns is None:
+        reversal_return=total_return_prices.pct_change(config.reversal_window, fill_method=None)
+    else:
+        # Direct CIZ returns already include distributions/delisting treatment.
+        # A full observed lookback is required; missing returns are not zeroed.
+        reversal_return=np.expm1(np.log1p(returns).rolling(config.reversal_window,min_periods=config.reversal_window).sum())
+    if universe_mask is not None:reversal_return=reversal_return.where(universe_mask)
+    reversal = cross_section_zscore(-reversal_return)
     if config.mode == "gated_value":
         base = value
     elif config.mode == "gated_reversal":
         base = reversal
     else:
         base = config.value_weight * value + (1-config.value_weight) * reversal
-    eligible = base.notna() & up_fraction.notna() & prices.notna() & total_return_prices.notna()
+    valid_today = returns.notna() if explicit_returns is not None else total_return_prices.notna()
+    eligible = base.notna() & up_fraction.notna() & rank_prices.notna() & valid_today
     gate = (up_fraction > config.threshold) & eligible
     if config.mode in {"ungated", "equal_weight"}:
         gate = eligible
