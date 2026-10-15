@@ -43,10 +43,12 @@ The intuition is to trade relative-value/reversal differences among stocks exper
 
 - **47 predeclared cases accounted for:** 46 completed, including an explicitly **invalid same-day leakage diagnostic**; one strict 78% drift-threshold case was uncalibratable because all three training windows had zero variation. It has no invented Sharpe or leverage scale.
 - Ungated blend, inverse-price-only, reversal-only, equal-side weighting, price-adjustment conventions, nominal-unit perturbation, extra execution lag, two cost levels, short borrow, leverage cap, stop removal, and threshold/window/blend sensitivities.
-- Twenty fixed-seed random gates matching each day's eligible count, not regime spell lengths. One of twenty exceeded the primary Sharpe. This small exploratory comparison is **not** the paper's 1,000-filter experiment or a definitive significance test.
+- A **1,000-seed descriptive random-gate supplement** matches each day's eligible count, not regime spell lengths or turnover. **142 of 1,000** had Sharpe at least as high as the primary (14.2%); the random-gate mean was −0.19. The original 20 observed seeds were retained, then the fixed extension to seeds 0–999 was completed without outcome-based stopping. **14.2% is not a calibrated p-value**, and this is not an exact replication of the paper's randomization procedure. [Protocol, every seed and receipt](results/2026-10-14/random-gate-1000/).
 - Alternate endpoint interpretation—2011, 2016 and 2021—returns **0.15 Sharpe**. All calendar years 2010–2024 are also reported, rather than selecting only three favorable years.
 - A separate numerical challenger reconciled **100 signal dates**, **3,775 training returns**, training scales and **757 test-day returns**. It uses direct slices/ranks plus a share-and-cash ledger with Brent root-solving, versus the main rolling-signal/dollar-holdings/fixed-point implementation. This is a second implementation by the same authoring agent, **not independent human review**.
-- **29 offline tests** cover signal timing, future perturbations, missing held prices, self-financing fees, short costs, stops, compounding, recorded hashes and consistency of every published case. Linux/Windows CI runs without requesting provider data.
+- **31 offline tests** cover signal timing, future perturbations, missing held prices, self-financing fees, short costs, stops, compounding, recorded hashes, consistency of every published case and the complete random-gate supplement. Linux/Windows CI runs without requesting provider data.
+
+![Distribution across 1,000 daily-count-matched random gates](docs/figures/random-gate-supplement.png)
 
 ![Separate evaluation years](docs/figures/separate-test-years.png)
 
@@ -90,6 +92,7 @@ The downloader requires network access and provider availability; current downlo
 ## Start with the evidence
 
 - [Implementation plan](docs/IMPLEMENTATION_PLAN.md) and [run ledger](docs/RUN_LEDGER.md)
+- [What data would an exact replication require?](docs/DATA_REQUIREMENTS.md)
 - [All case summaries](results/2026-10-14/summary.csv), [per-window results](results/2026-10-14/windows.csv), [uncalibratable case](results/2026-10-14/unavailable-cases.json)
 - [Frozen protocol](results/2026-10-14/run-specification.json), [run receipt](results/2026-10-14/run-receipt.json), [numerical audit](results/2026-10-14/numerical-audit.json)
 - [Primary daily record](results/2026-10-14/primary-daily.csv), [all-year evaluation](results/2026-10-14/annual-walk-forward.csv), [coverage](results/2026-10-14/coverage.csv)

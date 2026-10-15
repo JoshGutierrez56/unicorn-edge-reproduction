@@ -55,6 +55,17 @@ def main():
     ax.set_ylabel('Calendar-year net return');ax.set_title('Broader retrospective check: 2010–2024',loc='left',fontsize=16,pad=16)
     fig.text(.01,-.03,'Five-year training calibration, year-end liquidation and annual restart. Current-member bias remains.\nThis additional retrospective evaluation is not an untouched holdout or a continuously operated live portfolio.',fontsize=9)
     fig.tight_layout();save(fig,'annual-walk-forward')
+    gates=pd.read_csv(args.results/'random-gate-1000'/'seeds.csv')
+    fig,ax=plt.subplots(figsize=(10,4.8))
+    ax.hist(gates.sharpe,bins=np.linspace(-2,1.6,31),color='#b7cdcf',edgecolor='#faf9f6')
+    primary_sharpe=s.loc['primary','sharpe']
+    ax.axvline(primary_sharpe,color='#087b78',lw=2,label=f'Primary: {primary_sharpe:.2f}')
+    ax.set_xlabel('Annualized Sharpe across 2010, 2015 and 2020')
+    ax.set_ylabel('Random gates per bin')
+    ax.set_title('142 of 1,000 random gates matched or exceeded the primary',loc='left',fontsize=14,pad=16)
+    ax.legend(frameon=False)
+    fig.text(.01,-.05,'Fixed seeds 0–999; original 20 retained. Daily eligible counts matched, not spell lengths, turnover or risk exposures.\nDescriptive supplement after observing initial results; 14.2% is NOT a calibrated p-value or the paper’s exact randomization.',fontsize=9)
+    fig.tight_layout();save(fig,'random-gate-supplement')
 
 
 if __name__=='__main__':main()

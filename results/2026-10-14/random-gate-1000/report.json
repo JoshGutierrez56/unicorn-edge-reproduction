@@ -1,0 +1,22 @@
+{
+  "completed": 1000,
+  "seed_min": 0,
+  "seed_max": 999,
+  "primary_sharpe": 0.5904051709049398,
+  "at_least_primary": 142,
+  "descriptive_tail_fraction": 0.142,
+  "random_sharpe_mean": -0.1879300948409174,
+  "random_sharpe_min": -1.923355375348409,
+  "random_sharpe_max": 1.4881751609483744,
+  "random_sharpe_quantiles": {
+    "0.025": -1.3888729433280063,
+    "0.5": -0.21545791685180044,
+    "0.975": 1.0326527293213243
+  },
+  "mean_random_annual_turnover": 315.2643935907281,
+  "primary_annual_turnover": 158.33646245942248,
+  "interpretation": "Descriptive supplemental null after the original 20 seeds were observed. Daily eligible counts matched; spell lengths, turnover and risk exposures are not. Not an inferential p-value or exact replication of the paper randomization.",
+  "seed_table_sha256": "75297e74da532ca8386fbe845f2f51ed34a47f6a4eafa8a27487d55e04785e27",
+  "specification_sha256": "24dcbf8a2d4d4c6ed212a05aa6ad2d3b6ba983a22e420e28f9b30a8a89f371c8",
+  "data_receipt_sha256": "dca1ac8661f316eb7e3581ab9c90a5e327b23b28b2ece061b5fa838fc58be81e"
+}

@@ -10,6 +10,40 @@ import pytest
 ROOT=Path(__file__).resolve().parents[1]/'results'/'2026-10-14'
 
 
+def test_random_gate_supplement_preserves_all_seeds_and_original_results():
+    folder=ROOT/'random-gate-1000'
+    spec=json.loads((folder/'specification.json').read_text())
+    report=json.loads((folder/'report.json').read_text())
+    seeds=pd.read_csv(folder/'seeds.csv')
+    assert sorted(seeds.seed)==spec['seeds']==list(range(1000))
+    assert seeds.seed.is_unique
+    assert np.isfinite(seeds.select_dtypes('number')).all().all()
+    assert hashlib.sha256((folder/'seeds.csv').read_bytes()).hexdigest()==report['seed_table_sha256']
+    assert hashlib.sha256((folder/'specification.json').read_bytes()).hexdigest()==report['specification_sha256']
+    assert hashlib.sha256((ROOT/'summary.csv').read_bytes()).hexdigest()==spec['original_summary_sha256']
+    original=pd.read_csv(ROOT/'summary.csv').set_index('case')
+    for row in seeds.loc[seeds.seed<20].itertuples():
+        for key in ('sharpe','annual_mean','annual_volatility','total_return','max_drawdown','annual_turnover','annual_cost_drag'):
+            assert getattr(row,key)==pytest.approx(original.loc[f'random_gate_{row.seed:02d}',key],abs=1e-12)
+
+
+def test_random_gate_report_is_a_reconciled_descriptive_summary():
+    folder=ROOT/'random-gate-1000'
+    report=json.loads((folder/'report.json').read_text())
+    seeds=pd.read_csv(folder/'seeds.csv')
+    original=pd.read_csv(ROOT/'summary.csv').set_index('case')
+    assert report['primary_sharpe']==pytest.approx(original.loc['primary','sharpe'])
+    assert report['completed']==len(seeds)==1000
+    assert report['at_least_primary']==int(seeds.sharpe.ge(report['primary_sharpe']).sum())==142
+    assert report['descriptive_tail_fraction']==report['at_least_primary']/len(seeds)
+    for key,actual in [('mean',seeds.sharpe.mean()),('min',seeds.sharpe.min()),('max',seeds.sharpe.max())]:
+        assert report[f'random_sharpe_{key}']==pytest.approx(actual)
+    for q,value in report['random_sharpe_quantiles'].items():
+        assert value==pytest.approx(seeds.sharpe.quantile(float(q)))
+    assert report['mean_random_annual_turnover']==pytest.approx(seeds.annual_turnover.mean())
+    assert 'Not an inferential p-value' in report['interpretation']
+
+
 def test_every_original_run_output_retains_its_recorded_bytes():
     receipt=json.loads((ROOT/'run-receipt.json').read_text())
     assert receipt['working_tree_clean']
